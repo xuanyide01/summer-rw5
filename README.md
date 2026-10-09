@@ -43,7 +43,7 @@
 | 原版资源版本 | REFLECTION BLUE |
 | 应用版本 | 0.1.4 / versionCode 5 |
 | 包名 | `com.codex.summer.rw5` |
-| BIN 文件 | `夏日口袋-RW5-0.1.4.bin` |
+| BIN 文件 | `summer-rw5-v0.1.4.bin` |
 | 文件大小 | **24,089,495 字节，约 24.09 MB** |
 | 包内文件解压总大小 | 33,067,429 字节，不含安装工具额外开销 |
 
@@ -102,6 +102,8 @@ docs/images/          README 截图
 ```
 
 资源研究工具包括 `luca_format.py`、`cz_images.py`、`compile_expressions.py`；立绘与 CG 处理工具包括 `restore-portraits.py`、`compress-portraits.py`、`compose-cg.py`。这些工具针对本次 PC 游戏资源版本，目前并非任意 Galgame 的一键转换器。仅公开代码和工具的仓库需先准备原版资源的转换结果，再构建。
+
+运行原版资源分析与图片处理工具前，将环境变量 `SUMMER_GAME_ROOT` 设为原版 `SummerPocketsRB.exe` 所在目录。已转换资源的应用构建无需读取原版目录。
 
 ### 原生模拟器
 
