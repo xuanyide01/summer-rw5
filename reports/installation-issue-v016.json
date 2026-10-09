@@ -1,0 +1,58 @@
+{
+  "feedbackDate": "2026-10-09",
+  "device": "REDMI Watch 5",
+  "originalV016": {
+    "physicalInstallationPassed": false,
+    "symptom": "No application or icon after transfer",
+    "uninstalledBeforeInstall": true,
+    "attempts": 2
+  },
+  "v015": {
+    "reinstallationPassedInSameEnvironment": true,
+    "otherLargeGameAppsInstalled": false
+  },
+  "probeV016": {
+    "bytes": 789302,
+    "physicalChecksPassed": [
+      "icon",
+      "title",
+      "route/chapter lists"
+    ],
+    "containsFullGameResources": false
+  },
+  "alignedProbeV016": {
+    "bytes": 789312,
+    "physicalChecksPassed": [
+      "icon",
+      "title",
+      "route/chapter lists"
+    ],
+    "containsFullGameResources": false
+  },
+  "comparison": {
+    "allCommonResourcesIdentical": true,
+    "sameSigningCertificate": true,
+    "packageSizeIncreaseBytes": 52,
+    "oldAndNewSignaturesAndDigestsValid": true
+  },
+  "candidate": {
+    "file": "夏日口袋-RW5-0.1.6-兼容封装测试.bin",
+    "version": "0.1.6",
+    "bytes": 24632209,
+    "expandedBytes": 33705747,
+    "entries": 2389,
+    "sha256": "74d503299b79437479a84e57422fa5ffb1a84eb542ea69115f5938a1e20bbb67",
+    "certificateSha256": "4e8e1ee24968b0dad6d0956a7e14d848b38b22a203f39c389a45d8737bdc4585",
+    "zipCRCValid": true,
+    "outerSignatureValid": true,
+    "innerSignatureValid": true,
+    "allFileDigestsValid": true,
+    "signedFiles": 1960,
+    "gameFilesAndCompressedStreamsUnchanged": true,
+    "extraZipCommentBytes": 1,
+    "nativeFreshInstallationPassed": true,
+    "physicalInstallationTested": false
+  },
+  "cause": "Unidentified; small-package results do not establish a simple alignment failure",
+  "status": "Investigating; do not present candidate as a confirmed fix"
+}
