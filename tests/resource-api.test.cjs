@@ -28,3 +28,14 @@ test('actual page reads packaged TXT chapters and CG catalog; API 202 exits load
  failed.toTitle();assert.equal(failed.mode,'title');assert.equal(failed.backgroundSrc,'/common/title_bg.png');
  failed.openGallery();assert.equal(failed.loading,false);assert.equal(failed.mode,'error');assert.match(failed.errorText,/202/);
 });
+
+test('actual menu skips to the first original decision and keeps it pending',async()=>{
+ const p=await pageWithReader(o=>o.success({text:fs.readFileSync(path.join(root,'src',o.uri),'utf8')}));p.textSpeed=0;p.startNew();
+ for(let n=0;n<100&&p.mode!=='play';n++)await new Promise(r=>setTimeout(r,5));assert.equal(p.mode,'play');p.showMenu();p.goNextChapter();
+ for(let n=0;n<200&&p._chapterSkip;n++)await new Promise(r=>setTimeout(r,5));assert.equal(p.mode,'choice');assert.equal(p.session.chapter,7);assert.equal(p.session.cursor,24);assert.equal(p.session.progression,'story');assert.equal(p.loading,false);
+ const before=JSON.stringify(p.session);p.showMenu();p.goNextChapter();assert.equal(p.mode,'choice');assert.equal(JSON.stringify(p.session),before);p.toTitle();
+});
+
+test('route first-page cards are not reused as chapter first-page cards',async()=>{
+ const p=await pageWithReader(o=>o.success({text:fs.readFileSync(path.join(root,'src',o.uri),'utf8')}));p.openRoutes();const keys=p.browseRows.map(x=>x.key);p.selectBrowse(0);assert.equal(p.mode,'chapters');assert.ok(p.browseRows.every(x=>!keys.includes(x.key)));p.closeBrowse();assert.deepEqual(p.browseRows.map(x=>x.key),keys);
+});

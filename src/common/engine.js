@@ -100,13 +100,20 @@ export function readFrame(ops,state,base,total){
   return {type:'yield'};
 }
 export function next(state){remember(state);state.cursor++;}
+// Run the original interpreter until a decision or the next chapter's first text.
+// The skip context is transient UI state; saves keep the original VM format.
 export function nextChapter(state){
-  if(state.progression==='story'){
-    const parent=state.stack.findIndex(x=>x[0]===catalog.flowScene);if(parent<0)return false;
-    remember(state);const target=state.stack[parent];state.stack=state.stack.slice(0,parent);state.body='';changeScene(state,target[0],target[1]);return true;
+  if(state.ended)return null;
+  remember(state);
+  return {chapter:state.rootChapter};
+}
+export function readChapterSkip(ops,state,context,base,total){
+  for(let count=0;count<64;count++){
+    const frame=readFrame(ops,state,base,total);
+    if(frame.type!=='text'||state.rootChapter!==context.chapter)return frame;
+    state.cursor++;
   }
-  const info=catalog.scenes[String(state.rootChapter)];if(!info||!info.next)return false;
-  remember(state);state.rootChapter=info.next;state.stack=[];state.ended=false;state.body='';state.background='bg_black';state.regularBackground='bg_black';changeScene(state,info.next,0);return true;
+  return {type:'yield'};
 }
 export function choose(state,item,index){if(!item||!Number.isInteger(item.value)||!Number.isInteger(item.variable))throw new Error('选项无效');remember(state);if(item.mapKey)state.mapVisits[item.mapKey]=true;state.variables[String(item.variable)]=item.value;state.choices.push(index);state.cursor++;}
 export function previous(state){const last=state.history.pop();if(!last)return false;const history=state.history;Object.assign(state,last,{history});return true;}

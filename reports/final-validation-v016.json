@@ -1,0 +1,42 @@
+{
+  "version": "0.1.6",
+  "packageBytes": 24632208,
+  "expandedBytes": 33705747,
+  "sha256": "a595a84ef9c68bf6fb71ba6483303fa8efdd9f6ea74eb698b5956e32b22be70f",
+  "automatedTestsPassed": 15,
+  "sourceResourceFilesMatch": 1955,
+  "safeChapterSkip": {
+    "result": "passed",
+    "chapters": 315,
+    "decisionStops": 87,
+    "normalReadingStateMatches": true
+  },
+  "native": {
+    "version": "0.1.6",
+    "result": "passed",
+    "runtime": "official vela-watch-5.0",
+    "screen": [
+      432,
+      514
+    ],
+    "packageSha256": "a595a84ef9c68bf6fb71ba6483303fa8efdd9f6ea74eb698b5956e32b22be70f",
+    "checks": [
+      "new package installs and starts in official Vela watch VM",
+      "menu skip stops at first original choice",
+      "menu skip cannot bypass a pending choice",
+      "Shiroha first chapter page immediately shows chapter rows without pagination",
+      "Ao first chapter page immediately shows chapter rows without pagination",
+      "return to route first page immediately restores route rows",
+      "repeat Shiroha first-page entry/return four times"
+    ],
+    "physicalDeviceTested": false,
+    "firstPageScreenshots": [
+      "routes-first.png",
+      "shiroha-first.png",
+      "routes-return.png",
+      "ao-first.png",
+      "routes-return-ao.png"
+    ]
+  },
+  "physicalDeviceTested": false
+}

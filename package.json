@@ -1,6 +1,6 @@
 {
   "name": "summer-rw5-reader",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": true,
   "scripts": {
     "build": "node tools/build.cjs",
