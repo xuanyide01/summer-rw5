@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-09",
+  "source": "maintainer physical-device feedback in this conversation",
+  "device": "REDMI Watch 5",
+  "version": "0.1.7",
+  "sha256": "0849e570ecab9dfdebd4034a361f2b93d0c22a8f075961db30bad43db3fb0d38",
+  "installationPassed": true,
+  "applicationIconDisplayedNormally": true,
+  "otherBugsReported": false,
+  "verbatimFeedback": "3个游戏都已通过上机测试，安装正常，图标正常，暂未发现其他bug。",
+  "scope": "Installation, application icon and the functions exercised by the maintainer; not an exhaustive route or firmware compatibility test."
+}
