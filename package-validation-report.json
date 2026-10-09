@@ -1,0 +1,13 @@
+{
+  "version": "0.1.5",
+  "versionCode": 6,
+  "bytes": 24632156,
+  "expandedBytes": 33705464,
+  "sha256": "a906940ef39821d7bfb82d2a5e38692b33078ad3cd961ee3a77d9da424e7069c",
+  "sourceResourcesExact": 1955,
+  "unchangedOriginalResources": 2378,
+  "previousVersion": "0.1.4",
+  "sameSigningCertificate": true,
+  "signingCertificateSha256": "4e8e1ee24968b0dad6d0956a7e14d848b38b22a203f39c389a45d8737bdc4585",
+  "capBytes": 25000000
+}

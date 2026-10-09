@@ -4,11 +4,12 @@ const moduleSource=name=>fs.readFileSync(path.join(common,name+'.js'),'utf8');
 const summer=fs.existsSync(path.join(common,'catalog.js'));
 const catalogSource=summer?moduleSource('catalog'):'';
 const engineSource=moduleSource('engine').replace("'./catalog.js'",JSON.stringify(toUri(catalogSource)));
+const namesSource=moduleSource('names');
 async function pageWithReader(reader){
- const e=await import(toUri(engineSource)),s=await import(toUri(moduleSource('saves').replace("'./catalog.js'",JSON.stringify(toUri(catalogSource))).replace("'./engine.js'",JSON.stringify(toUri(engineSource))))),g=await import(toUri(moduleSource('gallery'))),a=await import(toUri(moduleSource('assets')));
+ const e=await import(toUri(engineSource)),s=await import(toUri(moduleSource('saves').replace("'./catalog.js'",JSON.stringify(toUri(catalogSource))).replace("'./engine.js'",JSON.stringify(toUri(engineSource))).replace("'./names.js'",JSON.stringify(toUri(namesSource))))),g=await import(toUri(moduleSource('gallery'))),a=await import(toUri(moduleSource('assets'))),n=await import(toUri(namesSource));
  const catalog=summer?(await import(toUri(catalogSource))).catalog:undefined;
  const source=fs.readFileSync(path.join(root,'src/pages/index/index.ux'),'utf8').split('<script>')[1].split('</script>')[0].replace(/^import[^\n]+\n/gm,'').replace('export default','globalThis.page=');
- const context=vm.createContext({...e,...s,...g,...a,catalog,file:{readText:reader},storage:{get:o=>o.success('')},prompt:{showToast(){}},console:{log(){},error(){}},setTimeout,clearTimeout,Date});
+ const context=vm.createContext({...e,...s,...g,...a,...n,catalog,file:{readText:reader},storage:{get:o=>o.success('')},prompt:{showToast(){}},console:{log(){},error(){}},setTimeout,clearTimeout,Date});
  vm.runInContext(source,context);const p=context.page;Object.assign(p,p.private);p.onInit();return p;
 }
 test('actual page reads packaged TXT chapters and CG catalog; API 202 exits loading and exposes its reason',async()=>{

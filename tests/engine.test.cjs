@@ -3,7 +3,8 @@ const root=path.resolve(__dirname,'..'),uri=t=>'data:text/javascript;base64,'+Bu
 const catalogSource=fs.readFileSync(path.join(root,'src/common/catalog.js'),'utf8'),catalog=JSON.parse(catalogSource.replace(/^export const catalog=/,'').trim().slice(0,-1));
 const catalogUri=uri(catalogSource),engineUri=uri(fs.readFileSync(path.join(root,'src/common/engine.js'),'utf8').replace("'./catalog.js'",JSON.stringify(catalogUri)));
 const engine=import(engineUri),gallery=import(uri(fs.readFileSync(path.join(root,'src/common/gallery.js'),'utf8')));
-const saves=import(uri(fs.readFileSync(path.join(root,'src/common/saves.js'),'utf8').replace("'./catalog.js'",JSON.stringify(catalogUri)).replace("'./engine.js'",JSON.stringify(engineUri))));
+const namesUri=uri(fs.readFileSync(path.join(root,'src/common/names.js'),'utf8'));
+const saves=import(uri(fs.readFileSync(path.join(root,'src/common/saves.js'),'utf8').replace("'./catalog.js'",JSON.stringify(catalogUri)).replace("'./engine.js'",JSON.stringify(engineUri)).replace("'./names.js'",JSON.stringify(namesUri))));
 const stories={};for(let i=1;i<=catalog.count;i++)stories[i]=JSON.parse(fs.readFileSync(path.join(root,'converted-story',i+'.json'),'utf8'));
 const paths=JSON.parse(/const paths=(.*);\r?\n/.exec(fs.readFileSync(path.join(root,'src/common/assets.js'),'utf8'))[1]);
 test('every control-flow destination and actual BG/portrait/CG reference exists',()=>{

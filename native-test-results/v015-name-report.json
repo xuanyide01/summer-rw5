@@ -1,0 +1,30 @@
+{
+  "version": "0.1.5",
+  "result": "passed",
+  "runtime": "official vela-watch-5.0",
+  "screen": [
+    432,
+    514
+  ],
+  "physicalDeviceTested": false,
+  "packageSha256": "a906940ef39821d7bfb82d2a5e38692b33078ad3cd961ee3a77d9da424e7069c",
+  "sample": {
+    "position": [
+      199,
+      289
+    ],
+    "visibleFrames": 132
+  },
+  "checked": [
+    "route name",
+    "chapter name",
+    "Chinese speaker and dialogue",
+    "large font",
+    "save preview",
+    "overwrite confirmation",
+    "reload",
+    "CG variant"
+  ],
+  "overwriteNameChecked": true,
+  "visualReview": "Chinese name, dialogue, standard/large font, chapter list, save preview and overwrite confirmation screenshots reviewed; no missing glyph or duplicated surname."
+}

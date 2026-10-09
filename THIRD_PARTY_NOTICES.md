@@ -13,3 +13,7 @@ LucaSystem 脚本与图片格式研究参考 [wetor/LuckSystem](https://github.c
 Node.js、aiot-toolkit、sharp，以及 Python 图片/资源处理依赖通过包管理器安装，没有将依赖目录打包入仓库。它们各自的许可证保留在相应软件包中。
 
 `src/common/` 中由原版转换的剧情、CG、背景、角色立绘，以及 README 截图和应用图标涉及原作资源，不属于本仓库 MIT 代码许可的授权范围。完整 BIN/RPK 安装包包含这些资源，代码开源不代表原游戏资源开源。
+
+## 姓名字体
+
+`src/common/summer-name.otf` 为 Noto Sans Mono CJK SC 的字形子集，修改后的字体名称为 SummerNameSubset。原字体由 Adobe 与 Google 等贡献者提供，按 SIL Open Font License 1.1 分发；字体独立于本项目的 MIT 代码许可。上游项目：[notofonts/noto-cjk](https://github.com/notofonts/noto-cjk)，许可证保留于 [licenses/NotoSansCJK-OFL.txt](licenses/NotoSansCJK-OFL.txt)，安装包内亦包含 `common/name-font-license.txt` 及字体版权元数据。
