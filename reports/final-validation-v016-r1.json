@@ -1,0 +1,43 @@
+{
+  "file": "夏日口袋-RW5-0.1.6-r1.bin",
+  "version": "0.1.6",
+  "bytes": 24632209,
+  "expandedBytes": 33705747,
+  "entries": 2389,
+  "sha256": "74d503299b79437479a84e57422fa5ffb1a84eb542ea69115f5938a1e20bbb67",
+  "certificateSha256": "4e8e1ee24968b0dad6d0956a7e14d848b38b22a203f39c389a45d8737bdc4585",
+  "zipCRCValid": true,
+  "outerSignatureValid": true,
+  "innerSignatureValid": true,
+  "allFileDigestsValid": true,
+  "signedFiles": 1960,
+  "binEqualsRpk": true,
+  "allOriginalEntryContentsAndCompressedStreamsIdentical": true,
+  "native": {
+    "runtime": "official vela-watch-5.0",
+    "freshInstallationPassed": true,
+    "coldLaunchPassed": true,
+    "checked": [
+      "title",
+      "route/chapter first page",
+      "original story text and image",
+      "30-slot load list and old preview",
+      "CG list",
+      "CG variant cycle"
+    ],
+    "visualScreenshotsInspected": true,
+    "testLogHasNoGameErrorOrPanic": true,
+    "saveDatabasePreservedByteForByte": true
+  },
+  "physicalInstallationTested": true,
+  "status": "hardware-confirmed installation revision; later 0999 text layout issue recorded",
+  "releaseRevision": "0.1.6-r1",
+  "physical": {
+    "device": "REDMI Watch 5",
+    "feedbackDate": "2026-10-09",
+    "installationPassed": true,
+    "chapterListStutterResolved": true,
+    "feedback": "成功安装，目前未发现问题。卡顿也已解决",
+    "knownIssueReportedLater": "Long leading layout padding in Tsumugi 0999; next version fixes display formatting"
+  }
+}

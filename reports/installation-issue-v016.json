@@ -51,8 +51,18 @@
     "gameFilesAndCompressedStreamsUnchanged": true,
     "extraZipCommentBytes": 1,
     "nativeFreshInstallationPassed": true,
-    "physicalInstallationTested": false
+    "physicalInstallationTested": true,
+    "physicalInstallationPassed": true,
+    "chapterListStutterResolved": true
   },
   "cause": "Unidentified; small-package results do not establish a simple alignment failure",
-  "status": "Investigating; do not present candidate as a confirmed fix"
+  "status": "Rewrapped complete package installed on physical device; original failure cause unidentified",
+  "resolutionFeedback": {
+    "device": "REDMI Watch 5",
+    "feedbackDate": "2026-10-09",
+    "installationPassed": true,
+    "chapterListStutterResolved": true,
+    "feedback": "成功安装，目前未发现问题。卡顿也已解决",
+    "knownIssueReportedLater": "Long leading layout padding in Tsumugi 0999; next version fixes display formatting"
+  }
 }

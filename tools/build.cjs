@@ -10,6 +10,10 @@ const {compile}=require(path.join(toolkit,'lib/commands/compile'));
  const manifest=JSON.parse(fs.readFileSync('src/manifest.json','utf8'));
  const name=manifest.package+'.debug.'+manifest.versionName+'.rpk',file=path.join('dist',name);
  if(!fs.existsSync(file))throw Error('Current-version package was not produced');
+ if(process.argv.includes('--release')){
+  const result=await require('./repack-rpk.cjs').repackRpk(file,file,toolkit);
+  console.log('R1_PACKAGING',JSON.stringify(result));
+ }
  const bytes=fs.statSync(file).size;if(bytes>25000000)throw Error('Package exceeds the 25,000,000-byte cap: '+bytes);
  console.log('BUILD_OUTPUT',name,bytes);
 })().catch(e=>{console.error(e);process.exitCode=1;});
