@@ -1,0 +1,22 @@
+{
+  "name": "summer-rw5-reader",
+  "version": "0.1.4",
+  "private": true,
+  "scripts": {
+    "build": "node tools/build.cjs",
+    "release": "node tools/build.cjs --release",
+    "test": "node --test tests/*.test.cjs",
+    "test:native": "node tools/native-main.cjs",
+    "test:native:persist": "node tools/native-main.cjs --persist",
+    "emulator:setup": "node tools/setup-emulator.cjs",
+    "emulator": "node tools/emulator-server.cjs"
+  },
+  "devDependencies": {
+    "aiot-toolkit": "2.0.5"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xuanyide01/summer-rw5.git"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "version": "0.1.3",
+  "result": "passed",
+  "runtime": "official vela-watch-5.0",
+  "screen": [
+    432,
+    514
+  ],
+  "physicalDeviceTested": false,
+  "packageSha256": "745bee8cec31efafb2961bef849f11f91cb41fca87eb380232ac8d144daba2be",
+  "portraits": [
+    {
+      "route": "鸣濑白羽",
+      "chapter": 95,
+      "cursor": 10,
+      "body": "i13168",
+      "texts": 4,
+      "file": "v013-portrait-route-1.png",
+      "resource": "portrait_sr011111.png"
+    },
+    {
+      "route": "空门苍",
+      "chapter": 96,
+      "cursor": 10,
+      "body": "i10241",
+      "texts": 6,
+      "file": "v013-portrait-route-2.png",
+      "resource": "portrait_ao020402.png"
+    },
+    {
+      "route": "久岛鸥",
+      "chapter": 178,
+      "cursor": 9,
+      "body": "i11306",
+      "texts": 5,
+      "file": "v013-portrait-route-3.png",
+      "resource": "portrait_km081111.png"
+    },
+    {
+      "route": "紬",
+      "chapter": 206,
+      "cursor": 5,
+      "body": "i14323",
+      "texts": 1,
+      "file": "v013-portrait-route-4.png",
+      "resource": "portrait_tm011111.png"
+    },
+    {
+      "route": "野村美希",
+      "chapter": 282,
+      "cursor": 8,
+      "body": "i11827",
+      "texts": 2,
+      "file": "v013-portrait-route-5.png",
+      "resource": "portrait_mk011414.png"
+    },
+    {
+      "route": "水织静久",
+      "chapter": 319,
+      "cursor": 20,
+      "body": "i13819",
+      "texts": 12,
+      "file": "v013-portrait-route-6.png",
+      "resource": "portrait_sz020301.png"
+    },
+    {
+      "route": "神山识",
+      "chapter": 349,
+      "cursor": 35,
+      "body": "i12570",
+      "texts": 27,
+      "file": "v013-portrait-route-7.png",
+      "resource": "portrait_sk011111.png"
+    },
+    {
+      "route": "加藤羽未",
+      "chapter": 389,
+      "cursor": 4,
+      "body": "i15371",
+      "texts": 2,
+      "file": "v013-portrait-route-8.png",
+      "resource": "portrait_um010101.png"
+    }
+  ],
+  "gallery": {
+    "groups": 155,
+    "variants": 856
+  },
+  "cgCompleteCanvas": true,
+  "cgDifferenceCycle": true,
+  "oldMapSlotAndBranchRestored": true
+}

@@ -1,0 +1,24 @@
+{
+  "project": "summer-rw5",
+  "version": "0.1.4",
+  "name": "夏日口袋",
+  "oldIconColors": 1,
+  "oldIconPath": "/common/icon.png",
+  "iconPath": "/common/logo.png",
+  "dimensions": [
+    192,
+    192
+  ],
+  "pngMode": "RGB",
+  "colors": 25337,
+  "bytes": 67586,
+  "sha256": "039e1a5d13abd35c7d57a4b8c5baff604f8d88b41b432fec1a031968cee2c9ae",
+  "source": "existing original-game title art",
+  "cropBox": [
+    0,
+    0,
+    180,
+    180
+  ],
+  "iconSizeSpecification": "https://iot.mi.com/vela/quickapp/zh/guide/framework/manifest.html"
+}

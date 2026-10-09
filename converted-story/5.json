@@ -1,0 +1,1 @@
+[{"op":"set","variable":30001,"value":1920},{"op":"set","variable":30002,"value":1080},{"op":"if","truth":false,"target":5,"value":["<",["v",10013],300]},{"op":"text","speaker":"羽依里","text":"“队伍还没有组建完成哦。”"},{"op":"goto","target":2},{"op":"return"},{"op":"end"}]

@@ -1,0 +1,4455 @@
+{
+  "version": "0.1.3",
+  "fileCapBytes": 25000000,
+  "portraitMaxSize": [
+    200,
+    256
+  ],
+  "rgbBits": [
+    6,
+    6,
+    6
+  ],
+  "alphaBits": 8,
+  "format": "RGBA PNG; mild RGB rounding, lossless PNG encoding afterwards",
+  "portraitCount": 277,
+  "portraitBytes": 13764683,
+  "maxDecodedPortraitBytes": 203200,
+  "minPsnrDb": 46.154531575686526,
+  "maxRgbError": 2,
+  "minimumColors": 1235,
+  "images": [
+    {
+      "file": "portrait_ao010101.png",
+      "before": [
+        224,
+        214
+      ],
+      "size": [
+        200,
+        191
+      ],
+      "bytes": 53805,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.86533465341178,
+      "colors": 3799
+    },
+    {
+      "file": "portrait_ao010201.png",
+      "before": [
+        224,
+        214
+      ],
+      "size": [
+        200,
+        191
+      ],
+      "bytes": 54527,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.8349859820225,
+      "colors": 3932
+    },
+    {
+      "file": "portrait_ao010301.png",
+      "before": [
+        224,
+        214
+      ],
+      "size": [
+        200,
+        191
+      ],
+      "bytes": 54580,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.938904189832,
+      "colors": 3903
+    },
+    {
+      "file": "portrait_ao010402.png",
+      "before": [
+        224,
+        214
+      ],
+      "size": [
+        200,
+        191
+      ],
+      "bytes": 54212,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.85260742292206,
+      "colors": 3906
+    },
+    {
+      "file": "portrait_ao011111.png",
+      "before": [
+        224,
+        249
+      ],
+      "size": [
+        200,
+        222
+      ],
+      "bytes": 64540,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.7750820897179,
+      "colors": 4538
+    },
+    {
+      "file": "portrait_ao011211.png",
+      "before": [
+        184,
+        286
+      ],
+      "size": [
+        165,
+        256
+      ],
+      "bytes": 69297,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.14831256409231,
+      "colors": 4741
+    },
+    {
+      "file": "portrait_ao011411.png",
+      "before": [
+        224,
+        249
+      ],
+      "size": [
+        200,
+        222
+      ],
+      "bytes": 66494,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.773921538055596,
+      "colors": 4722
+    },
+    {
+      "file": "portrait_ao020101.png",
+      "before": [
+        224,
+        214
+      ],
+      "size": [
+        200,
+        191
+      ],
+      "bytes": 52076,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.82150218855777,
+      "colors": 4179
+    },
+    {
+      "file": "portrait_ao020201.png",
+      "before": [
+        224,
+        214
+      ],
+      "size": [
+        200,
+        191
+      ],
+      "bytes": 52149,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.82871224755188,
+      "colors": 4137
+    },
+    {
+      "file": "portrait_ao020301.png",
+      "before": [
+        224,
+        214
+      ],
+      "size": [
+        200,
+        191
+      ],
+      "bytes": 53261,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.904737932678444,
+      "colors": 4310
+    },
+    {
+      "file": "portrait_ao020402.png",
+      "before": [
+        224,
+        214
+      ],
+      "size": [
+        200,
+        191
+      ],
+      "bytes": 52507,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.874030390423336,
+      "colors": 4348
+    },
+    {
+      "file": "portrait_ao021111.png",
+      "before": [
+        224,
+        267
+      ],
+      "size": [
+        200,
+        238
+      ],
+      "bytes": 69536,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.79679384915251,
+      "colors": 5578
+    },
+    {
+      "file": "portrait_ao021211.png",
+      "before": [
+        224,
+        263
+      ],
+      "size": [
+        200,
+        235
+      ],
+      "bytes": 71579,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.783555919084314,
+      "colors": 5713
+    },
+    {
+      "file": "portrait_ao021311.png",
+      "before": [
+        224,
+        267
+      ],
+      "size": [
+        200,
+        238
+      ],
+      "bytes": 71798,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.800614938498185,
+      "colors": 5690
+    },
+    {
+      "file": "portrait_ao021411.png",
+      "before": [
+        224,
+        267
+      ],
+      "size": [
+        200,
+        238
+      ],
+      "bytes": 71919,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.793585630809325,
+      "colors": 5709
+    },
+    {
+      "file": "portrait_ao030101.png",
+      "before": [
+        224,
+        214
+      ],
+      "size": [
+        200,
+        191
+      ],
+      "bytes": 54396,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.561312808755595,
+      "colors": 5115
+    },
+    {
+      "file": "portrait_ao030201.png",
+      "before": [
+        224,
+        214
+      ],
+      "size": [
+        200,
+        191
+      ],
+      "bytes": 53272,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.61937903451617,
+      "colors": 4549
+    },
+    {
+      "file": "portrait_ao030301.png",
+      "before": [
+        224,
+        214
+      ],
+      "size": [
+        200,
+        191
+      ],
+      "bytes": 53409,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.58377231408882,
+      "colors": 5189
+    },
+    {
+      "file": "portrait_ao030402.png",
+      "before": [
+        224,
+        214
+      ],
+      "size": [
+        200,
+        191
+      ],
+      "bytes": 53986,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.593668103108996,
+      "colors": 4727
+    },
+    {
+      "file": "portrait_ao031111.png",
+      "before": [
+        224,
+        267
+      ],
+      "size": [
+        200,
+        238
+      ],
+      "bytes": 71578,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.550953236683,
+      "colors": 6415
+    },
+    {
+      "file": "portrait_ao031211.png",
+      "before": [
+        224,
+        262
+      ],
+      "size": [
+        200,
+        234
+      ],
+      "bytes": 70649,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.584476751381246,
+      "colors": 6754
+    },
+    {
+      "file": "portrait_ao031311.png",
+      "before": [
+        224,
+        267
+      ],
+      "size": [
+        200,
+        238
+      ],
+      "bytes": 72988,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.60291450169872,
+      "colors": 6747
+    },
+    {
+      "file": "portrait_ao031411.png",
+      "before": [
+        224,
+        267
+      ],
+      "size": [
+        200,
+        238
+      ],
+      "bytes": 73329,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.597890417060775,
+      "colors": 6767
+    },
+    {
+      "file": "portrait_in010101.png",
+      "before": [
+        224,
+        200
+      ],
+      "size": [
+        200,
+        179
+      ],
+      "bytes": 28980,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.10043731598195,
+      "colors": 2218
+    },
+    {
+      "file": "portrait_in010201.png",
+      "before": [
+        224,
+        183
+      ],
+      "size": [
+        200,
+        163
+      ],
+      "bytes": 30237,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.08320184933325,
+      "colors": 2124
+    },
+    {
+      "file": "portrait_in010301.png",
+      "before": [
+        224,
+        167
+      ],
+      "size": [
+        200,
+        149
+      ],
+      "bytes": 21349,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.234096535015865,
+      "colors": 1950
+    },
+    {
+      "file": "portrait_in010401.png",
+      "before": [
+        224,
+        200
+      ],
+      "size": [
+        200,
+        179
+      ],
+      "bytes": 30304,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.129428032842085,
+      "colors": 2293
+    },
+    {
+      "file": "portrait_in020101.png",
+      "before": [
+        224,
+        196
+      ],
+      "size": [
+        200,
+        175
+      ],
+      "bytes": 28176,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 48.16020448917154,
+      "colors": 1490
+    },
+    {
+      "file": "portrait_in020201.png",
+      "before": [
+        224,
+        196
+      ],
+      "size": [
+        200,
+        175
+      ],
+      "bytes": 30170,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.88557051541113,
+      "colors": 1629
+    },
+    {
+      "file": "portrait_in020301.png",
+      "before": [
+        224,
+        196
+      ],
+      "size": [
+        200,
+        175
+      ],
+      "bytes": 27546,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 48.70932276579264,
+      "colors": 1563
+    },
+    {
+      "file": "portrait_in020401.png",
+      "before": [
+        224,
+        196
+      ],
+      "size": [
+        200,
+        175
+      ],
+      "bytes": 28709,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 48.13261581184291,
+      "colors": 1533
+    },
+    {
+      "file": "portrait_km020101.png",
+      "before": [
+        224,
+        285
+      ],
+      "size": [
+        200,
+        254
+      ],
+      "bytes": 52301,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.62348237835503,
+      "colors": 3620
+    },
+    {
+      "file": "portrait_km020202.png",
+      "before": [
+        224,
+        285
+      ],
+      "size": [
+        200,
+        254
+      ],
+      "bytes": 51510,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.77578958758367,
+      "colors": 3465
+    },
+    {
+      "file": "portrait_km020303.png",
+      "before": [
+        224,
+        285
+      ],
+      "size": [
+        200,
+        254
+      ],
+      "bytes": 51873,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.75268553871996,
+      "colors": 3604
+    },
+    {
+      "file": "portrait_km021111.png",
+      "before": [
+        198,
+        286
+      ],
+      "size": [
+        177,
+        256
+      ],
+      "bytes": 50961,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.70047759921264,
+      "colors": 3492
+    },
+    {
+      "file": "portrait_km021211.png",
+      "before": [
+        208,
+        286
+      ],
+      "size": [
+        186,
+        256
+      ],
+      "bytes": 55384,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.70858193054858,
+      "colors": 3847
+    },
+    {
+      "file": "portrait_km021311.png",
+      "before": [
+        198,
+        286
+      ],
+      "size": [
+        177,
+        256
+      ],
+      "bytes": 51019,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.68865750320242,
+      "colors": 3483
+    },
+    {
+      "file": "portrait_km030101.png",
+      "before": [
+        224,
+        285
+      ],
+      "size": [
+        200,
+        254
+      ],
+      "bytes": 52016,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.3641122961082,
+      "colors": 3560
+    },
+    {
+      "file": "portrait_km030303.png",
+      "before": [
+        224,
+        285
+      ],
+      "size": [
+        200,
+        254
+      ],
+      "bytes": 52889,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.338978704779265,
+      "colors": 3655
+    },
+    {
+      "file": "portrait_km031111.png",
+      "before": [
+        198,
+        286
+      ],
+      "size": [
+        177,
+        256
+      ],
+      "bytes": 50506,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.29435784292796,
+      "colors": 3496
+    },
+    {
+      "file": "portrait_km031211.png",
+      "before": [
+        208,
+        286
+      ],
+      "size": [
+        186,
+        256
+      ],
+      "bytes": 54150,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.32333373354834,
+      "colors": 3627
+    },
+    {
+      "file": "portrait_km031311.png",
+      "before": [
+        198,
+        286
+      ],
+      "size": [
+        177,
+        256
+      ],
+      "bytes": 52585,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.28988326532734,
+      "colors": 3491
+    },
+    {
+      "file": "portrait_km040101.png",
+      "before": [
+        224,
+        285
+      ],
+      "size": [
+        200,
+        254
+      ],
+      "bytes": 52574,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.37788111916639,
+      "colors": 3341
+    },
+    {
+      "file": "portrait_km040202.png",
+      "before": [
+        224,
+        285
+      ],
+      "size": [
+        200,
+        254
+      ],
+      "bytes": 52727,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.37709825264706,
+      "colors": 3319
+    },
+    {
+      "file": "portrait_km040303.png",
+      "before": [
+        224,
+        285
+      ],
+      "size": [
+        200,
+        254
+      ],
+      "bytes": 52540,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.3424437142971,
+      "colors": 3374
+    },
+    {
+      "file": "portrait_km041111.png",
+      "before": [
+        198,
+        286
+      ],
+      "size": [
+        177,
+        256
+      ],
+      "bytes": 51055,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.31664433255348,
+      "colors": 3299
+    },
+    {
+      "file": "portrait_km041211.png",
+      "before": [
+        208,
+        286
+      ],
+      "size": [
+        186,
+        256
+      ],
+      "bytes": 55244,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.31360750525985,
+      "colors": 3582
+    },
+    {
+      "file": "portrait_km041311.png",
+      "before": [
+        198,
+        286
+      ],
+      "size": [
+        177,
+        256
+      ],
+      "bytes": 51859,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.308150009714396,
+      "colors": 3225
+    },
+    {
+      "file": "portrait_km050101.png",
+      "before": [
+        224,
+        285
+      ],
+      "size": [
+        200,
+        254
+      ],
+      "bytes": 53586,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.74876417406389,
+      "colors": 3495
+    },
+    {
+      "file": "portrait_km050202.png",
+      "before": [
+        224,
+        285
+      ],
+      "size": [
+        200,
+        254
+      ],
+      "bytes": 52466,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.936249639706055,
+      "colors": 3428
+    },
+    {
+      "file": "portrait_km050303.png",
+      "before": [
+        224,
+        285
+      ],
+      "size": [
+        200,
+        254
+      ],
+      "bytes": 53299,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.88262052539593,
+      "colors": 3592
+    },
+    {
+      "file": "portrait_km051111.png",
+      "before": [
+        186,
+        286
+      ],
+      "size": [
+        166,
+        256
+      ],
+      "bytes": 48825,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.0966952030969,
+      "colors": 3374
+    },
+    {
+      "file": "portrait_km051211.png",
+      "before": [
+        196,
+        286
+      ],
+      "size": [
+        175,
+        256
+      ],
+      "bytes": 53009,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.13641336235384,
+      "colors": 3639
+    },
+    {
+      "file": "portrait_km051311.png",
+      "before": [
+        186,
+        286
+      ],
+      "size": [
+        166,
+        256
+      ],
+      "bytes": 50991,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.103509537140695,
+      "colors": 3428
+    },
+    {
+      "file": "portrait_km060101.png",
+      "before": [
+        224,
+        285
+      ],
+      "size": [
+        200,
+        254
+      ],
+      "bytes": 52301,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.62348237835503,
+      "colors": 3620
+    },
+    {
+      "file": "portrait_km060303.png",
+      "before": [
+        204,
+        286
+      ],
+      "size": [
+        183,
+        256
+      ],
+      "bytes": 43733,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.137028304340376,
+      "colors": 3726
+    },
+    {
+      "file": "portrait_km061111.png",
+      "before": [
+        186,
+        286
+      ],
+      "size": [
+        166,
+        256
+      ],
+      "bytes": 48536,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.748683238886585,
+      "colors": 3518
+    },
+    {
+      "file": "portrait_km061311.png",
+      "before": [
+        186,
+        286
+      ],
+      "size": [
+        166,
+        256
+      ],
+      "bytes": 48620,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.74608543530365,
+      "colors": 3419
+    },
+    {
+      "file": "portrait_km070101.png",
+      "before": [
+        185,
+        286
+      ],
+      "size": [
+        166,
+        256
+      ],
+      "bytes": 43644,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.346785804032464,
+      "colors": 3730
+    },
+    {
+      "file": "portrait_km071111.png",
+      "before": [
+        186,
+        286
+      ],
+      "size": [
+        166,
+        256
+      ],
+      "bytes": 47772,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.286718986370374,
+      "colors": 3412
+    },
+    {
+      "file": "portrait_km071211.png",
+      "before": [
+        196,
+        286
+      ],
+      "size": [
+        175,
+        256
+      ],
+      "bytes": 51415,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.33965567054843,
+      "colors": 3518
+    },
+    {
+      "file": "portrait_km080101.png",
+      "before": [
+        224,
+        285
+      ],
+      "size": [
+        200,
+        254
+      ],
+      "bytes": 52574,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.37788111916639,
+      "colors": 3341
+    },
+    {
+      "file": "portrait_km080202.png",
+      "before": [
+        224,
+        285
+      ],
+      "size": [
+        200,
+        254
+      ],
+      "bytes": 52727,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.37709825264706,
+      "colors": 3319
+    },
+    {
+      "file": "portrait_km080303.png",
+      "before": [
+        224,
+        285
+      ],
+      "size": [
+        200,
+        254
+      ],
+      "bytes": 52540,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.3424437142971,
+      "colors": 3374
+    },
+    {
+      "file": "portrait_km081111.png",
+      "before": [
+        198,
+        286
+      ],
+      "size": [
+        177,
+        256
+      ],
+      "bytes": 51055,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.31664433255348,
+      "colors": 3299
+    },
+    {
+      "file": "portrait_km081211.png",
+      "before": [
+        208,
+        286
+      ],
+      "size": [
+        186,
+        256
+      ],
+      "bytes": 55244,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.31360750525985,
+      "colors": 3582
+    },
+    {
+      "file": "portrait_km081311.png",
+      "before": [
+        198,
+        286
+      ],
+      "size": [
+        177,
+        256
+      ],
+      "bytes": 51859,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.308150009714396,
+      "colors": 3225
+    },
+    {
+      "file": "portrait_km090104.png",
+      "before": [
+        224,
+        281
+      ],
+      "size": [
+        200,
+        251
+      ],
+      "bytes": 59622,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.6413661879579,
+      "colors": 3576
+    },
+    {
+      "file": "portrait_ko010101.png",
+      "before": [
+        185,
+        286
+      ],
+      "size": [
+        166,
+        256
+      ],
+      "bytes": 50310,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.68654256177497,
+      "colors": 3249
+    },
+    {
+      "file": "portrait_ko010202.png",
+      "before": [
+        192,
+        286
+      ],
+      "size": [
+        172,
+        256
+      ],
+      "bytes": 50940,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.676510877038936,
+      "colors": 3164
+    },
+    {
+      "file": "portrait_ky010101.png",
+      "before": [
+        176,
+        286
+      ],
+      "size": [
+        158,
+        256
+      ],
+      "bytes": 47920,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.65823633229711,
+      "colors": 3124
+    },
+    {
+      "file": "portrait_ky010102.png",
+      "before": [
+        134,
+        286
+      ],
+      "size": [
+        120,
+        256
+      ],
+      "bytes": 40557,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.79128422147861,
+      "colors": 3297
+    },
+    {
+      "file": "portrait_ky010203.png",
+      "before": [
+        180,
+        286
+      ],
+      "size": [
+        161,
+        256
+      ],
+      "bytes": 47203,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.79496821461753,
+      "colors": 3184
+    },
+    {
+      "file": "portrait_ky010204.png",
+      "before": [
+        180,
+        286
+      ],
+      "size": [
+        161,
+        256
+      ],
+      "bytes": 48046,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.79472119908126,
+      "colors": 3478
+    },
+    {
+      "file": "portrait_ky020101.png",
+      "before": [
+        173,
+        286
+      ],
+      "size": [
+        155,
+        256
+      ],
+      "bytes": 44379,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.520934544271896,
+      "colors": 2751
+    },
+    {
+      "file": "portrait_ky020102.png",
+      "before": [
+        118,
+        286
+      ],
+      "size": [
+        106,
+        256
+      ],
+      "bytes": 39166,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.49627685716873,
+      "colors": 2919
+    },
+    {
+      "file": "portrait_ky020203.png",
+      "before": [
+        180,
+        286
+      ],
+      "size": [
+        161,
+        256
+      ],
+      "bytes": 45029,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.61207240491692,
+      "colors": 2880
+    },
+    {
+      "file": "portrait_ky020204.png",
+      "before": [
+        122,
+        286
+      ],
+      "size": [
+        109,
+        256
+      ],
+      "bytes": 37165,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.487360438436205,
+      "colors": 2876
+    },
+    {
+      "file": "portrait_ky030101.png",
+      "before": [
+        176,
+        286
+      ],
+      "size": [
+        158,
+        256
+      ],
+      "bytes": 47920,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.65823633229711,
+      "colors": 3124
+    },
+    {
+      "file": "portrait_ky030205.png",
+      "before": [
+        136,
+        286
+      ],
+      "size": [
+        122,
+        256
+      ],
+      "bytes": 39046,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.739182539456465,
+      "colors": 3242
+    },
+    {
+      "file": "portrait_mk010101.png",
+      "before": [
+        198,
+        286
+      ],
+      "size": [
+        177,
+        256
+      ],
+      "bytes": 56740,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.79761510265779,
+      "colors": 5611
+    },
+    {
+      "file": "portrait_mk010201.png",
+      "before": [
+        198,
+        286
+      ],
+      "size": [
+        177,
+        256
+      ],
+      "bytes": 57574,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.8238252131631,
+      "colors": 5789
+    },
+    {
+      "file": "portrait_mk011111.png",
+      "before": [
+        162,
+        286
+      ],
+      "size": [
+        145,
+        256
+      ],
+      "bytes": 57313,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.71082542361522,
+      "colors": 5950
+    },
+    {
+      "file": "portrait_mk011211.png",
+      "before": [
+        117,
+        286
+      ],
+      "size": [
+        105,
+        256
+      ],
+      "bytes": 37951,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.307532815524866,
+      "colors": 4300
+    },
+    {
+      "file": "portrait_mk011311.png",
+      "before": [
+        162,
+        286
+      ],
+      "size": [
+        145,
+        256
+      ],
+      "bytes": 57753,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.70131593250027,
+      "colors": 5990
+    },
+    {
+      "file": "portrait_mk011414.png",
+      "before": [
+        147,
+        286
+      ],
+      "size": [
+        132,
+        256
+      ],
+      "bytes": 45911,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.999964884554906,
+      "colors": 4579
+    },
+    {
+      "file": "portrait_mk011514.png",
+      "before": [
+        175,
+        286
+      ],
+      "size": [
+        157,
+        256
+      ],
+      "bytes": 51225,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.953933931032594,
+      "colors": 4803
+    },
+    {
+      "file": "portrait_mk020101.png",
+      "before": [
+        156,
+        286
+      ],
+      "size": [
+        140,
+        256
+      ],
+      "bytes": 40020,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.440777840725964,
+      "colors": 4013
+    },
+    {
+      "file": "portrait_mk020201.png",
+      "before": [
+        156,
+        286
+      ],
+      "size": [
+        140,
+        256
+      ],
+      "bytes": 42063,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.41636550551954,
+      "colors": 4066
+    },
+    {
+      "file": "portrait_mk021414.png",
+      "before": [
+        140,
+        286
+      ],
+      "size": [
+        125,
+        256
+      ],
+      "bytes": 33836,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.38745705705241,
+      "colors": 3213
+    },
+    {
+      "file": "portrait_mk030101.png",
+      "before": [
+        161,
+        286
+      ],
+      "size": [
+        144,
+        256
+      ],
+      "bytes": 41781,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.29345370799933,
+      "colors": 3873
+    },
+    {
+      "file": "portrait_mk031414.png",
+      "before": [
+        140,
+        286
+      ],
+      "size": [
+        125,
+        256
+      ],
+      "bytes": 37549,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.42335389094745,
+      "colors": 3691
+    },
+    {
+      "file": "portrait_mk031514.png",
+      "before": [
+        125,
+        286
+      ],
+      "size": [
+        112,
+        256
+      ],
+      "bytes": 32354,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.439087965440706,
+      "colors": 3185
+    },
+    {
+      "file": "portrait_mk040101.png",
+      "before": [
+        156,
+        286
+      ],
+      "size": [
+        140,
+        256
+      ],
+      "bytes": 42800,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.6434507022941,
+      "colors": 3820
+    },
+    {
+      "file": "portrait_ru010101.png",
+      "before": [
+        224,
+        285
+      ],
+      "size": [
+        200,
+        254
+      ],
+      "bytes": 51226,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.275585673408216,
+      "colors": 2034
+    },
+    {
+      "file": "portrait_ru010201.png",
+      "before": [
+        224,
+        277
+      ],
+      "size": [
+        200,
+        247
+      ],
+      "bytes": 52417,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.24822104578026,
+      "colors": 1741
+    },
+    {
+      "file": "portrait_ru010202.png",
+      "before": [
+        143,
+        286
+      ],
+      "size": [
+        128,
+        256
+      ],
+      "bytes": 39018,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.154531575686526,
+      "colors": 2058
+    },
+    {
+      "file": "portrait_ru010301.png",
+      "before": [
+        224,
+        217
+      ],
+      "size": [
+        200,
+        194
+      ],
+      "bytes": 42512,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.24211337368781,
+      "colors": 1643
+    },
+    {
+      "file": "portrait_ru020101.png",
+      "before": [
+        224,
+        285
+      ],
+      "size": [
+        200,
+        254
+      ],
+      "bytes": 51226,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.275585673408216,
+      "colors": 2034
+    },
+    {
+      "file": "portrait_ru020201.png",
+      "before": [
+        224,
+        277
+      ],
+      "size": [
+        200,
+        247
+      ],
+      "bytes": 52417,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.24822104578026,
+      "colors": 1741
+    },
+    {
+      "file": "portrait_ru020301.png",
+      "before": [
+        224,
+        217
+      ],
+      "size": [
+        200,
+        194
+      ],
+      "bytes": 42512,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.24211337368781,
+      "colors": 1643
+    },
+    {
+      "file": "portrait_ru030101.png",
+      "before": [
+        157,
+        286
+      ],
+      "size": [
+        141,
+        256
+      ],
+      "bytes": 40962,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.360533330177574,
+      "colors": 3888
+    },
+    {
+      "file": "portrait_ru040101.png",
+      "before": [
+        224,
+        275
+      ],
+      "size": [
+        200,
+        246
+      ],
+      "bytes": 51077,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.39903672189948,
+      "colors": 4179
+    },
+    {
+      "file": "portrait_ru040201.png",
+      "before": [
+        224,
+        262
+      ],
+      "size": [
+        200,
+        234
+      ],
+      "bytes": 49859,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.33269006806685,
+      "colors": 3739
+    },
+    {
+      "file": "portrait_ru040202.png",
+      "before": [
+        149,
+        286
+      ],
+      "size": [
+        133,
+        256
+      ],
+      "bytes": 42792,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.3713511330089,
+      "colors": 4223
+    },
+    {
+      "file": "portrait_ru040301.png",
+      "before": [
+        224,
+        210
+      ],
+      "size": [
+        200,
+        188
+      ],
+      "bytes": 44389,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.40401350271597,
+      "colors": 3136
+    },
+    {
+      "file": "portrait_ru040302.png",
+      "before": [
+        197,
+        286
+      ],
+      "size": [
+        176,
+        256
+      ],
+      "bytes": 52987,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.388092161898136,
+      "colors": 4129
+    },
+    {
+      "file": "portrait_ru050101.png",
+      "before": [
+        155,
+        286
+      ],
+      "size": [
+        139,
+        256
+      ],
+      "bytes": 42977,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.18853798461102,
+      "colors": 2685
+    },
+    {
+      "file": "portrait_ru050201.png",
+      "before": [
+        143,
+        286
+      ],
+      "size": [
+        128,
+        256
+      ],
+      "bytes": 41819,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.1869258712596,
+      "colors": 2467
+    },
+    {
+      "file": "portrait_ru060101.png",
+      "before": [
+        155,
+        286
+      ],
+      "size": [
+        139,
+        256
+      ],
+      "bytes": 43143,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.26097374686533,
+      "colors": 2980
+    },
+    {
+      "file": "portrait_ru060201.png",
+      "before": [
+        143,
+        286
+      ],
+      "size": [
+        128,
+        256
+      ],
+      "bytes": 41506,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.246162166078136,
+      "colors": 2863
+    },
+    {
+      "file": "portrait_ru070101.png",
+      "before": [
+        155,
+        286
+      ],
+      "size": [
+        139,
+        256
+      ],
+      "bytes": 44599,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.224748173659094,
+      "colors": 5201
+    },
+    {
+      "file": "portrait_ru070201.png",
+      "before": [
+        143,
+        286
+      ],
+      "size": [
+        128,
+        256
+      ],
+      "bytes": 43013,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.204888301342564,
+      "colors": 4738
+    },
+    {
+      "file": "portrait_ru080101.png",
+      "before": [
+        224,
+        285
+      ],
+      "size": [
+        200,
+        254
+      ],
+      "bytes": 52877,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.2689837949723,
+      "colors": 2260
+    },
+    {
+      "file": "portrait_ru080201.png",
+      "before": [
+        143,
+        286
+      ],
+      "size": [
+        128,
+        256
+      ],
+      "bytes": 42704,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.23872498852954,
+      "colors": 2187
+    },
+    {
+      "file": "portrait_ru080301.png",
+      "before": [
+        224,
+        217
+      ],
+      "size": [
+        200,
+        194
+      ],
+      "bytes": 43233,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.262365484672955,
+      "colors": 1785
+    },
+    {
+      "file": "portrait_ru090101.png",
+      "before": [
+        224,
+        262
+      ],
+      "size": [
+        200,
+        234
+      ],
+      "bytes": 41016,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 48.09238525762673,
+      "colors": 2124
+    },
+    {
+      "file": "portrait_sc010101.png",
+      "before": [
+        214,
+        286
+      ],
+      "size": [
+        192,
+        256
+      ],
+      "bytes": 55510,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.41317775283514,
+      "colors": 3268
+    },
+    {
+      "file": "portrait_sc010201.png",
+      "before": [
+        214,
+        286
+      ],
+      "size": [
+        192,
+        256
+      ],
+      "bytes": 59571,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.16783377433876,
+      "colors": 3538
+    },
+    {
+      "file": "portrait_sc010301.png",
+      "before": [
+        191,
+        286
+      ],
+      "size": [
+        171,
+        256
+      ],
+      "bytes": 49173,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.21510091939338,
+      "colors": 3350
+    },
+    {
+      "file": "portrait_sj010101.png",
+      "before": [
+        224,
+        216
+      ],
+      "size": [
+        200,
+        193
+      ],
+      "bytes": 31678,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.273038522919265,
+      "colors": 1596
+    },
+    {
+      "file": "portrait_sj010201.png",
+      "before": [
+        224,
+        162
+      ],
+      "size": [
+        200,
+        145
+      ],
+      "bytes": 29153,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.275356983684766,
+      "colors": 1454
+    },
+    {
+      "file": "portrait_sj020102.png",
+      "before": [
+        224,
+        216
+      ],
+      "size": [
+        200,
+        193
+      ],
+      "bytes": 31222,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.29792374556513,
+      "colors": 1639
+    },
+    {
+      "file": "portrait_sj030101.png",
+      "before": [
+        224,
+        216
+      ],
+      "size": [
+        200,
+        193
+      ],
+      "bytes": 34349,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.29458788319175,
+      "colors": 1326
+    },
+    {
+      "file": "portrait_sj030201.png",
+      "before": [
+        224,
+        162
+      ],
+      "size": [
+        200,
+        145
+      ],
+      "bytes": 29669,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.33813764426266,
+      "colors": 1235
+    },
+    {
+      "file": "portrait_sk010101.png",
+      "before": [
+        224,
+        275
+      ],
+      "size": [
+        200,
+        246
+      ],
+      "bytes": 57797,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.69902609487374,
+      "colors": 5859
+    },
+    {
+      "file": "portrait_sk010201.png",
+      "before": [
+        224,
+        275
+      ],
+      "size": [
+        200,
+        246
+      ],
+      "bytes": 59013,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.69488656993871,
+      "colors": 6293
+    },
+    {
+      "file": "portrait_sk010302.png",
+      "before": [
+        224,
+        275
+      ],
+      "size": [
+        200,
+        246
+      ],
+      "bytes": 56297,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.73031133792557,
+      "colors": 5992
+    },
+    {
+      "file": "portrait_sk011111.png",
+      "before": [
+        224,
+        247
+      ],
+      "size": [
+        200,
+        221
+      ],
+      "bytes": 52748,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.589008640231555,
+      "colors": 5393
+    },
+    {
+      "file": "portrait_sk011211.png",
+      "before": [
+        224,
+        247
+      ],
+      "size": [
+        200,
+        221
+      ],
+      "bytes": 53852,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.5773411449904,
+      "colors": 5586
+    },
+    {
+      "file": "portrait_sk020101.png",
+      "before": [
+        224,
+        275
+      ],
+      "size": [
+        200,
+        246
+      ],
+      "bytes": 53632,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.575975308467086,
+      "colors": 4924
+    },
+    {
+      "file": "portrait_sk020201.png",
+      "before": [
+        224,
+        275
+      ],
+      "size": [
+        200,
+        246
+      ],
+      "bytes": 55632,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.60316098649207,
+      "colors": 5080
+    },
+    {
+      "file": "portrait_sk021111.png",
+      "before": [
+        224,
+        247
+      ],
+      "size": [
+        200,
+        221
+      ],
+      "bytes": 51530,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.522649113167034,
+      "colors": 4463
+    },
+    {
+      "file": "portrait_sk021211.png",
+      "before": [
+        224,
+        247
+      ],
+      "size": [
+        200,
+        221
+      ],
+      "bytes": 51423,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.581573767499464,
+      "colors": 4487
+    },
+    {
+      "file": "portrait_sk030101.png",
+      "before": [
+        224,
+        275
+      ],
+      "size": [
+        200,
+        246
+      ],
+      "bytes": 59981,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.72510257738861,
+      "colors": 6633
+    },
+    {
+      "file": "portrait_sk030201.png",
+      "before": [
+        224,
+        275
+      ],
+      "size": [
+        200,
+        246
+      ],
+      "bytes": 60538,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.69697489740872,
+      "colors": 6889
+    },
+    {
+      "file": "portrait_sk030302.png",
+      "before": [
+        191,
+        286
+      ],
+      "size": [
+        171,
+        256
+      ],
+      "bytes": 51163,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.307515963151594,
+      "colors": 6294
+    },
+    {
+      "file": "portrait_sk031111.png",
+      "before": [
+        224,
+        247
+      ],
+      "size": [
+        200,
+        221
+      ],
+      "bytes": 53925,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.67410976329336,
+      "colors": 6017
+    },
+    {
+      "file": "portrait_sk031211.png",
+      "before": [
+        187,
+        286
+      ],
+      "size": [
+        167,
+        256
+      ],
+      "bytes": 52435,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.01065626380839,
+      "colors": 5896
+    },
+    {
+      "file": "portrait_sk050101.png",
+      "before": [
+        224,
+        275
+      ],
+      "size": [
+        200,
+        246
+      ],
+      "bytes": 59664,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.740639935067875,
+      "colors": 6432
+    },
+    {
+      "file": "portrait_sk050201.png",
+      "before": [
+        224,
+        275
+      ],
+      "size": [
+        200,
+        246
+      ],
+      "bytes": 60240,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.70682265842633,
+      "colors": 6759
+    },
+    {
+      "file": "portrait_sk050302.png",
+      "before": [
+        191,
+        286
+      ],
+      "size": [
+        171,
+        256
+      ],
+      "bytes": 49282,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.42185451377634,
+      "colors": 5923
+    },
+    {
+      "file": "portrait_sk051111.png",
+      "before": [
+        224,
+        247
+      ],
+      "size": [
+        200,
+        221
+      ],
+      "bytes": 53780,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.68941758000771,
+      "colors": 5909
+    },
+    {
+      "file": "portrait_sk051211.png",
+      "before": [
+        224,
+        247
+      ],
+      "size": [
+        200,
+        221
+      ],
+      "bytes": 54355,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.672319092061336,
+      "colors": 6004
+    },
+    {
+      "file": "portrait_sk060101.png",
+      "before": [
+        224,
+        275
+      ],
+      "size": [
+        200,
+        246
+      ],
+      "bytes": 59823,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.91195482354536,
+      "colors": 5658
+    },
+    {
+      "file": "portrait_sk060201.png",
+      "before": [
+        224,
+        275
+      ],
+      "size": [
+        200,
+        246
+      ],
+      "bytes": 59926,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.84100305176233,
+      "colors": 5809
+    },
+    {
+      "file": "portrait_sk061111.png",
+      "before": [
+        224,
+        247
+      ],
+      "size": [
+        200,
+        221
+      ],
+      "bytes": 53756,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.87791285851293,
+      "colors": 4846
+    },
+    {
+      "file": "portrait_sk061211.png",
+      "before": [
+        224,
+        247
+      ],
+      "size": [
+        200,
+        221
+      ],
+      "bytes": 53011,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.84907227582303,
+      "colors": 4997
+    },
+    {
+      "file": "portrait_sr010101.png",
+      "before": [
+        190,
+        286
+      ],
+      "size": [
+        170,
+        256
+      ],
+      "bytes": 48597,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.2118950374946,
+      "colors": 2945
+    },
+    {
+      "file": "portrait_sr010201.png",
+      "before": [
+        190,
+        286
+      ],
+      "size": [
+        170,
+        256
+      ],
+      "bytes": 50388,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.089980779789,
+      "colors": 2846
+    },
+    {
+      "file": "portrait_sr010302.png",
+      "before": [
+        190,
+        286
+      ],
+      "size": [
+        170,
+        256
+      ],
+      "bytes": 51408,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.05342681782055,
+      "colors": 2945
+    },
+    {
+      "file": "portrait_sr011111.png",
+      "before": [
+        200,
+        286
+      ],
+      "size": [
+        179,
+        256
+      ],
+      "bytes": 52929,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.115448014329516,
+      "colors": 2755
+    },
+    {
+      "file": "portrait_sr011211.png",
+      "before": [
+        200,
+        286
+      ],
+      "size": [
+        179,
+        256
+      ],
+      "bytes": 56047,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.11483800958202,
+      "colors": 3083
+    },
+    {
+      "file": "portrait_sr011312.png",
+      "before": [
+        203,
+        286
+      ],
+      "size": [
+        182,
+        256
+      ],
+      "bytes": 55913,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.06979289356666,
+      "colors": 2868
+    },
+    {
+      "file": "portrait_sr012121.png",
+      "before": [
+        135,
+        286
+      ],
+      "size": [
+        121,
+        256
+      ],
+      "bytes": 34539,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.12257028351083,
+      "colors": 1833
+    },
+    {
+      "file": "portrait_sr020101.png",
+      "before": [
+        190,
+        286
+      ],
+      "size": [
+        170,
+        256
+      ],
+      "bytes": 47155,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.065928876581694,
+      "colors": 3303
+    },
+    {
+      "file": "portrait_sr020201.png",
+      "before": [
+        190,
+        286
+      ],
+      "size": [
+        170,
+        256
+      ],
+      "bytes": 50291,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.947795238569796,
+      "colors": 3320
+    },
+    {
+      "file": "portrait_sr020302.png",
+      "before": [
+        190,
+        286
+      ],
+      "size": [
+        170,
+        256
+      ],
+      "bytes": 51663,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.92144297757168,
+      "colors": 3348
+    },
+    {
+      "file": "portrait_sr021111.png",
+      "before": [
+        200,
+        286
+      ],
+      "size": [
+        179,
+        256
+      ],
+      "bytes": 51633,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.14955804533779,
+      "colors": 2886
+    },
+    {
+      "file": "portrait_sr021211.png",
+      "before": [
+        147,
+        286
+      ],
+      "size": [
+        132,
+        256
+      ],
+      "bytes": 41900,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.07657329653461,
+      "colors": 2726
+    },
+    {
+      "file": "portrait_sr021312.png",
+      "before": [
+        203,
+        286
+      ],
+      "size": [
+        182,
+        256
+      ],
+      "bytes": 55607,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.231421326661035,
+      "colors": 3182
+    },
+    {
+      "file": "portrait_sr022121.png",
+      "before": [
+        167,
+        286
+      ],
+      "size": [
+        149,
+        256
+      ],
+      "bytes": 41610,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.21329548123997,
+      "colors": 1829
+    },
+    {
+      "file": "portrait_sr030101.png",
+      "before": [
+        199,
+        286
+      ],
+      "size": [
+        178,
+        256
+      ],
+      "bytes": 41493,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.60992264691856,
+      "colors": 2477
+    },
+    {
+      "file": "portrait_sr030103.png",
+      "before": [
+        139,
+        286
+      ],
+      "size": [
+        124,
+        256
+      ],
+      "bytes": 31164,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.58821833035864,
+      "colors": 2218
+    },
+    {
+      "file": "portrait_sr030201.png",
+      "before": [
+        199,
+        286
+      ],
+      "size": [
+        178,
+        256
+      ],
+      "bytes": 43999,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.57840607549901,
+      "colors": 2547
+    },
+    {
+      "file": "portrait_sr030203.png",
+      "before": [
+        139,
+        286
+      ],
+      "size": [
+        124,
+        256
+      ],
+      "bytes": 31065,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.58056555796597,
+      "colors": 2219
+    },
+    {
+      "file": "portrait_sr030302.png",
+      "before": [
+        139,
+        286
+      ],
+      "size": [
+        124,
+        256
+      ],
+      "bytes": 30020,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.55430578564576,
+      "colors": 1942
+    },
+    {
+      "file": "portrait_sr031111.png",
+      "before": [
+        169,
+        286
+      ],
+      "size": [
+        151,
+        256
+      ],
+      "bytes": 38792,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.79178219912974,
+      "colors": 2543
+    },
+    {
+      "file": "portrait_sr040105.png",
+      "before": [
+        224,
+        232
+      ],
+      "size": [
+        200,
+        207
+      ],
+      "bytes": 44881,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.94305495310738,
+      "colors": 4388
+    },
+    {
+      "file": "portrait_sr050105.png",
+      "before": [
+        224,
+        273
+      ],
+      "size": [
+        200,
+        244
+      ],
+      "bytes": 45233,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.92962224976412,
+      "colors": 2524
+    },
+    {
+      "file": "portrait_sr050205.png",
+      "before": [
+        224,
+        273
+      ],
+      "size": [
+        200,
+        244
+      ],
+      "bytes": 47927,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.89318628554667,
+      "colors": 2799
+    },
+    {
+      "file": "portrait_sr060106.png",
+      "before": [
+        224,
+        271
+      ],
+      "size": [
+        200,
+        242
+      ],
+      "bytes": 47178,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.895195035737,
+      "colors": 2942
+    },
+    {
+      "file": "portrait_sr060206.png",
+      "before": [
+        224,
+        271
+      ],
+      "size": [
+        200,
+        242
+      ],
+      "bytes": 48291,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.8767530454373,
+      "colors": 3036
+    },
+    {
+      "file": "portrait_sr060307.png",
+      "before": [
+        224,
+        271
+      ],
+      "size": [
+        200,
+        242
+      ],
+      "bytes": 50256,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.964927327106444,
+      "colors": 3102
+    },
+    {
+      "file": "portrait_sz010101.png",
+      "before": [
+        177,
+        286
+      ],
+      "size": [
+        158,
+        256
+      ],
+      "bytes": 58184,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.89154657409379,
+      "colors": 4466
+    },
+    {
+      "file": "portrait_sz010202.png",
+      "before": [
+        215,
+        286
+      ],
+      "size": [
+        192,
+        256
+      ],
+      "bytes": 60891,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.893378787535134,
+      "colors": 4815
+    },
+    {
+      "file": "portrait_sz010301.png",
+      "before": [
+        176,
+        286
+      ],
+      "size": [
+        158,
+        256
+      ],
+      "bytes": 57597,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.887247397927865,
+      "colors": 4428
+    },
+    {
+      "file": "portrait_sz020101.png",
+      "before": [
+        181,
+        286
+      ],
+      "size": [
+        162,
+        256
+      ],
+      "bytes": 54670,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.583411716059224,
+      "colors": 4738
+    },
+    {
+      "file": "portrait_sz020202.png",
+      "before": [
+        220,
+        286
+      ],
+      "size": [
+        197,
+        256
+      ],
+      "bytes": 57133,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.64407698368596,
+      "colors": 4994
+    },
+    {
+      "file": "portrait_sz020301.png",
+      "before": [
+        182,
+        286
+      ],
+      "size": [
+        163,
+        256
+      ],
+      "bytes": 54569,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.58873579325193,
+      "colors": 4739
+    },
+    {
+      "file": "portrait_sz021111.png",
+      "before": [
+        178,
+        286
+      ],
+      "size": [
+        159,
+        256
+      ],
+      "bytes": 53067,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.66125527890327,
+      "colors": 4575
+    },
+    {
+      "file": "portrait_sz021211.png",
+      "before": [
+        178,
+        286
+      ],
+      "size": [
+        159,
+        256
+      ],
+      "bytes": 53277,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.67753879174667,
+      "colors": 4557
+    },
+    {
+      "file": "portrait_sz021311.png",
+      "before": [
+        220,
+        286
+      ],
+      "size": [
+        197,
+        256
+      ],
+      "bytes": 62308,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.70825364953875,
+      "colors": 4873
+    },
+    {
+      "file": "portrait_sz030101.png",
+      "before": [
+        172,
+        286
+      ],
+      "size": [
+        154,
+        256
+      ],
+      "bytes": 54687,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.581469693671124,
+      "colors": 4652
+    },
+    {
+      "file": "portrait_sz030202.png",
+      "before": [
+        210,
+        286
+      ],
+      "size": [
+        188,
+        256
+      ],
+      "bytes": 57489,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.64608375000207,
+      "colors": 4910
+    },
+    {
+      "file": "portrait_sz030301.png",
+      "before": [
+        189,
+        286
+      ],
+      "size": [
+        169,
+        256
+      ],
+      "bytes": 54824,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.545341909966815,
+      "colors": 4290
+    },
+    {
+      "file": "portrait_sz031111.png",
+      "before": [
+        164,
+        286
+      ],
+      "size": [
+        147,
+        256
+      ],
+      "bytes": 50653,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.58831248579821,
+      "colors": 4089
+    },
+    {
+      "file": "portrait_sz031211.png",
+      "before": [
+        179,
+        286
+      ],
+      "size": [
+        160,
+        256
+      ],
+      "bytes": 54155,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.622908778411926,
+      "colors": 4424
+    },
+    {
+      "file": "portrait_sz031311.png",
+      "before": [
+        220,
+        286
+      ],
+      "size": [
+        197,
+        256
+      ],
+      "bytes": 62888,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.71728088591208,
+      "colors": 4708
+    },
+    {
+      "file": "portrait_sz040101.png",
+      "before": [
+        200,
+        286
+      ],
+      "size": [
+        179,
+        256
+      ],
+      "bytes": 60075,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.618777692512865,
+      "colors": 4886
+    },
+    {
+      "file": "portrait_sz040202.png",
+      "before": [
+        224,
+        283
+      ],
+      "size": [
+        200,
+        253
+      ],
+      "bytes": 61502,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.6597188010796,
+      "colors": 5001
+    },
+    {
+      "file": "portrait_sz040301.png",
+      "before": [
+        200,
+        286
+      ],
+      "size": [
+        179,
+        256
+      ],
+      "bytes": 58982,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.61120044186204,
+      "colors": 4795
+    },
+    {
+      "file": "portrait_sz041111.png",
+      "before": [
+        135,
+        286
+      ],
+      "size": [
+        121,
+        256
+      ],
+      "bytes": 43213,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.869862499626606,
+      "colors": 3673
+    },
+    {
+      "file": "portrait_sz041211.png",
+      "before": [
+        189,
+        286
+      ],
+      "size": [
+        169,
+        256
+      ],
+      "bytes": 56007,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.81175599930712,
+      "colors": 4728
+    },
+    {
+      "file": "portrait_sz041311.png",
+      "before": [
+        218,
+        286
+      ],
+      "size": [
+        195,
+        256
+      ],
+      "bytes": 63877,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.88803029090125,
+      "colors": 4986
+    },
+    {
+      "file": "portrait_tm010101.png",
+      "before": [
+        224,
+        231
+      ],
+      "size": [
+        200,
+        206
+      ],
+      "bytes": 59444,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.89059353791572,
+      "colors": 4576
+    },
+    {
+      "file": "portrait_tm010201.png",
+      "before": [
+        224,
+        231
+      ],
+      "size": [
+        200,
+        206
+      ],
+      "bytes": 57740,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.87683313859547,
+      "colors": 4428
+    },
+    {
+      "file": "portrait_tm010301.png",
+      "before": [
+        224,
+        231
+      ],
+      "size": [
+        200,
+        206
+      ],
+      "bytes": 58994,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.00251545546388,
+      "colors": 4636
+    },
+    {
+      "file": "portrait_tm011111.png",
+      "before": [
+        224,
+        222
+      ],
+      "size": [
+        200,
+        198
+      ],
+      "bytes": 58074,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.940515298455416,
+      "colors": 4330
+    },
+    {
+      "file": "portrait_tm011211.png",
+      "before": [
+        224,
+        222
+      ],
+      "size": [
+        200,
+        198
+      ],
+      "bytes": 57491,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.998227969897634,
+      "colors": 4219
+    },
+    {
+      "file": "portrait_tm011311.png",
+      "before": [
+        224,
+        222
+      ],
+      "size": [
+        200,
+        198
+      ],
+      "bytes": 57310,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.865561827554586,
+      "colors": 4345
+    },
+    {
+      "file": "portrait_tm020101.png",
+      "before": [
+        224,
+        231
+      ],
+      "size": [
+        200,
+        206
+      ],
+      "bytes": 58442,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.9704944292188,
+      "colors": 3833
+    },
+    {
+      "file": "portrait_tm020201.png",
+      "before": [
+        224,
+        231
+      ],
+      "size": [
+        200,
+        206
+      ],
+      "bytes": 56466,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.96909498216798,
+      "colors": 3617
+    },
+    {
+      "file": "portrait_tm020301.png",
+      "before": [
+        224,
+        231
+      ],
+      "size": [
+        200,
+        206
+      ],
+      "bytes": 57131,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.0535318920357,
+      "colors": 3750
+    },
+    {
+      "file": "portrait_tm021111.png",
+      "before": [
+        224,
+        222
+      ],
+      "size": [
+        200,
+        198
+      ],
+      "bytes": 57171,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.91925387129065,
+      "colors": 3674
+    },
+    {
+      "file": "portrait_tm021211.png",
+      "before": [
+        224,
+        222
+      ],
+      "size": [
+        200,
+        198
+      ],
+      "bytes": 56356,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.99802907765496,
+      "colors": 3561
+    },
+    {
+      "file": "portrait_tm021311.png",
+      "before": [
+        224,
+        222
+      ],
+      "size": [
+        200,
+        198
+      ],
+      "bytes": 56482,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.877853911610444,
+      "colors": 3612
+    },
+    {
+      "file": "portrait_tm030101.png",
+      "before": [
+        224,
+        255
+      ],
+      "size": [
+        200,
+        228
+      ],
+      "bytes": 49305,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.97432728074736,
+      "colors": 5197
+    },
+    {
+      "file": "portrait_tm030201.png",
+      "before": [
+        224,
+        215
+      ],
+      "size": [
+        200,
+        192
+      ],
+      "bytes": 44319,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.07130250821646,
+      "colors": 4743
+    },
+    {
+      "file": "portrait_tm030301.png",
+      "before": [
+        224,
+        218
+      ],
+      "size": [
+        200,
+        195
+      ],
+      "bytes": 46268,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.89725607510627,
+      "colors": 4812
+    },
+    {
+      "file": "portrait_tm031111.png",
+      "before": [
+        196,
+        286
+      ],
+      "size": [
+        175,
+        256
+      ],
+      "bytes": 57941,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.17734212440228,
+      "colors": 5275
+    },
+    {
+      "file": "portrait_tm031212.png",
+      "before": [
+        196,
+        286
+      ],
+      "size": [
+        175,
+        256
+      ],
+      "bytes": 56055,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.20026121351977,
+      "colors": 4862
+    },
+    {
+      "file": "portrait_tm031311.png",
+      "before": [
+        224,
+        273
+      ],
+      "size": [
+        200,
+        244
+      ],
+      "bytes": 61493,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.055890717894606,
+      "colors": 5535
+    },
+    {
+      "file": "portrait_tm040101.png",
+      "before": [
+        224,
+        238
+      ],
+      "size": [
+        200,
+        213
+      ],
+      "bytes": 61327,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.89370549263609,
+      "colors": 5156
+    },
+    {
+      "file": "portrait_tm040301.png",
+      "before": [
+        224,
+        238
+      ],
+      "size": [
+        200,
+        213
+      ],
+      "bytes": 60842,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.00680115612656,
+      "colors": 5168
+    },
+    {
+      "file": "portrait_tm041111.png",
+      "before": [
+        224,
+        229
+      ],
+      "size": [
+        200,
+        204
+      ],
+      "bytes": 59429,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.918663400298314,
+      "colors": 4814
+    },
+    {
+      "file": "portrait_tm041211.png",
+      "before": [
+        224,
+        229
+      ],
+      "size": [
+        200,
+        204
+      ],
+      "bytes": 58866,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.98558881526141,
+      "colors": 4695
+    },
+    {
+      "file": "portrait_tm041311.png",
+      "before": [
+        224,
+        229
+      ],
+      "size": [
+        200,
+        204
+      ],
+      "bytes": 58519,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.87603756944899,
+      "colors": 4836
+    },
+    {
+      "file": "portrait_tm050101.png",
+      "before": [
+        224,
+        238
+      ],
+      "size": [
+        200,
+        213
+      ],
+      "bytes": 60226,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.975121536559655,
+      "colors": 4351
+    },
+    {
+      "file": "portrait_tm050201.png",
+      "before": [
+        224,
+        238
+      ],
+      "size": [
+        200,
+        213
+      ],
+      "bytes": 58212,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.96335031377537,
+      "colors": 4150
+    },
+    {
+      "file": "portrait_tm050301.png",
+      "before": [
+        224,
+        238
+      ],
+      "size": [
+        200,
+        213
+      ],
+      "bytes": 58828,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.05862817791345,
+      "colors": 4272
+    },
+    {
+      "file": "portrait_tm051111.png",
+      "before": [
+        224,
+        229
+      ],
+      "size": [
+        200,
+        204
+      ],
+      "bytes": 58481,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.91194118070902,
+      "colors": 4147
+    },
+    {
+      "file": "portrait_tm051211.png",
+      "before": [
+        224,
+        229
+      ],
+      "size": [
+        200,
+        204
+      ],
+      "bytes": 57668,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.97120943526428,
+      "colors": 4028
+    },
+    {
+      "file": "portrait_tm051311.png",
+      "before": [
+        224,
+        229
+      ],
+      "size": [
+        200,
+        204
+      ],
+      "bytes": 57579,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.88093625842004,
+      "colors": 4102
+    },
+    {
+      "file": "portrait_tn010101.png",
+      "before": [
+        206,
+        286
+      ],
+      "size": [
+        184,
+        256
+      ],
+      "bytes": 41311,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.44072140974724,
+      "colors": 3512
+    },
+    {
+      "file": "portrait_tn010107.png",
+      "before": [
+        163,
+        286
+      ],
+      "size": [
+        146,
+        256
+      ],
+      "bytes": 37364,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.39439110153723,
+      "colors": 3407
+    },
+    {
+      "file": "portrait_tn010108.png",
+      "before": [
+        163,
+        286
+      ],
+      "size": [
+        146,
+        256
+      ],
+      "bytes": 37426,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.38939545949101,
+      "colors": 3443
+    },
+    {
+      "file": "portrait_tn010109.png",
+      "before": [
+        163,
+        286
+      ],
+      "size": [
+        146,
+        256
+      ],
+      "bytes": 37518,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.39104660854657,
+      "colors": 3442
+    },
+    {
+      "file": "portrait_tn010201.png",
+      "before": [
+        206,
+        286
+      ],
+      "size": [
+        184,
+        256
+      ],
+      "bytes": 41311,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.44072140974724,
+      "colors": 3512
+    },
+    {
+      "file": "portrait_tn010301.png",
+      "before": [
+        212,
+        286
+      ],
+      "size": [
+        190,
+        256
+      ],
+      "bytes": 46384,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.48720125047813,
+      "colors": 4266
+    },
+    {
+      "file": "portrait_tn010402.png",
+      "before": [
+        170,
+        286
+      ],
+      "size": [
+        152,
+        256
+      ],
+      "bytes": 41219,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.46070278794939,
+      "colors": 4114
+    },
+    {
+      "file": "portrait_tn020101.png",
+      "before": [
+        187,
+        286
+      ],
+      "size": [
+        167,
+        256
+      ],
+      "bytes": 37246,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 47.096508275985975,
+      "colors": 1934
+    },
+    {
+      "file": "portrait_tn020301.png",
+      "before": [
+        197,
+        286
+      ],
+      "size": [
+        176,
+        256
+      ],
+      "bytes": 42037,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.953893633612225,
+      "colors": 2475
+    },
+    {
+      "file": "portrait_tn020403.png",
+      "before": [
+        125,
+        286
+      ],
+      "size": [
+        112,
+        256
+      ],
+      "bytes": 29867,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.596610369344695,
+      "colors": 1927
+    },
+    {
+      "file": "portrait_tn030101.png",
+      "before": [
+        206,
+        286
+      ],
+      "size": [
+        184,
+        256
+      ],
+      "bytes": 41311,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.44072140974724,
+      "colors": 3512
+    },
+    {
+      "file": "portrait_tn030201.png",
+      "before": [
+        162,
+        286
+      ],
+      "size": [
+        145,
+        256
+      ],
+      "bytes": 37238,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.388807284762585,
+      "colors": 3251
+    },
+    {
+      "file": "portrait_tn030301.png",
+      "before": [
+        166,
+        286
+      ],
+      "size": [
+        149,
+        256
+      ],
+      "bytes": 38055,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.42942178150683,
+      "colors": 3634
+    },
+    {
+      "file": "portrait_tn030403.png",
+      "before": [
+        170,
+        286
+      ],
+      "size": [
+        152,
+        256
+      ],
+      "bytes": 40202,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.465312049202666,
+      "colors": 3816
+    },
+    {
+      "file": "portrait_tn040104.png",
+      "before": [
+        163,
+        286
+      ],
+      "size": [
+        146,
+        256
+      ],
+      "bytes": 36888,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.415046372403985,
+      "colors": 3194
+    },
+    {
+      "file": "portrait_tn040204.png",
+      "before": [
+        163,
+        286
+      ],
+      "size": [
+        146,
+        256
+      ],
+      "bytes": 36888,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.415046372403985,
+      "colors": 3194
+    },
+    {
+      "file": "portrait_tn040304.png",
+      "before": [
+        168,
+        286
+      ],
+      "size": [
+        150,
+        256
+      ],
+      "bytes": 37987,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.45010448537704,
+      "colors": 3665
+    },
+    {
+      "file": "portrait_tn040405.png",
+      "before": [
+        129,
+        286
+      ],
+      "size": [
+        115,
+        256
+      ],
+      "bytes": 33744,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.3809868979572,
+      "colors": 3489
+    },
+    {
+      "file": "portrait_tn050104.png",
+      "before": [
+        160,
+        286
+      ],
+      "size": [
+        143,
+        256
+      ],
+      "bytes": 32605,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.93586483291703,
+      "colors": 1665
+    },
+    {
+      "file": "portrait_tn050304.png",
+      "before": [
+        162,
+        286
+      ],
+      "size": [
+        145,
+        256
+      ],
+      "bytes": 34250,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.80626399802372,
+      "colors": 2070
+    },
+    {
+      "file": "portrait_tn050406.png",
+      "before": [
+        125,
+        286
+      ],
+      "size": [
+        112,
+        256
+      ],
+      "bytes": 29396,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.620333855736895,
+      "colors": 1825
+    },
+    {
+      "file": "portrait_tn060104.png",
+      "before": [
+        162,
+        286
+      ],
+      "size": [
+        145,
+        256
+      ],
+      "bytes": 36598,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.40716351746411,
+      "colors": 3141
+    },
+    {
+      "file": "portrait_tn060204.png",
+      "before": [
+        162,
+        286
+      ],
+      "size": [
+        145,
+        256
+      ],
+      "bytes": 36598,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.40716351746411,
+      "colors": 3141
+    },
+    {
+      "file": "portrait_tn060304.png",
+      "before": [
+        212,
+        286
+      ],
+      "size": [
+        190,
+        256
+      ],
+      "bytes": 44963,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.51844170410605,
+      "colors": 3994
+    },
+    {
+      "file": "portrait_tn060406.png",
+      "before": [
+        170,
+        286
+      ],
+      "size": [
+        152,
+        256
+      ],
+      "bytes": 39239,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.499578789218134,
+      "colors": 3675
+    },
+    {
+      "file": "portrait_tn070101.png",
+      "before": [
+        160,
+        286
+      ],
+      "size": [
+        143,
+        256
+      ],
+      "bytes": 37095,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.826476659779026,
+      "colors": 2200
+    },
+    {
+      "file": "portrait_tn070301.png",
+      "before": [
+        197,
+        286
+      ],
+      "size": [
+        176,
+        256
+      ],
+      "bytes": 45834,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.862640576186635,
+      "colors": 3030
+    },
+    {
+      "file": "portrait_tn070403.png",
+      "before": [
+        165,
+        286
+      ],
+      "size": [
+        148,
+        256
+      ],
+      "bytes": 37904,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.71979109801859,
+      "colors": 2712
+    },
+    {
+      "file": "portrait_tr010101.png",
+      "before": [
+        97,
+        286
+      ],
+      "size": [
+        87,
+        256
+      ],
+      "bytes": 18512,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.27646146065594,
+      "colors": 1366
+    },
+    {
+      "file": "portrait_tr011211.png",
+      "before": [
+        139,
+        286
+      ],
+      "size": [
+        124,
+        256
+      ],
+      "bytes": 31597,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.31123068384747,
+      "colors": 2522
+    },
+    {
+      "file": "portrait_ts010101.png",
+      "before": [
+        224,
+        227
+      ],
+      "size": [
+        200,
+        203
+      ],
+      "bytes": 52174,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.673542358972725,
+      "colors": 4510
+    },
+    {
+      "file": "portrait_ts010201.png",
+      "before": [
+        224,
+        227
+      ],
+      "size": [
+        200,
+        203
+      ],
+      "bytes": 53892,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.76431673228497,
+      "colors": 4354
+    },
+    {
+      "file": "portrait_um010101.png",
+      "before": [
+        224,
+        267
+      ],
+      "size": [
+        200,
+        238
+      ],
+      "bytes": 57141,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.38590088206981,
+      "colors": 4172
+    },
+    {
+      "file": "portrait_um010201.png",
+      "before": [
+        224,
+        252
+      ],
+      "size": [
+        200,
+        225
+      ],
+      "bytes": 52105,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.439299599096785,
+      "colors": 4160
+    },
+    {
+      "file": "portrait_um010301.png",
+      "before": [
+        224,
+        267
+      ],
+      "size": [
+        200,
+        238
+      ],
+      "bytes": 59211,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.39780841580006,
+      "colors": 4112
+    },
+    {
+      "file": "portrait_um011111.png",
+      "before": [
+        224,
+        240
+      ],
+      "size": [
+        200,
+        214
+      ],
+      "bytes": 52433,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.35064236778024,
+      "colors": 4208
+    },
+    {
+      "file": "portrait_um011211.png",
+      "before": [
+        224,
+        240
+      ],
+      "size": [
+        200,
+        214
+      ],
+      "bytes": 52825,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.356804392466486,
+      "colors": 4303
+    },
+    {
+      "file": "portrait_um011311.png",
+      "before": [
+        224,
+        240
+      ],
+      "size": [
+        200,
+        214
+      ],
+      "bytes": 53454,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.394689107947464,
+      "colors": 4214
+    },
+    {
+      "file": "portrait_um020101.png",
+      "before": [
+        224,
+        267
+      ],
+      "size": [
+        200,
+        238
+      ],
+      "bytes": 59302,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.72269846589436,
+      "colors": 4660
+    },
+    {
+      "file": "portrait_um020201.png",
+      "before": [
+        224,
+        252
+      ],
+      "size": [
+        200,
+        225
+      ],
+      "bytes": 54211,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.78591310291195,
+      "colors": 4530
+    },
+    {
+      "file": "portrait_um020301.png",
+      "before": [
+        224,
+        267
+      ],
+      "size": [
+        200,
+        238
+      ],
+      "bytes": 60929,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.67133481161394,
+      "colors": 4629
+    },
+    {
+      "file": "portrait_um021111.png",
+      "before": [
+        224,
+        240
+      ],
+      "size": [
+        200,
+        214
+      ],
+      "bytes": 53147,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.522896857600855,
+      "colors": 4649
+    },
+    {
+      "file": "portrait_um021211.png",
+      "before": [
+        224,
+        240
+      ],
+      "size": [
+        200,
+        214
+      ],
+      "bytes": 53588,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.524296038969894,
+      "colors": 4736
+    },
+    {
+      "file": "portrait_um021311.png",
+      "before": [
+        224,
+        240
+      ],
+      "size": [
+        200,
+        214
+      ],
+      "bytes": 54644,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.43292722539375,
+      "colors": 4333
+    },
+    {
+      "file": "portrait_um030101.png",
+      "before": [
+        224,
+        246
+      ],
+      "size": [
+        200,
+        220
+      ],
+      "bytes": 54071,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.81589258438112,
+      "colors": 4985
+    },
+    {
+      "file": "portrait_um030201.png",
+      "before": [
+        224,
+        246
+      ],
+      "size": [
+        200,
+        220
+      ],
+      "bytes": 53548,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.86270489375315,
+      "colors": 5019
+    },
+    {
+      "file": "portrait_um030301.png",
+      "before": [
+        224,
+        246
+      ],
+      "size": [
+        200,
+        220
+      ],
+      "bytes": 55451,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.779621801193656,
+      "colors": 4993
+    },
+    {
+      "file": "portrait_um031111.png",
+      "before": [
+        224,
+        219
+      ],
+      "size": [
+        200,
+        196
+      ],
+      "bytes": 46167,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.64554123409587,
+      "colors": 4771
+    },
+    {
+      "file": "portrait_um031211.png",
+      "before": [
+        224,
+        219
+      ],
+      "size": [
+        200,
+        196
+      ],
+      "bytes": 46486,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.643108180561796,
+      "colors": 4842
+    },
+    {
+      "file": "portrait_um031311.png",
+      "before": [
+        224,
+        219
+      ],
+      "size": [
+        200,
+        196
+      ],
+      "bytes": 47360,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.55751445436769,
+      "colors": 4586
+    },
+    {
+      "file": "portrait_um040101.png",
+      "before": [
+        224,
+        267
+      ],
+      "size": [
+        200,
+        238
+      ],
+      "bytes": 55713,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.33316777223284,
+      "colors": 3705
+    },
+    {
+      "file": "portrait_um040201.png",
+      "before": [
+        177,
+        286
+      ],
+      "size": [
+        158,
+        256
+      ],
+      "bytes": 50924,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.436236272463425,
+      "colors": 3803
+    },
+    {
+      "file": "portrait_um040301.png",
+      "before": [
+        224,
+        267
+      ],
+      "size": [
+        200,
+        238
+      ],
+      "bytes": 57505,
+      "maxRgbError": 2,
+      "alphaUnchanged": true,
+      "psnrDb": 46.35017993702182,
+      "colors": 3752
+    }
+  ]
+}

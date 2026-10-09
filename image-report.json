@@ -1,0 +1,409 @@
+{
+  "images": [
+    {
+      "id": 25243,
+      "name": "CUTIN_BORDER02",
+      "file": "i25243.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        27
+      ],
+      "size": [
+        384,
+        5
+      ],
+      "bytes": 722
+    },
+    {
+      "id": 25242,
+      "name": "CUTIN_BORDER01",
+      "file": "i25242.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        152,
+        1080
+      ],
+      "size": [
+        41,
+        288
+      ],
+      "bytes": 1474
+    },
+    {
+      "id": 25240,
+      "name": "bg999n_01_70",
+      "file": "i25240.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        1080
+      ],
+      "size": [
+        384,
+        216
+      ],
+      "bytes": 2600
+    },
+    {
+      "id": 25253,
+      "name": "EF_BG_AO01",
+      "file": "i25253.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        1080
+      ],
+      "size": [
+        384,
+        216
+      ],
+      "bytes": 6129
+    },
+    {
+      "id": 25178,
+      "name": "__SYS_TM_BG05",
+      "file": "i25178.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        1080
+      ],
+      "size": [
+        384,
+        216
+      ],
+      "bytes": 8899
+    },
+    {
+      "id": 25610,
+      "name": "EF_CHARACTER08_00",
+      "file": "i25610.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        1080
+      ],
+      "size": [
+        384,
+        216
+      ],
+      "bytes": 1023
+    },
+    {
+      "id": 25619,
+      "name": "EF_CHARACTER08_03",
+      "file": "i25619.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        1080
+      ],
+      "size": [
+        384,
+        216
+      ],
+      "bytes": 978
+    },
+    {
+      "id": 25616,
+      "name": "EF_CHARACTER08_02",
+      "file": "i25616.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        1080
+      ],
+      "size": [
+        384,
+        216
+      ],
+      "bytes": 1575
+    },
+    {
+      "id": 25622,
+      "name": "EF_CHARACTER08_04",
+      "file": "i25622.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        1080
+      ],
+      "size": [
+        384,
+        216
+      ],
+      "bytes": 977
+    },
+    {
+      "id": 25613,
+      "name": "EF_CHARACTER08_01",
+      "file": "i25613.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        1080
+      ],
+      "size": [
+        384,
+        216
+      ],
+      "bytes": 1036
+    },
+    {
+      "id": 25625,
+      "name": "EF_CHARACTER08_05",
+      "file": "i25625.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        1080
+      ],
+      "size": [
+        384,
+        216
+      ],
+      "bytes": 1641
+    },
+    {
+      "id": 25631,
+      "name": "EF_CHARACTER08_07",
+      "file": "i25631.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        1080
+      ],
+      "size": [
+        384,
+        216
+      ],
+      "bytes": 1732
+    },
+    {
+      "id": 25132,
+      "name": "__SYS_MAP_BG01",
+      "file": "i25132.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        2160
+      ],
+      "size": [
+        256,
+        288
+      ],
+      "bytes": 4585
+    },
+    {
+      "id": 25634,
+      "name": "EF_CHARACTER08_08",
+      "file": "i25634.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        1080
+      ],
+      "size": [
+        384,
+        216
+      ],
+      "bytes": 2066
+    },
+    {
+      "id": 25628,
+      "name": "EF_CHARACTER08_06",
+      "file": "i25628.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        1080
+      ],
+      "size": [
+        384,
+        216
+      ],
+      "bytes": 1890
+    },
+    {
+      "id": 25638,
+      "name": "EF_FACE_FILTER",
+      "file": "i25638.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        1080
+      ],
+      "size": [
+        384,
+        216
+      ],
+      "bytes": 1374
+    },
+    {
+      "id": 25639,
+      "name": "ef_face_filter_black",
+      "file": "i25639.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        1000
+      ],
+      "size": [
+        384,
+        200
+      ],
+      "bytes": 802
+    },
+    {
+      "id": 25637,
+      "name": "ef_cutin_miki01",
+      "file": "i25637.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        1480
+      ],
+      "size": [
+        374,
+        288
+      ],
+      "bytes": 6116
+    },
+    {
+      "id": 25640,
+      "name": "EF_FILTER_AO01",
+      "file": "i25640.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        1080
+      ],
+      "size": [
+        384,
+        216
+      ],
+      "bytes": 2011
+    },
+    {
+      "id": 25658,
+      "name": "EF_NOBEL_FILTER",
+      "file": "i25658.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        1080
+      ],
+      "size": [
+        384,
+        216
+      ],
+      "bytes": 2585
+    },
+    {
+      "id": 25676,
+      "name": "EF_WAKAME_FILTER",
+      "file": "i25676.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        1080
+      ],
+      "size": [
+        384,
+        216
+      ],
+      "bytes": 897
+    },
+    {
+      "id": 25679,
+      "name": "mask_tn01",
+      "file": "i25679.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        1080
+      ],
+      "size": [
+        384,
+        216
+      ],
+      "bytes": 3018
+    },
+    {
+      "id": 25680,
+      "name": "mask_tn02",
+      "file": "i25680.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        1080
+      ],
+      "size": [
+        384,
+        216
+      ],
+      "bytes": 3194
+    },
+    {
+      "id": 25681,
+      "name": "mask_tn03",
+      "file": "i25681.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        1080
+      ],
+      "size": [
+        384,
+        216
+      ],
+      "bytes": 3183
+    },
+    {
+      "id": 25682,
+      "name": "mask_tn04",
+      "file": "i25682.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        1920,
+        1080
+      ],
+      "size": [
+        384,
+        216
+      ],
+      "bytes": 3440
+    },
+    {
+      "id": 25654,
+      "name": "EF_ISLAND",
+      "file": "i25654.jpg",
+      "archive": "OTHCG.PAK",
+      "original": [
+        3840,
+        1080
+      ],
+      "size": [
+        384,
+        108
+      ],
+      "bytes": 3648
+    }
+  ],
+  "errors": [
+    {
+      "job": [
+        "OTHCG.PAK",
+        {
+          "id": 25241,
+          "name": "BS_FACE_MASK01",
+          "offset": 118085632,
+          "size": 2074688
+        },
+        "<workspace>\\work\\summer-rw5\\src\\common\\images"
+      ],
+      "error": "ValueError('not enough image data')"
+    }
+  ]
+}

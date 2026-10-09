@@ -1,0 +1,19 @@
+{
+  "blockSize": 1024,
+  "blocks": 457,
+  "scenes": 422,
+  "results": [
+    {
+      "policy": 0,
+      "visibleFrames": 13299,
+      "sha256": "3a86bc3aad39baa452aa117b6c9bb8bb45d28d8c2bd215fb5abc6e00ffdcac91",
+      "result": "passed"
+    },
+    {
+      "policy": 1,
+      "visibleFrames": 14294,
+      "sha256": "61cac490251093cd0bc586f19c23f172087e4577c28c459eaf2aa7981f77bc43",
+      "result": "passed"
+    }
+  ]
+}
