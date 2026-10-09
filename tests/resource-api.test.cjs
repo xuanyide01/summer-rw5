@@ -8,8 +8,9 @@ const namesSource=moduleSource('names');
 async function pageWithReader(reader){
  const e=await import(toUri(engineSource)),s=await import(toUri(moduleSource('saves').replace("'./catalog.js'",JSON.stringify(toUri(catalogSource))).replace("'./engine.js'",JSON.stringify(toUri(engineSource))).replace("'./names.js'",JSON.stringify(toUri(namesSource))))),g=await import(toUri(moduleSource('gallery'))),a=await import(toUri(moduleSource('assets'))),n=await import(toUri(namesSource));
  const catalog=summer?(await import(toUri(catalogSource))).catalog:undefined;
+ const d=await import(toUri(moduleSource('dialogue')));
  const source=fs.readFileSync(path.join(root,'src/pages/index/index.ux'),'utf8').split('<script>')[1].split('</script>')[0].replace(/^import[^\n]+\n/gm,'').replace('export default','globalThis.page=');
- const context=vm.createContext({...e,...s,...g,...a,...n,catalog,file:{readText:reader},storage:{get:o=>o.success('')},prompt:{showToast(){}},console:{log(){},error(){}},setTimeout,clearTimeout,Date});
+ const context=vm.createContext({...e,...s,...g,...a,...n,...d,catalog,file:{readText:reader},storage:{get:o=>o.success('')},prompt:{showToast(){}},console:{log(){},error(){}},setTimeout,clearTimeout,Date});
  vm.runInContext(source,context);const p=context.page;Object.assign(p,p.private);p.onInit();return p;
 }
 test('actual page reads packaged TXT chapters and CG catalog; API 202 exits loading and exposes its reason',async()=>{
@@ -38,4 +39,14 @@ test('actual menu skips to the first original decision and keeps it pending',asy
 
 test('route first-page cards are not reused as chapter first-page cards',async()=>{
  const p=await pageWithReader(o=>o.success({text:fs.readFileSync(path.join(root,'src',o.uri),'utf8')}));p.openRoutes();const keys=p.browseRows.map(x=>x.key);p.selectBrowse(0);assert.equal(p.mode,'chapters');assert.ok(p.browseRows.every(x=>!keys.includes(x.key)));p.closeBrowse();assert.deepEqual(p.browseRows.map(x=>x.key),keys);
+});
+test('actual 0999 page renders unpadded text but retains the original text in the session for saves',async()=>{
+ const p=await pageWithReader(o=>o.success({text:fs.readFileSync(path.join(root,'src',o.uri),'utf8')}));
+ p.textSpeed=0;p.openRoutes();p.browsePage=1;p.refreshBrowse();p.selectBrowse(0);
+ const index=p._browseItems.findIndex(x=>x.id===205);assert.ok(index>=0);
+ p.browsePage=Math.floor(index/4);p.refreshBrowse();p.selectBrowse(index%4);
+ assert.equal(p.mode,'play');assert.equal(p.session.chapter,205);assert.equal(p.session.cursor,16);
+ assert.equal(p.displayText,'好像做了一场很长很长的梦。');
+ assert.ok(p.session.text.startsWith('\u3000'.repeat(9)));
+ p.showMenu();p.resume();assert.equal(p.displayText,'好像做了一场很长很长的梦。');
 });

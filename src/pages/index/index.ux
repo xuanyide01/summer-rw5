@@ -70,6 +70,7 @@
 </template>
 <script>
 import file from '@system.file';
+import {formatDialogue} from '../../common/dialogue.js';
 import storage from '@system.storage';
 import prompt from '@system.prompt';
 import {newState,restore,readFrame,readChapterSkip,next,nextChapter,choose,previous,previewMap} from '../../common/engine.js';
@@ -127,7 +128,7 @@ export default {
         if(f.type==='map'){this.renderMap(f);return;}
         if(f.type==='choice'){this.options=this.visibleOptions(f.items);this.mode='choice';console.log('SUMMER_RW5 choice',this.session.chapter,this.session.cursor);return;}
         if(f.type==='end'){this.mode='end';console.log('SUMMER_RW5 ending');return;}
-        this.mode='play';this.speaker=this.visibleText(f.speaker,true);this.fullText=this.visibleText(f.text);this.speakerFont=textFont(this.speaker);this.dialogueFont=textFont(this.fullText);this.displayText='';
+        this.mode='play';this.speaker=this.visibleText(f.speaker,true);this.fullText=formatDialogue(this.visibleText(f.text));this.speakerFont=textFont(this.speaker);this.dialogueFont=textFont(this.fullText);this.displayText='';
         try{this.$element('dialogue-scroll').scrollTo({index:0});}catch(e){}
         console.log('SUMMER_RW5 frame',this.session.chapter,this.session.cursor);
         if(this.textSpeed===0){this.displayText=this.fullText;return;}

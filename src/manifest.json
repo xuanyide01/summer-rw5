@@ -1,8 +1,8 @@
 {
   "package": "com.codex.summer.rw5",
   "name": "夏日口袋",
-  "versionName": "0.1.6",
-  "versionCode": 7,
+  "versionName": "0.1.7",
+  "versionCode": 8,
   "minPlatformVersion": 1000,
   "minAPILevel": 1,
   "icon": "/common/logo.png",

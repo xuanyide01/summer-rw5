@@ -1,0 +1,56 @@
+{
+  "file": "com.codex.summer.rw5.debug.0.1.7.rpk",
+  "version": "0.1.7",
+  "bytes": 24641553,
+  "expandedBytes": 33715165,
+  "entries": 2389,
+  "sha256": "0849e570ecab9dfdebd4034a361f2b93d0c22a8f075961db30bad43db3fb0d38",
+  "certificateSha256": "4e8e1ee24968b0dad6d0956a7e14d848b38b22a203f39c389a45d8737bdc4585",
+  "zipCRCValid": true,
+  "outerSignatureValid": true,
+  "innerSignatureValid": true,
+  "allFileDigestsValid": true,
+  "signedFiles": 1960,
+  "device": "REDMI Watch 5",
+  "physicalDeviceTested": false,
+  "applicationIcon": {
+    "game": "summer",
+    "width": 192,
+    "height": 192,
+    "pngColorType": 6,
+    "transparentCorners": true,
+    "centerOpaque": true,
+    "bytes": 76811,
+    "sha256": "f862756650610923077df17de8370e86cd6fd3afb2eb7aa2f239be6b3543bf93",
+    "imagegenOutput": "exec-b984cc73-0a2c-4179-b9f3-1462e46c7f41.png",
+    "builtInImagegenUsed": true
+  },
+  "allStoryImagesFontsAndOtherResourcesUnchanged": true,
+  "changedCommonResources": [
+    "common/logo.png"
+  ],
+  "compiledGamePageUnchanged": false,
+  "binEqualsRpk": true,
+  "native": {
+    "runtime": "official vela-watch-5.0",
+    "freshInstallationPassed": true,
+    "coldLaunchPassed": true,
+    "iconManifestPath": "/common/logo.png",
+    "actualPhysicalLauncherRenderingTested": false,
+    "saveDatabaseRestoredByteForByte": true
+  },
+  "status": "virtual-watch checked; new complete package awaits physical testing",
+  "automatedTestsPassed": 18,
+  "dialogueLayout": {
+    "scene": 205,
+    "chapterLabel": "紬文德斯 0999",
+    "correctedLines": 46,
+    "fontsTested": [
+      24,
+      28
+    ],
+    "nextPreviousTextPassed": true,
+    "screenshotsInspected": true,
+    "rawStoryAndSaveSchemaUnchanged": true
+  }
+}
