@@ -8,9 +8,9 @@ const namesSource=moduleSource('names');
 async function pageWithReader(reader){
  const e=await import(toUri(engineSource)),s=await import(toUri(moduleSource('saves').replace("'./catalog.js'",JSON.stringify(toUri(catalogSource))).replace("'./engine.js'",JSON.stringify(toUri(engineSource))).replace("'./names.js'",JSON.stringify(toUri(namesSource))))),g=await import(toUri(moduleSource('gallery'))),a=await import(toUri(moduleSource('assets'))),n=await import(toUri(namesSource));
  const catalog=summer?(await import(toUri(catalogSource))).catalog:undefined;
- const d=await import(toUri(moduleSource('dialogue')));
+ const d=await import(toUri(moduleSource('dialogue'))),aut=await import(toUri(moduleSource('auto-reader'))),progress=await import(toUri(moduleSource('title-progress')));
  const source=fs.readFileSync(path.join(root,'src/pages/index/index.ux'),'utf8').split('<script>')[1].split('</script>')[0].replace(/^import[^\n]+\n/gm,'').replace('export default','globalThis.page=');
- const context=vm.createContext({...e,...s,...g,...a,...n,...d,catalog,file:{readText:reader},storage:{get:o=>o.success('')},prompt:{showToast(){}},console:{log(){},error(){}},setTimeout,clearTimeout,Date});
+ const context=vm.createContext({...e,...s,...g,...a,...n,...d,...aut,...progress,audio:{},makeTitleMusic:()=>({update(){},stop(){},retry(){},destroy(){}}),catalog,file:{readText:reader},storage:{get:o=>o.success(o.key==='summer_rw5_settings_v1'?JSON.stringify({soundEnabled:false}):''),set:o=>{if(o.success)o.success();}},prompt:{showToast(){}},console:{log(){},error(){}},setTimeout,clearTimeout,Date});
  vm.runInContext(source,context);const p=context.page;Object.assign(p,p.private);p.onInit();return p;
 }
 test('actual page reads packaged TXT chapters and CG catalog; API 202 exits loading and exposes its reason',async()=>{
@@ -26,7 +26,7 @@ test('actual page reads packaged TXT chapters and CG catalog; API 202 exits load
  const failed=await pageWithReader(o=>o.fail('invalid file path',202));
  failed.readChapter(1,()=>assert.fail('A failed read must not render a frame'));
  assert.equal(failed.loading,false);assert.equal(failed.mode,'error');assert.match(failed.errorText,/202.*invalid file path/);
- failed.toTitle();assert.equal(failed.mode,'title');assert.equal(failed.backgroundSrc,'/common/title_bg.png');
+ failed.toTitle();assert.equal(failed.mode,'title');assert.equal(failed.backgroundSrc,'/common/ui/title.png');
  failed.openGallery();assert.equal(failed.loading,false);assert.equal(failed.mode,'error');assert.match(failed.errorText,/202/);
 });
 

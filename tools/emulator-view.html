@@ -3,7 +3,7 @@
 <main><div class="watch"><img id="screen" alt="官方 Vela 模拟器画面"></div><aside><h1 id="game">红米手表 5 虚拟测试</h1><p>这是官方 Vela 模拟器的实时画面。点击屏幕操作应用，拖动画面可滚动选项。</p><p>虚拟设备：432 × 514<br>应用：红米手表 5 图文版</p><button onclick="command('start')">启动应用</button><button onclick="command('stop')">停止应用</button><p id="status">正在连接模拟器…</p><p>图文、分支和存档可在这里验证；实际手表的性能与安装兼容性仍需真机测试。</p></aside></main>
 <script>
 const screen=document.querySelector('#screen'),status=document.querySelector('#status');let updating=false;
-fetch('/info').then(r=>r.json()).then(info=>{const name=info.packageName.includes('summer')?'夏日口袋 REFLECTION BLUE':'星空列车与白的旅行';document.querySelector('#game').textContent=name+(info.packageName.includes('.qa')?' · 测试应用':'');document.title=name+' · Vela 虚拟手表';}).catch(()=>{});
+fetch('/info').then(r=>r.json()).then(info=>{const name='夏日口袋';document.querySelector('#game').textContent=name;document.title=name+' · Vela 虚拟手表';}).catch(()=>{});
 async function command(endpoint){try{const r=await fetch('/'+endpoint);const d=await r.json();if(!r.ok)throw new Error(d.error);status.textContent=typeof d==='string'?(d||'操作完成'):JSON.stringify(d)}catch(e){status.textContent=e.message}}
 let down=null;const point=e=>{const r=screen.getBoundingClientRect();return{x:Math.max(0,Math.min(431,Math.round((e.clientX-r.left)*432/r.width))),y:Math.max(0,Math.min(513,Math.round((e.clientY-r.top)*514/r.height)))}};
 screen.addEventListener('pointerdown',e=>{down=point(e);screen.setPointerCapture(e.pointerId)});
@@ -11,4 +11,4 @@ screen.addEventListener('pointerup',async e=>{if(!down)return;const end=point(e)
 screen.addEventListener('dragstart',e=>e.preventDefault());screen.addEventListener('pointercancel',()=>down=null);
 async function refresh(){if(updating)return;updating=true;try{const r=await fetch('/screen?t='+Date.now());if(!r.ok){const d=await r.json();throw new Error(d.error)}const blob=await r.blob(),url=URL.createObjectURL(blob),previous=screen.src;screen.src=url;if(previous.startsWith('blob:'))URL.revokeObjectURL(previous);if(status.textContent.startsWith('正在')||status.textContent.includes('registered'))status.textContent='模拟器已连接，可以点击屏幕。'}catch(e){status.textContent=e.message}finally{updating=false}}
 setInterval(refresh,500);refresh();
-</script></html>
+</script><script src="/emulator-audio-client.js"></script></html>

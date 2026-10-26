@@ -1,0 +1,18 @@
+{
+  "source": "Original MUSIC.PAK/BGM32",
+  "nativeTitleMusicId": 100040,
+  "sourceSha256": "a1f480903426d02f287230a2b421f330960abcd864282041ed7fc402b419ecf5",
+  "file": "common/title-theme.wav",
+  "sourceContentSeconds": 237.0,
+  "fileSeconds": 239.0,
+  "codec": "WAV IMA ADPCM 4-bit",
+  "sampleRate": 11025,
+  "channels": 1,
+  "bytes": 1323102,
+  "sha256": "a52285d56d1a2c93d6634d50c530a86fb5212cfa0a52c9617c5b9a2ea9cdac71",
+  "silentGuardSeconds": 2,
+  "guardedStopMilliseconds": 237000,
+  "restartGapMilliseconds": 1200,
+  "audioIsDownsampled": true,
+  "artworkLosslessCompressionIsIndependentOfAudioEncoding": true
+}

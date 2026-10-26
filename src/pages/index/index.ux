@@ -1,22 +1,35 @@
 <template>
   <div class="page" onswipe="swipe">
-    <div if="{{mode === 'title' || mode === 'play'}}" class="art" onclick="advance">
-      <image if="{{mode === 'title'}}" class="background" src="/common/title_bg.png" onerror="backgroundError" oncomplete="backgroundLoaded"></image>
+    <div if="{{mode === 'play'}}" class="art">
+      <image if="{{mode === 'title'}}" class="background" src="/common/ui/title.png" onerror="backgroundError" oncomplete="backgroundLoaded"></image>
       <image if="{{mode !== 'title'}}" class="background" src="{{backgroundSrc}}" onerror="backgroundError" oncomplete="backgroundLoaded"></image>
       <image if="{{bodySrc !== ''}}" class="body" src="{{bodySrc}}"></image>
     </div>
-    <div if="{{mode === 'title'}}" class="title-panel">
-      <text class="title-text">夏日口袋 RB</text>
-      <text class="title-subtitle">红米手表 5 · 章节图文版</text>
-      <text class="title-action" onclick="startNew">开始阅读</text>
-      <text class="title-action secondary" onclick="continueGame">读取存档</text>
-      <text class="title-action secondary" onclick="openGallery">CG 鉴赏</text>
-      <text class="title-action secondary" onclick="openRoutes">选择路线 / 章节</text>
+    <div if="{{mode === 'title'}}" class="title-scene">
+      <image class="title-background" src="/common/ui/title.png"></image>
+      <image class="title-logo" src="/common/ui/logo.png"></image>
+      <div class="title-menu" style="top: {{titleMenuTop}}px;height: {{titleMenuHeight}}px;">
+        <div for="{{titleButtons}}" tid="action" class="title-row" onclick="titleAction($item.action)"><image class="title-button" style="width: {{$item.width}}px;" src="{{$item.src}}"></image></div>
+      </div>
+    </div>
+    <div if="{{mode === 'config'}}" class="overlay config-panel">
+      <text class="menu-title">OPTIONS</text>
+      <text class="menu-action" onclick="toggleMusic">{{musicLabel}}</text>
+      <text class="menu-action" onclick="toggleSpeed">{{speedLabel}}</text>
+      <text class="menu-action" onclick="toggleFont">{{fontLabel}}</text>
+      <text class="menu-action" onclick="openRoutes">路线 / 章节</text>
+      <text class="menu-action" onclick="retryProgress">重试保存通关记录</text>
+      <text class="menu-action" onclick="toTitle">返回标题</text>
+    </div>
+    <div if="{{mode === 'help'}}" class="full-panel">
+      <text class="panel-title">MANUAL</text>
+      <scroll class="help-scroll" scroll-y="true"><text class="help-text">{{helpText}}</text></scroll>
+      <text class="small-action" onclick="toTitle">返回标题</text>
     </div>
     <div if="{{mode === 'play'}}" class="dialogue-panel">
       <div class="speaker-row"><text class="speaker" style="font-family: {{speakerFont}};">{{speaker}}</text><text class="chapter" style="font-family: {{chapterFont}};">{{chapterLabel}}</text></div>
-      <scroll id="dialogue-scroll" class="dialogue-scroll" scroll-y="true" onclick="advance"><text class="dialogue" style="font-size: {{fontSize}}px;font-family: {{dialogueFont}};">{{displayText}}</text></scroll>
-      <div class="toolbar"><text class="tool" onclick="goBack">上一句</text><text class="tool" onclick="showMenu">菜单</text><text class="tool" onclick="advance">下一句 ›</text></div>
+      <scroll id="dialogue-scroll" class="dialogue-scroll" scroll-y="true" ontouchstart="dialogueTouchStart" ontouchmove="dialogueTouchMove" ontouchend="dialogueTouchEnd" onscroll="dialogueScrolled" onclick="dialogueTap"><div class="dialogue-content" style="height: {{dialogueHeight}}px;"><text class="dialogue" style="font-size: {{fontSize}}px;font-family: {{dialogueFont}};">{{displayText}}</text></div></scroll>
+      <div class="toolbar"><text class="tool" onclick="goBack">上一句</text><text class="tool" onclick="showMenu">{{autoEnabled ? '自动 · 菜单' : '菜单'}}</text><text class="tool" onclick="advance">下一句 ›</text></div>
     </div>
     <div if="{{mode === 'choice'}}" class="choice-panel">
       <text class="choice-title">选择下一步</text>
@@ -25,9 +38,11 @@
     </div>
     <div if="{{mode === 'menu'}}" class="overlay">
       <text class="menu-title">阅读菜单</text>
+      <text class="menu-action" onclick="toggleAuto">{{autoLabel}}</text>
+      <text class="menu-action" onclick="cycleAutoSpeed">{{autoSpeedLabel}}</text>
       <text class="menu-action" onclick="saveGame">保存进度</text>
       <text class="menu-action" onclick="loadGame">读取进度</text>
-      <text class="menu-action" style="color: {{hasNextChapter ? '#d5e5f2' : '#64758a'}};" onclick="goNextChapter">下一章 ›</text>
+      <text class="menu-action" style="color: {{hasNextChapter ? '#214b6a' : '#94aab8'}};" onclick="goNextChapter">下一章 ›</text>
       <text class="menu-action" onclick="toggleSpeed">{{speedLabel}}</text>
       <text class="menu-action" onclick="toggleFont">{{fontLabel}}</text>
       <text class="menu-action" onclick="resume">返回游戏</text>
@@ -42,7 +57,7 @@
       <text class="panel-title">{{slotTitle}}</text>
       <text class="panel-subtitle">{{slotPageLabel}}</text>
       <div class="slot-list">
-        <div for="{{slotRows}}" tid="number" class="slot-card" style="background-color: {{$item.occupied ? '#1d3549' : '#142535'}};" onclick="selectSlot($item.index)">
+        <div for="{{slotRows}}" tid="number" class="slot-card" style="background-color: {{$item.occupied ? '#dceef6' : '#f6fbfd'}};" onclick="selectSlot($item.index)">
           <text class="slot-title">{{$item.title}}</text><text class="slot-meta" style="font-family: {{$item.metaFont}};">{{$item.meta}}</text><text class="slot-preview" style="font-family: {{$item.previewFont}};">{{$item.preview}}</text>
         </div>
       </div>
@@ -61,7 +76,7 @@
     </div>
     <div if="{{mode === 'cg'}}" class="cg-panel">
       <image class="cg-image" src="{{cgSrc}}" onclick="cycleCg"></image><text class="cg-caption">{{cgLabel}}</text>
-      <div class="cg-controls"><text class="pager-action" onclick="previousCg">‹ 上一组</text><text class="pager-action" onclick="backToGallery">返回列表</text><text class="pager-action" onclick="nextCg">下一组 ›</text></div>
+      <div class="cg-controls"><text class="pager-action cg-action" onclick="previousCg">‹ 上一组</text><text class="pager-action cg-action" onclick="backToGallery">返回列表</text><text class="pager-action cg-action" onclick="nextCg">下一组 ›</text></div>
     </div>
     <div if="{{mode === 'end'}}" class="end-panel"><text class="game-title">本篇阅读完毕</text><text class="subtitle">可从标题选择其他篇章</text><text class="action" onclick="toTitle">返回标题</text></div>
     <div if="{{mode === 'error'}}" class="overlay"><text class="menu-title">暂时无法继续</text><text class="error-text">{{errorText}}</text><text class="action" onclick="toTitle">返回标题</text></div>
@@ -70,6 +85,10 @@
 </template>
 <script>
 import file from '@system.file';
+import audio from '@system.audio';
+import {autoSpeeds,autoWait} from '../../common/auto-reader.js';
+import {makeTitleMusic} from '../../common/title-music.js';
+import {PROGRESS_KEY,FLOW_ENDINGS,emptyProgress,decodeProgress,progressFromState,withProgress,titleActions,titleRows} from '../../common/title-progress.js';
 import {formatDialogue} from '../../common/dialogue.js';
 import storage from '@system.storage';
 import prompt from '@system.prompt';
@@ -80,31 +99,56 @@ import {imagePath} from '../../common/assets.js';
 import {groupGallery,stepVariant} from '../../common/gallery.js';
 import {visibleText,textFont} from '../../common/names.js';
 export default {
-  private:{mode:'title',backgroundSrc:'/common/title_bg.png',bodySrc:'',speaker:'',displayText:'',chapterLabel:'',speakerFont:'sans-serif',dialogueFont:'sans-serif',chapterFont:'sans-serif',browseFont:'sans-serif',overwriteFont:'sans-serif',
-    options:[],loading:false,errorText:'',hasNextChapter:true,fontSize:24,textSpeed:30,speedLabel:'显示速度：逐字',fontLabel:'字号：标准',
+  private:{mode:'title',backgroundSrc:'/common/ui/title.png',bodySrc:'',speaker:'',displayText:'',chapterLabel:'',speakerFont:'sans-serif',dialogueFont:'sans-serif',chapterFont:'sans-serif',browseFont:'sans-serif',overwriteFont:'sans-serif',
+    titleButtons:[],titleMenuTop:262,titleMenuHeight:232,dialogueHeight:128,autoEnabled:false,autoSpeed:1,autoLabel:'自动播放：关闭',autoSpeedLabel:'自动速度：标准',soundEnabled:true,musicAvailable:true,musicLabel:'标题音乐：开启',helpText:'点击正文可补全当前句或进入下一句。\n\n阅读菜单提供30个保存/加载栏位、下一章、三档自动播放和字号设置。遇到选项必须手动选择。拖动长文本时暂停推进。\n\nReSTART、ALKA、Pocket随原作通关阶段出现。通关记录独立保存，章节阅览不会伪造结局记录。\n\n标题音乐在LOAD和CG鉴赏中继续播放，可在OPTIONS中关闭。',options:[],loading:false,errorText:'',hasNextChapter:true,fontSize:24,textSpeed:30,speedLabel:'显示速度：逐字',fontLabel:'字号：标准',
     slotTitle:'',slotPage:0,slotPageLabel:'',slotRows:[],storageBusy:false,overwriteTitle:'',overwriteDetail:'',
     galleryPage:0,galleryPageLabel:'',galleryTop:[],galleryBottom:[],cgIndex:0,cgVariant:0,cgSrc:'',cgLabel:'',browseRows:[],browseTitle:'',browseLabel:'',browsePage:0},
   onInit(){
-    this.session=newState();this.cachedChapter=0;this.ops=[];this.loadSequence=0;this.timer=null;this.fullText='';this.resumeMode='play';
+    this._alive=true;this._hidden=false;this.autoEnabled=false;this._autoTimer=null;this._autoGeneration=0;this._typingGeneration=0;this._touchReading=false;this._progress=emptyProgress();this._progressReady=false;this._progressWriting=false;this._progressDirty=false;this._settingsReady=false;this._musicStartTimer=null;this._musicRequest=0;this._musicWanted=false;this._music=makeTitleMusic(audio,available=>{this.musicAvailable=available;this.refreshSettings();});if(this.$app&&this.$app.$def)this.$app.$def.titleMusicController=this._music;this.session=newState();this.cachedChapter=0;this.ops=[];this.loadSequence=0;this.timer=null;this.fullText='';this.resumeMode='play';
     this._slotsSequence=0;this._gallerySequence=0;this._slotData=[];this._galleryCatalog=[];this._galleryTotal=0;this._slotsReturnMode='title';this._slotRole='load';
-    storage.get({complete:()=>{},key:'summer_rw5_settings_v1',success:data=>{try{const s=JSON.parse(data);this.fontSize=s.fontSize===28?28:24;this.textSpeed=s.textSpeed===0?0:30;this.refreshSettings();}catch(e){}},fail:()=>{}});
+    storage.get({complete:()=>{},key:'summer_rw5_settings_v1',success:data=>{try{const s=JSON.parse(data);this.fontSize=s.fontSize===28?28:24;this.textSpeed=s.textSpeed===0?0:30;this.autoSpeed=s.autoSpeed===0||s.autoSpeed===2?s.autoSpeed:1;this.soundEnabled=s.soundEnabled!==false;}catch(e){}this._settingsReady=true;this.refreshSettings();this.updateMusic();},fail:()=>{this._settingsReady=true;this.refreshSettings();this.updateMusic();}});
+    this.readProgress();
     console.log('SUMMER_RW5 title ready');
   },
+
+  readProgress(){this.loading=true;storage.get({complete:()=>{},key:PROGRESS_KEY,default:'',success:data=>{try{this._progress=decodeProgress(data);this._progressReady=true;this.loading=false;this.refreshTitle();this.updateMusic();}catch(e){this.fail(e.message);}},fail:()=>this.fail('通关记录读取失败，请重试')});},
+  refreshTitle(){this.titleButtons=titleRows(this._progress);this.titleMenuHeight=this.titleButtons.length*42+16;this.titleMenuTop=502-this.titleMenuHeight;},
+  syncProgress(ending){if(!this._progressReady||!this.session||this.session.progression!=='story')return;const p=progressFromState(this._progress,this.session,ending);if(JSON.stringify(p)!==JSON.stringify(this._progress)){this._progress=p;this._progressDirty=true;this.refreshTitle();this.persistProgress();}},
+  persistProgress(){if(!this._progressReady||!this._progressDirty||this._progressWriting)return;const value=JSON.stringify(this._progress);this._progressWriting=true;storage.set({complete:()=>{},key:PROGRESS_KEY,value,success:()=>{this._progressWriting=false;this._progressDirty=JSON.stringify(this._progress)!==value;if(this._progressDirty)this.persistProgress();},fail:()=>{this._progressWriting=false;this._progressDirty=true;this.toast('通关记录保存失败，可在设置中重试');}});},
+  retryProgress(){this.persistProgress();this.toast(this._progressDirty?'正在重试保存':'通关记录已保存');},
+  titleAction(action){if(this.mode!=='title'||this.loading)return;if(action==='load'){this.continueGame();return;}if(action==='gallery'){this.openGallery();return;}if(action==='options'){this.mode='config';this.updateMusic();return;}if(action==='manual'){this.mode='help';this.updateMusic();return;}if(action==='exit'){this.stopTitleMusic();this.stopAuto();this.persistProgress();this.$app.exit();return;}if(titleActions(this._progress).indexOf(action)<0)return;if(action==='start'||action==='restart'){this.startNew();return;}this.stopAuto();this.clearTyping();this.session=withProgress(newState(catalog.flowScene,true),this._progress);this.session.variables['6004']=action==='alka'?1:2;this.cachedChapter=0;this._autoHops=0;this.renderFrame();},
+  clearAuto(){if(this._autoTimer!=null)clearTimeout(this._autoTimer);this._autoTimer=null;this._autoGeneration=(this._autoGeneration||0)+1;},
+  canAuto(){return this.autoEnabled&&this._alive&&!this._hidden&&!this._touchReading&&!this.loading&&!this.storageBusy&&this.mode==='play'&&this.timer===null&&this.displayText===this.fullText;},
+  armAuto(){this.clearAuto();if(!this.canAuto())return;const generation=this._autoGeneration,chapter=this.session.chapter,cursor=this.session.cursor;this._autoTimer=setTimeout(()=>{if(generation!==this._autoGeneration)return;this._autoTimer=null;if(!this.canAuto()||this.session.chapter!==chapter||this.session.cursor!==cursor)return;console.log('SUMMER_RW5 auto advance',chapter,cursor);this.advance();},autoWait(this.autoSpeed,this.fullText.length));},
+  stopAuto(){this.autoEnabled=false;this.clearAuto();this.refreshSettings();},
+  toggleAuto(){if(this.mode!=='menu')return;this.autoEnabled=!this.autoEnabled;this.clearAuto();this.refreshSettings();},
+  cycleAutoSpeed(){if(this.mode!=='menu')return;this.autoSpeed=(this.autoSpeed+1)%3;this.refreshSettings();this.persistSettings();},
+  measureDialogue(){const columns=this.fontSize===28?12:14;let lines=0;String(this.fullText||'').split('\n').forEach(line=>{let units=0;for(let i=0;i<line.length;i++)units+=line.charCodeAt(i)<128?0.55:1;lines+=Math.max(1,Math.ceil(units/columns));});this.dialogueHeight=Math.max(126,lines*34+8);},
+  dialoguePoint(event){const t=event&&((event.touches&&event.touches[0])||(event.changedTouches&&event.changedTouches[0]));return t?{x:Number(t.clientX===undefined?t.pageX:t.clientX),y:Number(t.clientY===undefined?t.pageY:t.clientY)}:null;},
+  dialogueTouchStart(event){this._touchReading=true;this.clearAuto();this._dialogueTouch=this.dialoguePoint(event);this._dialogueDragged=false;},
+  dialogueTouchMove(event){const p=this.dialoguePoint(event),start=this._dialogueTouch;if(p&&start&&(Math.abs(p.x-start.x)>8||Math.abs(p.y-start.y)>8))this._dialogueDragged=true;},
+  dialogueTouchEnd(){if(this._dialogueDragged)this._dialogueIgnoreUntil=Date.now()+450;this._dialogueTouch=null;this._touchReading=false;this.armAuto();},
+  dialogueScrolled(){if(this._dialogueTouch){this._dialogueDragged=true;this._dialogueIgnoreUntil=Date.now()+450;}if(this.mode==='play')this.armAuto();},
+  dialogueTap(){if(this._dialogueDragged||Date.now()<(this._dialogueIgnoreUntil||0)){this._dialogueDragged=false;return;}this.advance();},
+  canTitleMusic(){return this._alive&&!this._hidden&&this._settingsReady&&this._progressReady&&this.soundEnabled&&this.musicAvailable&&(this.mode==='title'||this.mode==='config'||this.mode==='help'||this.mode==='gallery'||this.mode==='cg'||this.mode==='slots'&&this._slotRole==='load');},
+  updateMusic(){if(!this._music)return;if(!this.canTitleMusic()){this.stopTitleMusic();return;}if(this._musicWanted)return;this._musicWanted=true;const request=++this._musicRequest;this._musicStartTimer=setTimeout(()=>{if(request!==this._musicRequest)return;this._musicStartTimer=null;if(!this.canTitleMusic()){this._musicWanted=false;return;}this._music.update(true);},1800);},
+  stopTitleMusic(){this._musicRequest=(this._musicRequest||0)+1;if(this._musicStartTimer!=null)clearTimeout(this._musicStartTimer);this._musicStartTimer=null;this._musicWanted=false;if(this._music)this._music.stop();},
+  toggleMusic(){if(this.mode!=='config')return;if(!this.musicAvailable){this._music.retry();this.soundEnabled=true;}else this.soundEnabled=!this.soundEnabled;this.refreshSettings();this.persistSettings();this.updateMusic();},
   backgroundLoaded(){console.log('SUMMER_RW5 background loaded',this.mode,this.backgroundSrc);},
   backgroundError(){console.log('SUMMER_RW5 background failed',this.mode,this.backgroundSrc);},
-  clearTyping(){if(this.timer!==null){clearTimeout(this.timer);this.timer=null;}},
-  onShow(){this._hidden=false;if(this._chapterSkip&&this.timer===null)this.renderFrame();},
-    onHide(){this._hidden=true;this.clearTyping();if(!this._chapterSkip&&this.mode==='play')this.displayText=this.fullText;},
-  onDestroy(){this.clearTyping();this.loadSequence++;this._slotsSequence++;this._gallerySequence++;},
-  startNew(){if(this.loading)return;this.clearTyping();this.session=newState(catalog.flowScene,true);this.cachedChapter=0;this._autoHops=0;this.renderFrame();},
-  openRoutes(){if(this.loading)return;this.clearTyping();this.mode='routes';this.browsePage=0;this.refreshBrowse();},
+  clearTyping(){this.clearAuto();this._typingGeneration=(this._typingGeneration||0)+1;if(this.timer!==null){clearTimeout(this.timer);this.timer=null;}},
+  onShow(){this._hidden=false;this.updateMusic();if((this._framePending||this._chapterSkip)&&this.timer===null)this.renderFrame();else this.armAuto();},
+    onHide(){this._hidden=true;this.stopTitleMusic();this._touchReading=false;this.clearTyping();if(!this._chapterSkip&&this.mode==='play')this.displayText=this.fullText;},
+  onDestroy(){this._alive=false;this.stopTitleMusic();if(this._music)this._music.destroy();if(this.$app&&this.$app.$def&&this.$app.$def.titleMusicController===this._music)this.$app.$def.titleMusicController=null;this.stopAuto();this.clearTyping();this.loadSequence++;this._slotsSequence++;this._gallerySequence++;},
+  startNew(){if(this.loading||!this._progressReady)return;this.stopAuto();this.clearTyping();this.session=withProgress(newState(catalog.flowScene,true),this._progress);this.cachedChapter=0;this._autoHops=0;this.renderFrame();},
+  openRoutes(){if(this.loading)return;this.stopTitleMusic();this.clearTyping();this._browseReturnMode=this.mode==='config'?'config':'title';this.mode='routes';this.browsePage=0;this.refreshBrowse();},
   visibleText(text,fullName){return visibleText(text,fullName);},
   visibleOptions(items){return items.map(item=>{const text=visibleText(item.text);return Object.assign({},item,{text,font:textFont(text)});});},
-  refreshBrowse(){const routes=this.mode==='routes';this._browseItems=routes?catalog.routes:catalog.chapters.filter(x=>x.route===this._browseRoute);this.browseTitle=routes?'选择路线':'选择章节';const start=this.browsePage*4;this.browseRows=this._browseItems.slice(start,start+4).map((item,i)=>({key:(routes?'route:':'chapter:'+this._browseRoute+':')+(start+i),index:start+i,name:this.visibleText(item.name,true),font:textFont(item.name),detail:routes?item.scenes.length+' 个章节':'点击开始阅读'}));this.browseLabel=(routes?'章节阅读 · ':this.visibleText(catalog.routes[this._browseRoute].name,true)+' · ')+(this.browsePage+1)+' / '+Math.ceil(this._browseItems.length/4);this.browseFont=textFont(this.browseLabel);},
+  refreshBrowse(){const routes=this.mode==='routes';this._browseItems=routes?catalog.routes.filter((r,i)=>i!==9&&i!==10&&i!==11||this._progress.cleared.indexOf(9)>=0||i===9&&titleActions(this._progress).indexOf('alka')>=0||i===10&&titleActions(this._progress).indexOf('pocket')>=0):catalog.chapters.filter(x=>x.route===this._browseRoute);this.browseTitle=routes?'选择路线':'选择章节';const start=this.browsePage*4;this.browseRows=this._browseItems.slice(start,start+4).map((item,i)=>({key:(routes?'route:':'chapter:'+this._browseRoute+':')+(start+i),index:start+i,name:this.visibleText(item.name,true),font:textFont(item.name),detail:routes?item.scenes.length+' 个章节':'点击开始阅读'}));this.browseLabel=(routes?'章节阅读 · ':this.visibleText(catalog.routes[this._browseRoute].name,true)+' · ')+(this.browsePage+1)+' / '+Math.ceil(this._browseItems.length/4);this.browseFont=textFont(this.browseLabel);},
   previousBrowse(){if(this.browsePage>0){this.browsePage--;this.refreshBrowse();}},
   nextBrowse(){if(this.browsePage<Math.ceil(this._browseItems.length/4)-1){this.browsePage++;this.refreshBrowse();}},
-  selectBrowse(row){const index=this.browsePage*4+row;if(this.mode==='routes'){this._browseRoute=index;this.browsePage=0;this.mode='chapters';this.refreshBrowse();return;}const item=this._browseItems[index];if(!item)return;this.session=newState(item.id);this.cachedChapter=0;this._autoHops=0;this.renderFrame();},
-  closeBrowse(){if(this.mode==='chapters'){this.mode='routes';this.browsePage=Math.floor(this._browseRoute/4);this.refreshBrowse();}else this.toTitle();},
+  selectBrowse(row){const index=this.browsePage*4+row;if(this.mode==='routes'){this._browseRoute=catalog.routes.indexOf(this._browseItems[index]);this.browsePage=0;this.mode='chapters';this.refreshBrowse();return;}const item=this._browseItems[index];if(!item)return;this.session=newState(item.id);this.cachedChapter=0;this._autoHops=0;this.renderFrame();},
+  closeBrowse(){if(this.mode==='chapters'){this.mode='routes';this.browsePage=0;this.refreshBrowse();}else if(this._browseReturnMode==='config'){this.mode='config';this.updateMusic();}else this.toTitle();},
   continueGame(){this.openSlots('load');},
   readChapter(chapter,done){
     const block=Math.floor(this.session.cursor/1024),key=chapter+':'+block;
@@ -117,32 +161,34 @@ export default {
     },fail:(data,code)=>{if(seq===this.loadSequence)this.fail('第 '+chapter+' 章读取失败：'+code+' '+String(data||'').slice(0,100));}});
   },
   renderFrame(){
-    this.clearTyping();this.readChapter(this.session.chapter,()=>{
+    this._framePending=true;this.stopTitleMusic();this.clearTyping();this.readChapter(this.session.chapter,()=>{
       if(this._hidden)return;
       try{
+        if(this.session.progression==='story')withProgress(this.session,this._progress);
         const f=this._chapterSkip?readChapterSkip(this.ops,this.session,this._chapterSkip,this.opsBase,catalog.scenes[String(this.session.chapter)].length):readFrame(this.ops,this.session,this.opsBase,catalog.scenes[String(this.session.chapter)].length);
-        if(f.type==='jump'||f.type==='yield'){this._autoHops=(this._autoHops||0)+1;if(this._autoHops>1000)throw new Error('此章节无法继续，可从标题选择其他篇章');this.timer=setTimeout(()=>{this.timer=null;this.renderFrame();},0);return;}this._autoHops=0;this._chapterSkip=null;this.loading=false;
+        if(f.type==='jump'||f.type==='yield'){this._autoHops=(this._autoHops||0)+1;if(this._autoHops>1000)throw new Error('此章节无法继续，可从标题选择其他篇章');this.loading=true;this.timer=setTimeout(()=>{this.timer=null;this.renderFrame();},0);return;}this._autoHops=0;this._chapterSkip=null;this._framePending=false;this.loading=false;
         this.backgroundSrc=imagePath(this.session.background);
         this.bodySrc=this.session.body?imagePath(this.session.body):'';
         this.chapterLabel=this.visibleText(catalog.scenes[String(this.session.rootChapter)].name,true);this.chapterFont=textFont(this.chapterLabel);this.hasNextChapter=!this.session.ended;
         if(f.type==='map'){this.renderMap(f);return;}
         if(f.type==='choice'){this.options=this.visibleOptions(f.items);this.mode='choice';console.log('SUMMER_RW5 choice',this.session.chapter,this.session.cursor);return;}
-        if(f.type==='end'){this.mode='end';console.log('SUMMER_RW5 ending');return;}
-        this.mode='play';this.speaker=this.visibleText(f.speaker,true);this.fullText=formatDialogue(this.visibleText(f.text));this.speakerFont=textFont(this.speaker);this.dialogueFont=textFont(this.fullText);this.displayText='';
+        if(f.type==='end'){this.syncProgress(this.session.chapter===catalog.flowScene?FLOW_ENDINGS[this.session.cursor]:0);this.stopAuto();this.mode='end';console.log('SUMMER_RW5 ending');return;}
+        this.syncProgress();this.mode='play';this.speaker=this.visibleText(f.speaker,true);this.fullText=formatDialogue(this.visibleText(f.text));this.speakerFont=textFont(this.speaker);this.dialogueFont=textFont(this.fullText);this.displayText='';this._dialogueDragged=false;this._dialogueIgnoreUntil=0;this.measureDialogue();
         try{this.$element('dialogue-scroll').scrollTo({index:0});}catch(e){}
         console.log('SUMMER_RW5 frame',this.session.chapter,this.session.cursor);
-        if(this.textSpeed===0){this.displayText=this.fullText;return;}
-        const tick=()=>{this.displayText=this.fullText.slice(0,this.displayText.length+1);if(this.displayText.length<this.fullText.length)this.timer=setTimeout(tick,this.textSpeed);else this.timer=null;};tick();
+        const speed=this.autoEnabled?30:this.textSpeed,generation=this._typingGeneration;
+        if(speed===0){this.displayText=this.fullText;this.armAuto();return;}
+        const tick=()=>{if(!this._alive||this._hidden||this.mode!=='play'||generation!==this._typingGeneration)return;this.displayText=this.fullText.slice(0,this.displayText.length+1);if(this.displayText.length<this.fullText.length)this.timer=setTimeout(tick,speed);else{this.timer=null;this.armAuto();}};tick();
       }catch(e){this.fail(e.message);}
     });
   },
-  advance(){if(this.loading||this.mode!=='play')return;if(this.timer!==null){this.clearTyping();this.displayText=this.fullText;return;}next(this.session);this.renderFrame();},
+  advance(){if(this.loading||this.mode!=='play')return;this.clearAuto();if(this.timer!==null){this.clearTyping();this.displayText=this.fullText;this.armAuto();return;}next(this.session);this.renderFrame();},
   renderMap(frame){this.loading=true;const seq=++this.loadSequence;file.readText({complete:()=>{},uri:'/common/map-preview.txt',success:data=>{if(seq!==this.loadSequence)return;try{const choices=previewMap(JSON.parse(data.text),this.session,frame);if(!choices.length)throw new Error('此地图阶段暂无支持的剧情选项，请返回标题选择其他篇章');this.options=this.visibleOptions(choices);this.mode='choice';this.loading=false;console.log('SUMMER_RW5 map ready',this.session.chapter,this.session.cursor,choices.map(x=>x.value).join(','));}catch(e){this.fail(e.message);}},fail:()=>{if(seq===this.loadSequence)this.fail('地图选项读取失败');}});},
   goNextChapter(){if(this.loading||this.mode!=='menu')return;if(this.resumeMode==='choice'){this.mode='choice';this.toast('请先作出当前选择');return;}this.clearTyping();this._chapterSkip=nextChapter(this.session);if(!this._chapterSkip){this.toast('本篇已结束');return;}this._autoHops=0;this.loading=true;this.renderFrame();console.log('SUMMER_RW5 safe chapter skip',this.session.chapter,this.session.cursor);},
   pick(index){if(this.mode!=='choice'||this.loading)return;choose(this.session,this.options[index],index);this.renderFrame();},
-  goBack(){if(this.loading||this.mode!=='play')return;this.clearTyping();if(previous(this.session))this.renderFrame();else this.toast('已经是第一句');},
+  goBack(){if(this.loading||this.mode!=='play')return;this.stopAuto();this.clearTyping();if(previous(this.session))this.renderFrame();else this.toast('已经是第一句');},
   showMenu(){if(this.loading||(this.mode!=='play'&&this.mode!=='choice'))return;this.clearTyping();this.displayText=this.fullText;this.resumeMode=this.mode;this.mode='menu';console.log('SUMMER_RW5 menu',this.session.chapter);},
-  resume(){this.mode=this.resumeMode;},
+  resume(){this.mode=this.resumeMode;this.armAuto();},
   swipe(event){
     if(this.mode==='gallery'){if(event.direction==='left')this.nextGalleryPage();if(event.direction==='right')this.previousGalleryPage();return;}
     if(event.direction==='right'&&(this.mode==='play'||this.mode==='choice'))this.showMenu();
@@ -152,7 +198,7 @@ export default {
   openSlots(role){
     if(this.loading||this.storageBusy)return;this.clearTyping();this._slotsReturnMode=this.mode;this._slotRole=role;
     this._pendingSave=role==='save'?createSave(this.session,this.resumeMode,Date.now()):null;
-    this.slotTitle=role==='save'?'选择保存栏位':'选择读取栏位';this.slotPage=0;this.slotRows=[];this.mode='slots';this.loading=true;
+    this.slotTitle=role==='save'?'选择保存栏位':'选择读取栏位';this.slotPage=0;this.slotRows=[];this.mode='slots';this.loading=true;this.updateMusic();
     const seq=++this._slotsSequence;this._slotData=Array(SLOT_COUNT).fill(null);let remaining=SLOT_COUNT;
     const ready=()=>{if(seq!==this._slotsSequence)return;this.loading=false;this.refreshSlotRows();console.log('SUMMER_RW5 slots ready',role);};
     const finish=()=>{
@@ -165,13 +211,13 @@ export default {
   refreshSlotRows(){const start=this.slotPage*4;const rows=[];for(let i=start;i<Math.min(start+4,SLOT_COUNT);i++)rows.push(slotRow(i,this._slotData[i]));this.slotRows=rows;this.slotPageLabel=SLOT_COUNT+' 个栏位 · 第 '+(this.slotPage+1)+' / '+Math.ceil(SLOT_COUNT/4)+' 页';},
   previousSlotPage(){if(this.loading||this.slotPage===0)return;this.slotPage--;this.refreshSlotRows();},
   nextSlotPage(){if(this.loading||this.slotPage>=Math.ceil(SLOT_COUNT/4)-1)return;this.slotPage++;this.refreshSlotRows();},
-  closeSlots(){if(this.storageBusy)return;this._slotsSequence++;this.loading=false;this.mode=this._slotsReturnMode;},
+  closeSlots(){if(this.storageBusy)return;this._slotsSequence++;this.loading=false;this.mode=this._slotsReturnMode;this.updateMusic();this.armAuto();},
   selectSlot(index){
     if(this.loading||this.storageBusy||this.mode!=='slots'||index<0||index>=SLOT_COUNT)return;
     const saved=this._slotData[index];
     if(this._slotRole==='load'){
       if(!saved){this.toast('这个栏位还没有存档');return;}if(saved.invalid){this.toast('这个存档无法读取');return;}
-      try{this.session=restore(saved.state);this.cachedChapter=0;this._slotsSequence++;this.renderFrame();console.log('SUMMER_RW5 slot loaded',index+1,this.session.chapter,this.session.cursor);}catch(e){this.toast(e.message);}return;
+      try{this.session=withProgress(restore(saved.state),this._progress);this.cachedChapter=0;this._slotsSequence++;this.renderFrame();console.log('SUMMER_RW5 slot loaded',index+1,this.session.chapter,this.session.cursor);}catch(e){this.toast(e.message);}return;
     }
     this._pendingSlotIndex=index;
     if(saved){const row=slotRow(index,saved);this.overwriteTitle='覆盖'+row.title+'？';this.overwriteDetail=row.meta+'\n覆盖后将保存当前进度。';this.overwriteFont=textFont(this.overwriteDetail);this.mode='overwrite';console.log('SUMMER_RW5 overwrite',index+1);return;}
@@ -184,11 +230,11 @@ export default {
     const index=this._pendingSlotIndex,seq=this._slotsSequence,payload=this._pendingSave;payload.savedAt=Date.now();this.storageBusy=true;this.loading=true;
     storage.set({complete:()=>{},key:slotKey(index),value:JSON.stringify(payload),success:()=>{
       if(seq!==this._slotsSequence)return;this._slotData[index]=payload;this.storageBusy=false;this.loading=false;this._slotsSequence++;this.mode=this.resumeMode;
-      this.toast('已保存到存档 '+('0'+(index+1)).slice(-2));console.log('SUMMER_RW5 slot saved',index+1,payload.state.chapter,payload.state.cursor);
+      this.armAuto();this.toast('已保存到存档 '+('0'+(index+1)).slice(-2));console.log('SUMMER_RW5 slot saved',index+1,payload.state.chapter,payload.state.cursor);
     },fail:()=>{if(seq!==this._slotsSequence)return;this.storageBusy=false;this.loading=false;this.toast('保存失败，请重试');}});
   },
   openGallery(){
-    if(this.loading)return;this.clearTyping();this.mode='gallery';
+    if(this.loading)return;this.clearTyping();this.mode='gallery';this.updateMusic();
     if(this._galleryCatalog.length){this.refreshGallery();return;}
     this.loading=true;const seq=++this._gallerySequence;
     file.readText({complete:()=>{},uri:'/common/gallery.txt',success:data=>{
@@ -199,19 +245,19 @@ export default {
   refreshGallery(){const start=this.galleryPage*4;const items=this._galleryCatalog.slice(start,start+4).map((item,i)=>({image:item.image,label:item.label+'\n'+item.variants.length+' 张',index:start+i,src:imagePath(item.image)}));this.galleryTop=items.slice(0,2);this.galleryBottom=items.slice(2,4);this.galleryPageLabel=this._galleryCatalog.length+' 组 · '+this._galleryTotal+' 张 · 第 '+(this.galleryPage+1)+' / '+Math.ceil(this._galleryCatalog.length/4)+' 页';},
   previousGalleryPage(){if(this.loading||this.galleryPage===0)return;this.galleryPage--;this.refreshGallery();},
   nextGalleryPage(){if(this.loading||this.galleryPage>=Math.ceil(this._galleryCatalog.length/4)-1)return;this.galleryPage++;this.refreshGallery();},
-  viewCg(index){if(this.loading||index<0||index>=this._galleryCatalog.length)return;this.cgIndex=index;this.cgVariant=0;this.mode='cg';this.renderCg();},
+  viewCg(index){if(this.loading||index<0||index>=this._galleryCatalog.length)return;this.cgIndex=index;this.cgVariant=0;this.mode='cg';this.updateMusic();this.renderCg();},
   renderCg(){const group=this._galleryCatalog[this.cgIndex],item=group.variants[this.cgVariant];this.cgSrc=imagePath(item.image);this.cgLabel=group.label+(group.variants.length>1?' · 差分 '+(this.cgVariant+1)+' / '+group.variants.length+' · 点击切换':'');console.log('SUMMER_RW5 cg',this.cgIndex+1,this.cgVariant+1,item.image);},
   cycleCg(){if(this.mode!=='cg'||this.loading)return;const count=this._galleryCatalog[this.cgIndex].variants.length;if(count<2)return;this.cgVariant=stepVariant(this.cgVariant,1,count);this.renderCg();},
   previousCg(){if(this.cgIndex>0)this.viewCg(this.cgIndex-1);},
   nextCg(){if(this.cgIndex<this._galleryCatalog.length-1)this.viewCg(this.cgIndex+1);},
-  backToGallery(){this.galleryPage=Math.floor(this.cgIndex/4);this.refreshGallery();this.mode='gallery';},
-  refreshSettings(){this.speedLabel=this.textSpeed===0?'显示速度：即时':'显示速度：逐字';this.fontLabel=this.fontSize===28?'字号：大':'字号：标准';},
-  persistSettings(){storage.set({complete:()=>{},key:'summer_rw5_settings_v1',value:JSON.stringify({fontSize:this.fontSize,textSpeed:this.textSpeed}),success:()=>{},fail:()=>{}});},
+  backToGallery(){this.galleryPage=Math.floor(this.cgIndex/4);this.refreshGallery();this.mode='gallery';this.updateMusic();},
+  refreshSettings(){this.speedLabel=this.textSpeed===0?'显示速度：即时':'显示速度：逐字';this.fontLabel=this.fontSize===28?'字号：大':'字号：标准';this.autoLabel='自动播放：'+(this.autoEnabled?'开启':'关闭');this.autoSpeedLabel='自动速度：'+autoSpeeds[this.autoSpeed];this.musicLabel=!this.musicAvailable?'标题音乐：点按重试':'标题音乐：'+(this.soundEnabled?'开启':'关闭');},
+  persistSettings(){storage.set({complete:()=>{},key:'summer_rw5_settings_v1',value:JSON.stringify({fontSize:this.fontSize,textSpeed:this.textSpeed,autoSpeed:this.autoSpeed,soundEnabled:this.soundEnabled}),success:()=>{},fail:()=>{}});},
   toggleSpeed(){this.textSpeed=this.textSpeed===0?30:0;this.refreshSettings();this.persistSettings();},
-  toggleFont(){this.fontSize=this.fontSize===24?28:24;this.refreshSettings();this.persistSettings();},
-  toTitle(){if(this.storageBusy)return;this._chapterSkip=null;this.clearTyping();this.loadSequence++;this._slotsSequence++;this._gallerySequence++;this.loading=false;this.mode='title';this.backgroundSrc='/common/title_bg.png';this.bodySrc='';},
+  toggleFont(){this.fontSize=this.fontSize===24?28:24;this.measureDialogue();this.refreshSettings();this.persistSettings();},
+  toTitle(){if(this.storageBusy)return;this.stopAuto();this.syncProgress();this.persistProgress();this._chapterSkip=null;this._framePending=false;this.clearTyping();this.loadSequence++;this._slotsSequence++;this._gallerySequence++;this.loading=false;this.mode='title';this.backgroundSrc='/common/ui/title.png';this.bodySrc='';this.refreshTitle();if(!this._progressReady)this.readProgress();this.updateMusic();},
   toast(message){prompt.showToast({message,duration:1500,success:()=>{},fail:()=>{},complete:()=>{}});},
-  fail(message){this._chapterSkip=null;this.clearTyping();this.loading=false;this.mode='error';this.errorText=message;console.error('SUMMER_RW5 error',message);}
+  fail(message){this._framePending=false;this.stopTitleMusic();this.stopAuto();this._chapterSkip=null;this.clearTyping();this.loading=false;this.mode='error';this.errorText=message;console.error('SUMMER_RW5 error',message);}
 }
 </script>
 <style>
@@ -235,12 +281,12 @@ export default {
 .dialogue{width:396px;color:#f4f7ff;line-height:34px;}
 .toolbar{height:42px;width:396px;justify-content:space-between;align-items:center;}
 .tool{font-size:20px;color:#b7cbdf;padding:8px;}
-.choice-title{font-size:23px;color:#b8dbe9;margin-bottom:8px;text-align:center;}
+.choice-title{font-size:23px;color:#b8dbe9;margin-bottom:6px;text-align:center;}
 .choice{height:68px;width:396px;background-color:#25445f;border-radius:12px;font-size:21px;line-height:25px;color:#ffffff;text-align:center;margin-bottom:6px;}
 .small-action{font-size:18px;color:#9bacc0;text-align:center;}
 .overlay{position:absolute;top:0px;left:0px;width:432px;height:514px;background-color:#0a111f;flex-direction:column;padding:22px 32px;}
-.menu-title{height:36px;font-size:28px;color:#ffffff;text-align:center;margin-bottom:12px;}
-.menu-action{height:50px;font-size:22px;color:#d5e5f2;background-color:#172b3c;border-radius:12px;margin-bottom:8px;text-align:center;}
+.menu-title{height:32px;font-size:28px;color:#ffffff;text-align:center;margin-bottom:8px;}
+.menu-action{height:39px;font-size:22px;color:#d5e5f2;background-color:#172b3c;border-radius:12px;margin-bottom:6px;text-align:center;}
 .muted{color:#98aabd;}
 .full-panel{position:absolute;top:0px;left:0px;width:432px;height:514px;background-color:#0a111f;flex-direction:column;padding:16px 18px;}
 .panel-title{height:36px;font-size:28px;color:#ffffff;text-align:center;margin-bottom:4px;}
@@ -265,5 +311,35 @@ export default {
 .loading{position:absolute;top:234px;left:128px;width:176px;height:46px;text-align:center;font-size:23px;color:#ffffff;background-color:#253a50;border-radius:12px;}
 .choice-panel{top:0px;height:514px;background-color:#0a111f;padding:18px;}
 .choice-list{width:396px;height:416px;flex-direction:column;}
+
+.title-scene{position:absolute;left:0px;top:0px;width:432px;height:514px;}
+.title-background{position:absolute;left:0px;top:0px;width:432px;height:514px;object-fit:contain;}
+.title-logo{position:absolute;left:56px;top:8px;width:320px;height:92px;object-fit:contain;}
+.title-menu{position:absolute;left:26px;width:194px;padding:8px 12px;flex-direction:column;}
+.title-row{height:42px;width:170px;align-items:center;justify-content:flex-start;}
+.title-button{height:41px;object-fit:contain;}
+.dialogue-content{width:396px;flex-direction:column;}
+.dialogue-panel{background-color:#102c42;border-top-width:2px;border-color:#9acfe4;}
+.speaker{color:#c7edfa;}
+.chapter{color:#a1c7d5;}
+.tool{color:#bfe8f7;}
+.overlay,.full-panel{background-color:#edf7fb;}
+.menu-title,.panel-title{color:#20496b;}
+.menu-action{color:#214b6a;background-color:#dceef6;border-width:1px;border-color:#b7d9e7;}
+.muted{color:#58778b;}
+.panel-subtitle,.slot-meta{color:#557c92;}
+.slot-card{background-color:#dceef6;}
+.slot-title,.slot-preview,.gallery-caption{color:#204b69;}
+.gallery-card{background-color:#daedf4;}
+.pager-action,.small-action{color:#3a7294;}
+.cg-action{color:#bfe8f7;}
+.choice-panel{background-color:#edf7fb;}
+.choice-title{color:#20496b;}
+.choice{background-color:#dceef6;color:#20496b;border-width:1px;border-color:#b7d9e7;}
+.end-panel{top:0px;height:514px;justify-content:center;background-color:#edf7fb;}
+.game-title{color:#20496b;}
+.confirm-text{color:#2c536f;}
+.help-scroll{width:396px;height:400px;}
+.help-text{width:396px;font-size:22px;line-height:32px;color:#2b506c;}
 </style>
 

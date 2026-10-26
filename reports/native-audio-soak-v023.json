@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "version": "0.2.3",
+  "physicalDeviceTested": false,
+  "runtime": "official vela-watch-5.0",
+  "guardedStops": 2,
+  "plays": 3,
+  "loaded": 3,
+  "wholeTrackSeconds": 237,
+  "fileSeconds": 239,
+  "cycles": [
+    {
+      "cycle": 1,
+      "maximumNativePositionMs": 237056,
+      "stopBeforeEOF": true
+    },
+    {
+      "cycle": 2,
+      "maximumNativePositionMs": 237056,
+      "stopBeforeEOF": true
+    }
+  ],
+  "noAppAudioErrorPanicOrDecoderReconfigFailure": true,
+  "noNativeLoopOrGetterPollingInApp": true,
+  "nativeOutputSampleRate": 8000,
+  "sourcePcmSampleRate": 4000,
+  "firmwareResamplesPcm": true,
+  "source": "C:\\Users\\HP\\.codex\\visualizations\\2026\\10\\25\\01a17304-beca-7093-99cd-405c6d48d114\\summer-ui-environment\\emulator.log"
+}

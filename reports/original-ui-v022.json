@@ -1,0 +1,33 @@
+{
+  "version": "0.2.2",
+  "source": "user supplied harbor screenshot",
+  "sourceSha256": "28255e42133d6013f71828a396f3861872ac1dc3beb3d3a0ab3db0556e6faee2",
+  "sourceSize": [
+    2551,
+    1587
+  ],
+  "sourceNonblackY": [
+    80,
+    1520
+  ],
+  "crop": [
+    1235.0,
+    80.0,
+    2445.2723735408563,
+    1520.0
+  ],
+  "displaySize": [
+    432,
+    514
+  ],
+  "encoding": "RGB PNG, no palette reduction",
+  "buttonAtlas": "original dark-blue TITLE_MENU01B glyphs with transparent background",
+  "buttonAlignment": "left",
+  "alignmentX": 42,
+  "logoRect": [
+    16,
+    8,
+    210,
+    60
+  ]
+}

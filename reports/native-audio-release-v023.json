@@ -1,0 +1,19 @@
+{
+  "orderlyExitThenAnotherAppAudioPassed": true,
+  "physicalDeviceTested": false,
+  "summerAudioStoppedBeforeAppDestroy": true,
+  "summerNativeAudioSessionClosedBeforeOtherApp": true,
+  "nativeMusicFocusAbandoned": true,
+  "probePackage": "com.codex.summer.audioprobe",
+  "probePcmSampleRate": 8000,
+  "probeDurationMs": 16000,
+  "probeMaximumPositionMs": 14592,
+  "probeLoadedPlayedAndStopped": true,
+  "systemVolumeNotChangedBySummer": true,
+  "simultaneousSwitchAttemptPassed": false,
+  "simultaneousAttemptFailure": "Native data abort in vappxms during parallel app launch; cause unconfirmed. That attempt is not counted as passed.",
+  "allFirmwareAndAppCombinationsVerified": false,
+  "testOnlyTemporarySlot2RemovedByRestoringVirtualDatabase": true,
+  "restoredVirtualDatabaseSha256": "691d5479eabec7d1aa0f41b7d7c60e8f33d196ed12b67b6a80a1964c7d7261c3",
+  "noRealWatchDataModified": true
+}

@@ -1,0 +1,46 @@
+{
+  "version": "0.2.4",
+  "titleScene": {
+    "archive": "OTHCG.PAK",
+    "name": "__SYS_TM_BGRB01B",
+    "id": 25179,
+    "rawSha256": "c677786454777d8ce17907ffd607c8c55f47fe4fbd3d0bb9d15e06af40b1c24f"
+  },
+  "cleanBackgroundRgb": {
+    "archive": "OTHCG.PAK",
+    "name": "__SYS_TM_BGRB04e",
+    "id": 25185,
+    "rawSha256": "a095825494f93c35737e77c1b79e88ca6539e92393f3ad24a42f1555595b04f8"
+  },
+  "originalTitleShirohaBounds": [
+    815,
+    1287,
+    1091,
+    1845
+  ],
+  "usesOriginalTitleShiroha": true,
+  "usesDialoguePortrait": false,
+  "foregroundPixelsCopiedFromOriginal": true,
+  "watchCameraCrop": [
+    475.0,
+    1120.0,
+    1113.7548638132296,
+    1880.0
+  ],
+  "size": [
+    432,
+    514
+  ],
+  "logoRect": [
+    16,
+    8,
+    320,
+    92
+  ],
+  "buttonRowHeight": 42,
+  "buttonInkLeft": 42,
+  "footerRemoved": true,
+  "titlePngBytes": 292640,
+  "pngBytesBeforeLosslessRecompression": 292640,
+  "titlePngSha256": "d4f27bc633b239c93faa62367b04a8b17d602f4cff7a22bcfc747afa34a3b182"
+}

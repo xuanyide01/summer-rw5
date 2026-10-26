@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "version": "0.2.3",
+  "physicalDeviceTested": false,
+  "oldSlot30Loaded": [
+    7,
+    43
+  ],
+  "thirtySlotListLastPageVisible": true,
+  "autoReadingEnabledViaMenuAndAdvancedWithoutTaps": true,
+  "returnedToTitleDisablesAuto": true,
+  "galleryGroups": 155,
+  "galleryVariants": 856,
+  "nativeCgDifference": {
+    "group": 1,
+    "first": "i1001",
+    "second": "i1002"
+  },
+  "titleAudioStoppedForSlotsAndGallery": true,
+  "screenshotFiles": [
+    "native-slots-29-30.png",
+    "native-old-save.png",
+    "native-auto.png",
+    "native-cg-verified.png"
+  ],
+  "saveSchemaUnchanged": true
+}

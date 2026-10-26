@@ -1,9 +1,9 @@
 {
   "name": "summer-rw5-reader",
-  "version": "0.1.7",
+  "version": "0.2.5",
   "private": true,
   "scripts": {
-    "build": "node tools/build.cjs",
+    "build": "node tools/build.cjs --release",
     "release": "node tools/build.cjs --release",
     "test": "node --test tests/*.test.cjs",
     "test:native": "node tools/native-main.cjs",

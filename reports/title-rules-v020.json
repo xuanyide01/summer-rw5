@@ -1,0 +1,52 @@
+{
+  "version": "0.2.0",
+  "evidence": "read-only supplied original scenario flow and executable disassembly",
+  "executableNeverExecuted": true,
+  "flowScene": 6,
+  "operationCount": 638,
+  "nativeClearCounter": {
+    "variable": 24006,
+    "flags": [
+      12003,
+      12004,
+      12005,
+      12006,
+      12573,
+      12574,
+      12575,
+      12007,
+      12008
+    ],
+    "excludesUmiFlag": 12576,
+    "nativeFunction": "0x1403d4d40"
+  },
+  "nativeTitleModeFunction": "0x1403d4e80",
+  "restartRequiredAtMainHeroineCounts": [
+    4,
+    6
+  ],
+  "heroineEndingIds": [
+    4,
+    5,
+    6,
+    7,
+    10,
+    12,
+    13
+  ],
+  "alkaRequires": "all seven main heroine clear flags",
+  "pocketRequires": "ALKA clear flag12007",
+  "postPocketTitle": [
+    "start",
+    "alka",
+    "pocket"
+  ],
+  "normalTitleMusic": {
+    "id": 100040,
+    "name": "BGM32",
+    "nativePreloadFunction": "0x1403cb8e0"
+  },
+  "globalProgressStorageKey": "summer_rw5_progress_v1",
+  "oldSaveSchemaAndKeysUnchanged": true,
+  "chapterBrowsingDoesNotAwardClears": true
+}

@@ -1,0 +1,31 @@
+{
+  "version": "0.2.1",
+  "officialSourcePage": "https://summerpockets-anime.jp/visualgallery/",
+  "officialImageUrl": "https://summerpockets-anime.jp/wp_summer/wp-content/uploads/2025/07/20250709145630.jpg",
+  "sourceTitle": "Main visual (Ao Sorakado arc)",
+  "sourceSize": [
+    1414,
+    2000
+  ],
+  "sourceSha256": "57ae6eba68fa61d05a5d6a146edead3c7695b41ffa572ff685e9c26e91e25c86",
+  "crop": [
+    0,
+    56,
+    1414,
+    1738
+  ],
+  "displaySize": [
+    432,
+    514
+  ],
+  "titleEncoding": "RGB PNG, no palette reduction",
+  "buttonAtlas": "original SYSCG_TITLE_MENU01, transparent light-blue letters",
+  "buttonAlignment": "left",
+  "alignmentX": 232,
+  "logoRect": [
+    16,
+    8,
+    210,
+    60
+  ]
+}

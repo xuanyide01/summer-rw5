@@ -1545,6 +1545,8 @@
     65311,
     65374
   ],
-  "fontBytes": 631876,
-  "requestedChars": 1542
+  "fontBytes": 620592,
+  "requestedChars": 1542,
+  "fontBytesBeforeVerticalMetadataRemoval": 631876,
+  "horizontalGlyphsUnchanged": true
 }

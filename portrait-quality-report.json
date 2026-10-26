@@ -1270,14 +1270,15 @@
         1256,
         1603
       ],
-      "file": "portrait_km060101.png",
+      "file": "portrait_km020101.png",
       "size": [
         200,
         254
       ],
       "mode": "RGBA",
       "bytes": 52301,
-      "colors": 3620
+      "colors": 3620,
+      "originalFile": "portrait_km060101.png"
     },
     {
       "family": "KM060303",
@@ -1431,14 +1432,15 @@
         1256,
         1603
       ],
-      "file": "portrait_km080101.png",
+      "file": "portrait_km040101.png",
       "size": [
         200,
         254
       ],
       "mode": "RGBA",
       "bytes": 52574,
-      "colors": 3341
+      "colors": 3341,
+      "originalFile": "portrait_km080101.png"
     },
     {
       "family": "KM080202",
@@ -1454,14 +1456,15 @@
         1256,
         1603
       ],
-      "file": "portrait_km080202.png",
+      "file": "portrait_km040202.png",
       "size": [
         200,
         254
       ],
       "mode": "RGBA",
       "bytes": 52727,
-      "colors": 3319
+      "colors": 3319,
+      "originalFile": "portrait_km080202.png"
     },
     {
       "family": "KM080303",
@@ -1477,14 +1480,15 @@
         1256,
         1603
       ],
-      "file": "portrait_km080303.png",
+      "file": "portrait_km040303.png",
       "size": [
         200,
         254
       ],
       "mode": "RGBA",
       "bytes": 52540,
-      "colors": 3374
+      "colors": 3374,
+      "originalFile": "portrait_km080303.png"
     },
     {
       "family": "KM081111",
@@ -1500,14 +1504,15 @@
         1204,
         1736
       ],
-      "file": "portrait_km081111.png",
+      "file": "portrait_km041111.png",
       "size": [
         177,
         256
       ],
       "mode": "RGBA",
       "bytes": 51055,
-      "colors": 3299
+      "colors": 3299,
+      "originalFile": "portrait_km081111.png"
     },
     {
       "family": "KM081211",
@@ -1523,14 +1528,15 @@
         1268,
         1736
       ],
-      "file": "portrait_km081211.png",
+      "file": "portrait_km041211.png",
       "size": [
         186,
         256
       ],
       "mode": "RGBA",
       "bytes": 55244,
-      "colors": 3582
+      "colors": 3582,
+      "originalFile": "portrait_km081211.png"
     },
     {
       "family": "KM081311",
@@ -1546,14 +1552,15 @@
         1204,
         1736
       ],
-      "file": "portrait_km081311.png",
+      "file": "portrait_km041311.png",
       "size": [
         177,
         256
       ],
       "mode": "RGBA",
       "bytes": 51859,
-      "colors": 3225
+      "colors": 3225,
+      "originalFile": "portrait_km081311.png"
     },
     {
       "family": "KM090104",
@@ -1822,14 +1829,15 @@
         792,
         1277
       ],
-      "file": "portrait_ky030101.png",
+      "file": "portrait_ky010101.png",
       "size": [
         158,
         256
       ],
       "mode": "RGBA",
       "bytes": 47920,
-      "colors": 3124
+      "colors": 3124,
+      "originalFile": "portrait_ky030101.png"
     },
     {
       "family": "KY030205",
@@ -2282,14 +2290,15 @@
         999,
         1272
       ],
-      "file": "portrait_ru020101.png",
+      "file": "portrait_ru010101.png",
       "size": [
         200,
         254
       ],
       "mode": "RGBA",
       "bytes": 51226,
-      "colors": 2034
+      "colors": 2034,
+      "originalFile": "portrait_ru020101.png"
     },
     {
       "family": "RU020201",
@@ -2305,14 +2314,15 @@
         1031,
         1272
       ],
-      "file": "portrait_ru020201.png",
+      "file": "portrait_ru010201.png",
       "size": [
         200,
         247
       ],
       "mode": "RGBA",
       "bytes": 52417,
-      "colors": 1741
+      "colors": 1741,
+      "originalFile": "portrait_ru020201.png"
     },
     {
       "family": "RU020301",
@@ -2328,14 +2338,15 @@
         1635,
         1584
       ],
-      "file": "portrait_ru020301.png",
+      "file": "portrait_ru010301.png",
       "size": [
         200,
         194
       ],
       "mode": "RGBA",
       "bytes": 42512,
-      "colors": 1643
+      "colors": 1643,
+      "originalFile": "portrait_ru020301.png"
     },
     {
       "family": "RU030101",
@@ -5272,14 +5283,15 @@
         1063,
         1472
       ],
-      "file": "portrait_tn010201.png",
+      "file": "portrait_tn010101.png",
       "size": [
         184,
         256
       ],
       "mode": "RGBA",
       "bytes": 41311,
-      "colors": 3512
+      "colors": 3512,
+      "originalFile": "portrait_tn010201.png"
     },
     {
       "family": "TN010301",
@@ -5410,14 +5422,15 @@
         1063,
         1472
       ],
-      "file": "portrait_tn030101.png",
+      "file": "portrait_tn010101.png",
       "size": [
         184,
         256
       ],
       "mode": "RGBA",
       "bytes": 41311,
-      "colors": 3512
+      "colors": 3512,
+      "originalFile": "portrait_tn030101.png"
     },
     {
       "family": "TN030201",
@@ -5525,14 +5538,15 @@
         736,
         1282
       ],
-      "file": "portrait_tn040204.png",
+      "file": "portrait_tn040104.png",
       "size": [
         146,
         256
       ],
       "mode": "RGBA",
       "bytes": 36888,
-      "colors": 3194
+      "colors": 3194,
+      "originalFile": "portrait_tn040204.png"
     },
     {
       "family": "TN040304",
@@ -5686,14 +5700,15 @@
         730,
         1282
       ],
-      "file": "portrait_tn060204.png",
+      "file": "portrait_tn060104.png",
       "size": [
         145,
         256
       ],
       "mode": "RGBA",
       "bytes": 36598,
-      "colors": 3141
+      "colors": 3141,
+      "originalFile": "portrait_tn060204.png"
     },
     {
       "family": "TN060304",

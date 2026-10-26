@@ -1,6 +1,7 @@
 <script>
 export default {
-  onCreate() { console.log('STARRY_RW5 app created'); },
-  onDestroy() { console.log('STARRY_RW5 app destroyed'); }
+  titleMusicController:null,
+  onCreate() { console.log('SUMMER_RW5 app created'); },
+  onDestroy() { if(this.titleMusicController)this.titleMusicController.stop();this.titleMusicController=null;console.log('SUMMER_RW5 app destroyed'); }
 }
 </script>

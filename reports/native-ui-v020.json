@@ -1,0 +1,56 @@
+{
+  "version": "0.2.0",
+  "date": "2026-10-26",
+  "runtime": "official vela-watch-5.0",
+  "virtualDevice": "SummerUI20261025",
+  "screen": [
+    432,
+    514
+  ],
+  "physicalDeviceTested": false,
+  "finalPackageBytes": 24885601,
+  "finalPackageSha256": "3a5a0f8e551b235ee00ce8e77150d3c19713329396902046fdfc7513d99a8daa",
+  "freshInstallSucceeded": true,
+  "installedManifestCodeAndAudioBytesMatchFinalRpk": true,
+  "restoredVirtualSlot30Loaded": [
+    7,
+    43
+  ],
+  "autoDisabledAfterColdStart": true,
+  "gallery": {
+    "groups": 155,
+    "variants": 856
+  },
+  "nativeAutoReading": {
+    "advancedActualDialogue": true,
+    "pausedAtOriginalChoice": [
+      7,
+      24
+    ],
+    "choicePausedForAtLeastSeconds": 76,
+    "resumedAfterManualSelection": true,
+    "menuVisibleAndOperable": true
+  },
+  "audio": {
+    "codec": "IMA ADPCM WAV",
+    "sampleRate": 11025,
+    "channels": 1,
+    "nativePositionAdvanced": true,
+    "maxObservedNativePositionMilliseconds": 236960,
+    "fullGuardedReplayBoundariesOnFinalInstall": 1,
+    "replayStarts": 1,
+    "unexpectedEofOrDecoderErrorsDuringFinalSoak": false,
+    "nativeLoopEnabled": false,
+    "applicationPollsNativePlayerProperties": false
+  },
+  "automatedTestsPassed": 38,
+  "controllerReplayTestCycles": 1000,
+  "observedWholeSimulatorHeapUsedBytes": 10422208,
+  "observedWholeSimulatorHeapPeakBytes": 10573680,
+  "actualWatchHeapPeakNotMeasured": true,
+  "developmentIssues": {
+    "rejectedPcmU8": "onplay fired but decoder graph reported Empty sample format; replaced and excluded from final",
+    "sameVersionTestOverwrite": "returned -19; final fresh install succeeded, cause not asserted",
+    "rapidAdbStopStart": "earlier emulator inspector uv_loop_init asserted; restarted isolated device, did not recur in final install/soak"
+  }
+}

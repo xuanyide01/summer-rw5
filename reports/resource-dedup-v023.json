@@ -1,0 +1,116 @@
+{
+  "filesRemoved": 15,
+  "bytesSaved": 652663,
+  "logicalPortraits": 277,
+  "uniquePortraitFiles": 262,
+  "allDecodedPixelsUnchanged": true,
+  "allOriginalAssetIdsPreserved": true,
+  "storyAndSaveSchemaUnchanged": true,
+  "rows": [
+    {
+      "removed": "portrait_km060101.png",
+      "retained": "portrait_km020101.png",
+      "bytes": 49986,
+      "sha256": "39561e868177da6c4a606e6e3ff37daa93ae523c0d8ea9ac46de38db0cbb7bba",
+      "rgbaIdentical": true
+    },
+    {
+      "removed": "portrait_km080101.png",
+      "retained": "portrait_km040101.png",
+      "bytes": 49439,
+      "sha256": "9742ee2a9790522af91d99544f1886682a63394b87a5eb7e67f67241c46c1fd7",
+      "rgbaIdentical": true
+    },
+    {
+      "removed": "portrait_km080202.png",
+      "retained": "portrait_km040202.png",
+      "bytes": 49671,
+      "sha256": "35feef6f36002dbaacb8029dfe96f9c14e78ceb5299cdd3ad6480d856eb9405e",
+      "rgbaIdentical": true
+    },
+    {
+      "removed": "portrait_km080303.png",
+      "retained": "portrait_km040303.png",
+      "bytes": 49693,
+      "sha256": "9aeb5a5d1fcd00df0b0b94c62dac69009349f64cae740ed0f2c8bc960025c64c",
+      "rgbaIdentical": true
+    },
+    {
+      "removed": "portrait_km081111.png",
+      "retained": "portrait_km041111.png",
+      "bytes": 48381,
+      "sha256": "297311d68c19acca3f0f3835f88f594fdca544ff831ad86d050a838e0f193005",
+      "rgbaIdentical": true
+    },
+    {
+      "removed": "portrait_km081211.png",
+      "retained": "portrait_km041211.png",
+      "bytes": 52340,
+      "sha256": "5719e3f16adc0e589c78204238fac0148beaf0a1cf4a8433bccde69621675208",
+      "rgbaIdentical": true
+    },
+    {
+      "removed": "portrait_km081311.png",
+      "retained": "portrait_km041311.png",
+      "bytes": 48911,
+      "sha256": "4b07860f117cab32f411c39468c457af2e70becec50004c649d7a99db6bfcd66",
+      "rgbaIdentical": true
+    },
+    {
+      "removed": "portrait_ky030101.png",
+      "retained": "portrait_ky010101.png",
+      "bytes": 43391,
+      "sha256": "e34b5eeaea6a11258e792f9d80f26815596bc36906dac8a0048f165edc945601",
+      "rgbaIdentical": true
+    },
+    {
+      "removed": "portrait_ru020101.png",
+      "retained": "portrait_ru010101.png",
+      "bytes": 42277,
+      "sha256": "7801c61c70b5c4ebd0f0f03d946a2f38b2da882898cf052ecc65f9ac9027ee2b",
+      "rgbaIdentical": true
+    },
+    {
+      "removed": "portrait_ru020201.png",
+      "retained": "portrait_ru010201.png",
+      "bytes": 41298,
+      "sha256": "67f5271533bf3d40d4ff25dbf1a446f66e5a7e102a2c38a1e29bb185f26df7f9",
+      "rgbaIdentical": true
+    },
+    {
+      "removed": "portrait_ru020301.png",
+      "retained": "portrait_ru010301.png",
+      "bytes": 33162,
+      "sha256": "0305dc0eba32e218ef3aa12da0bf346eca2cab70640f1355c5575071ffac31fe",
+      "rgbaIdentical": true
+    },
+    {
+      "removed": "portrait_tn010201.png",
+      "retained": "portrait_tn010101.png",
+      "bytes": 37558,
+      "sha256": "e3d498d517e899628a6ebdf9ed7b489ce8dc8ee2038ce17a9d89ff9fed972e6c",
+      "rgbaIdentical": true
+    },
+    {
+      "removed": "portrait_tn030101.png",
+      "retained": "portrait_tn010101.png",
+      "bytes": 37558,
+      "sha256": "e3d498d517e899628a6ebdf9ed7b489ce8dc8ee2038ce17a9d89ff9fed972e6c",
+      "rgbaIdentical": true
+    },
+    {
+      "removed": "portrait_tn040204.png",
+      "retained": "portrait_tn040104.png",
+      "bytes": 34614,
+      "sha256": "fdac41aa6155d1b4fb0842ed306771792f0e7778d562a727ed81d1d2ea3e6057",
+      "rgbaIdentical": true
+    },
+    {
+      "removed": "portrait_tn060204.png",
+      "retained": "portrait_tn060104.png",
+      "bytes": 34384,
+      "sha256": "c6ea64ec48d137352289802a13d0c58d5eca99538f33abf57b295dbead49223c",
+      "rgbaIdentical": true
+    }
+  ]
+}

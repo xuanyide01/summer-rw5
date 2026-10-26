@@ -1,0 +1,31 @@
+{
+  "version": "0.2.1",
+  "date": "2026-10-26",
+  "runtime": "official vela-watch-5.0",
+  "screen": [
+    432,
+    514
+  ],
+  "freshVirtualInstallPassed": true,
+  "installedManifestVersionCode": 10,
+  "installedTitlePngBytesMatchSource": true,
+  "nativeMovedLoadButtonOperable": true,
+  "restoredVirtualSlot30Loaded": [
+    7,
+    43
+  ],
+  "returnedToNewTitle": true,
+  "titleMusicPlayedAfterReturning": true,
+  "all38ExistingTestsPassed": true,
+  "normalRestartAndFullyClearedLayoutsReviewed": true,
+  "alignmentX": 232,
+  "buttonBackgroundTransparent": true,
+  "virtualOverwriteInstall": {
+    "result": -19,
+    "causeUnconfirmed": true,
+    "testDataBackedUpBeforeFreshInstall": true
+  },
+  "physicalDeviceTested": false,
+  "appBytes": 24888481,
+  "sha256": "8a1831a98363aa12989a1596388036ffae5a60464fb2186d4e412ade77cea82b"
+}

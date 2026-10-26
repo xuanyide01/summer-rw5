@@ -1,0 +1,205 @@
+{
+  "background": "OTHCG.PAK/__SYS_TM_BG01A",
+  "portrait": "CHARCG.PAK/BS2_SR01121101",
+  "originalLayersComposited": true,
+  "color": "A",
+  "ivory": "#fffdf5",
+  "stroke": "#163f5a",
+  "inkLeft": 42,
+  "transparentButtonBackground": true,
+  "rows": [
+    {
+      "file": "title.png",
+      "bytes": 303763,
+      "size": [
+        432,
+        514
+      ],
+      "sha256": "1f30102ebb7d4d4fb0c2a962c124f6f3b493ee722fcadfa30ed4c627d47632b3",
+      "mode": "RGB"
+    },
+    {
+      "file": "start.png",
+      "bytes": 7928,
+      "size": [
+        122,
+        41
+      ],
+      "sha256": "2eb5f558e70868aabdb37f605447d42b03e2f52505a882f82b6c040d55066e98",
+      "mode": "RGBA"
+    },
+    {
+      "file": "load.png",
+      "bytes": 6722,
+      "size": [
+        107,
+        41
+      ],
+      "sha256": "a277bc39cd750ce55c8847e02420e2234421379ee97b4643e308fb57c2a0e7dd",
+      "mode": "RGBA"
+    },
+    {
+      "file": "gallery.png",
+      "bytes": 10619,
+      "size": [
+        168,
+        41
+      ],
+      "sha256": "76a2948a5c12f5394582e0f2824a6fcfa0daa6870f870d38559052ee399749b3",
+      "mode": "RGBA"
+    },
+    {
+      "file": "options.png",
+      "bytes": 11271,
+      "size": [
+        169,
+        41
+      ],
+      "sha256": "4d8d900534fc9ae6c14295d724964a66f316ddde167e0a7e364c57497382d4b1",
+      "mode": "RGBA"
+    },
+    {
+      "file": "manual.png",
+      "bytes": 10475,
+      "size": [
+        167,
+        41
+      ],
+      "sha256": "d889f5e677cb0521062a01a82c7c6fb6e5fe456d5cc16301e6425d6bf273bc61",
+      "mode": "RGBA"
+    },
+    {
+      "file": "exit.png",
+      "bytes": 6190,
+      "size": [
+        98,
+        41
+      ],
+      "sha256": "75fdac54ddba798f6dc5b9041126683aa60eb3907ecf86da55cfdb12c838c213",
+      "mode": "RGBA"
+    },
+    {
+      "file": "alka.png",
+      "bytes": 6086,
+      "size": [
+        106,
+        41
+      ],
+      "sha256": "31b82d2090072170c0d523ad15e9a00afa06a91ec305523e54a8004819be58aa",
+      "mode": "RGBA"
+    },
+    {
+      "file": "pocket.png",
+      "bytes": 6707,
+      "size": [
+        113,
+        41
+      ],
+      "sha256": "5711f77fb00b508b7d6b9ebdff5926047b6b192a81009fe5285b6bc4f250b273",
+      "mode": "RGBA"
+    },
+    {
+      "file": "restart.png",
+      "bytes": 10354,
+      "size": [
+        161,
+        41
+      ],
+      "sha256": "16a6919a649c624492a0422f3c12f924e7624897fd1879458411356b8cee48f0",
+      "mode": "RGBA"
+    }
+  ],
+  "buttons": [
+    {
+      "file": "start.png",
+      "displaySize": [
+        122,
+        41
+      ],
+      "bytes": 7928,
+      "renderedAtNative432pxDesignSize": true,
+      "quantized": false
+    },
+    {
+      "file": "load.png",
+      "displaySize": [
+        107,
+        41
+      ],
+      "bytes": 6722,
+      "renderedAtNative432pxDesignSize": true,
+      "quantized": false
+    },
+    {
+      "file": "gallery.png",
+      "displaySize": [
+        168,
+        41
+      ],
+      "bytes": 10619,
+      "renderedAtNative432pxDesignSize": true,
+      "quantized": false
+    },
+    {
+      "file": "options.png",
+      "displaySize": [
+        169,
+        41
+      ],
+      "bytes": 11271,
+      "renderedAtNative432pxDesignSize": true,
+      "quantized": false
+    },
+    {
+      "file": "manual.png",
+      "displaySize": [
+        167,
+        41
+      ],
+      "bytes": 10475,
+      "renderedAtNative432pxDesignSize": true,
+      "quantized": false
+    },
+    {
+      "file": "exit.png",
+      "displaySize": [
+        98,
+        41
+      ],
+      "bytes": 6190,
+      "renderedAtNative432pxDesignSize": true,
+      "quantized": false
+    },
+    {
+      "file": "alka.png",
+      "displaySize": [
+        106,
+        41
+      ],
+      "bytes": 6086,
+      "renderedAtNative432pxDesignSize": true,
+      "quantized": false
+    },
+    {
+      "file": "pocket.png",
+      "displaySize": [
+        113,
+        41
+      ],
+      "bytes": 6707,
+      "renderedAtNative432pxDesignSize": true,
+      "quantized": false
+    },
+    {
+      "file": "restart.png",
+      "displaySize": [
+        161,
+        41
+      ],
+      "bytes": 10354,
+      "renderedAtNative432pxDesignSize": true,
+      "quantized": false
+    }
+  ],
+  "buttonRasterization": "Final A-style glyphs baked at exact runtime size (1x), without a duplicate 2x texture or runtime filter."
+}

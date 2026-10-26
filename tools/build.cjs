@@ -11,6 +11,7 @@ const {compile}=require(path.join(toolkit,'lib/commands/compile'));
  const name=manifest.package+'.debug.'+manifest.versionName+'.rpk',file=path.join('dist',name);
  if(!fs.existsSync(file))throw Error('Current-version package was not produced');
  if(process.argv.includes('--release')){
+  await require('./compact-install.cjs')(file,toolkit);
   const result=await require('./repack-rpk.cjs').repackRpk(file,file,toolkit);
   console.log('R1_PACKAGING',JSON.stringify(result));
  }

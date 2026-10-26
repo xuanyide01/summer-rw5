@@ -1,0 +1,19 @@
+{
+  "source": "MUSIC.PAK/BGM32",
+  "sourceSha256": "a1f480903426d02f287230a2b421f330960abcd864282041ed7fc402b419ecf5",
+  "file": "common/title-theme.wav",
+  "sourceContentSeconds": 237.0,
+  "wholeTrackPreserved": true,
+  "fileSeconds": 239.0,
+  "codec": "WAV PCM signed 16-bit little endian",
+  "sampleRate": 4000,
+  "channels": 1,
+  "bytes": 1912044,
+  "sha256": "2ad59b07f7316c655d8de7404c6d9fcf64e30330d740d0b06c2769e1e38bcbba",
+  "silentGuardSeconds": 2,
+  "guardedStopMilliseconds": 237000,
+  "restartGapMilliseconds": 1200,
+  "audioQualityTradeoff": "4 kHz mono to retain the complete 237-second track, uncompressed PCM and unchanged story/CG pixels within 25,000,000 bytes. Lower bandwidth than the 11.025 kHz ADPCM build.",
+  "doesNotChangeSystemVolume": true,
+  "devicePlaybackRequiresNewPhysicalTest": true
+}

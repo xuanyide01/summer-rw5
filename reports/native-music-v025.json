@@ -1,0 +1,94 @@
+{
+  "version": "0.2.5",
+  "continuousNavigationPassed": true,
+  "physicalDeviceTested": false,
+  "completeV025RpkInstallRepeated": false,
+  "nativePmMetadata": "0.2.3",
+  "method": "Final compiled page pushed after orderly virtual-app exit; title/media unchanged from 0.2.4.",
+  "logo": {
+    "left": 56,
+    "top": 8,
+    "width": 320,
+    "height": 92,
+    "centerX": 216
+  },
+  "snapshots": [
+    {
+      "screen": "title",
+      "playing": true,
+      "revision": 38,
+      "position": 142.848,
+      "duration": 239,
+      "updatedAt": 1793018464528
+    },
+    {
+      "screen": "load",
+      "playing": true,
+      "revision": 38,
+      "position": 145.92,
+      "duration": 239,
+      "updatedAt": 1793018467533
+    },
+    {
+      "screen": "return from load",
+      "playing": true,
+      "revision": 38,
+      "position": 147.968,
+      "duration": 239,
+      "updatedAt": 1793018469535
+    },
+    {
+      "screen": "gallery",
+      "playing": true,
+      "revision": 38,
+      "position": 151.04,
+      "duration": 239,
+      "updatedAt": 1793018472623
+    },
+    {
+      "screen": "cg difference",
+      "playing": true,
+      "revision": 38,
+      "position": 153.088,
+      "duration": 239,
+      "updatedAt": 1793018474624
+    },
+    {
+      "screen": "return gallery",
+      "playing": true,
+      "revision": 38,
+      "position": 153.088,
+      "duration": 239,
+      "updatedAt": 1793018474624
+    },
+    {
+      "screen": "cg again",
+      "playing": true,
+      "revision": 38,
+      "position": 155.648,
+      "duration": 239,
+      "updatedAt": 1793018477629
+    },
+    {
+      "screen": "cg after guarded replay",
+      "playing": true,
+      "revision": 39,
+      "position": 0.512,
+      "duration": 239,
+      "updatedAt": 1793018560614
+    }
+  ],
+  "sourceAudioUnchanged": true,
+  "loopInCgPassed": true,
+  "playsDuringCgTest": 2,
+  "guardedStops": 1,
+  "loadingGameStopsMusic": true,
+  "loadedOldSlot30": [
+    7,
+    43
+  ],
+  "returnTitleRestartsAfterGame": true,
+  "passed": true,
+  "readBackCompiledPageMatchesFinalRpk": true,
+  "logoScreenshot": "docs/images/title-v025.png"
+}

@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "bytes": 24885601,
+  "sha256": "3a5a0f8e551b235ee00ce8e77150d3c19713329396902046fdfc7513d99a8daa",
+  "under25000000Bytes": true,
+  "zipCrcVerified": true,
+  "sourcePayloadVerifiedFiles": 1966,
+  "existingPngPixelsIdenticalFiles": 278,
+  "all1215JpegFilesByteIdenticalTo017": true,
+  "sourceTitleAudioSha256": "a52285d56d1a2c93d6634d50c530a86fb5212cfa0a52c9617c5b9a2ea9cdac71",
+  "hardwareTested": false
+}

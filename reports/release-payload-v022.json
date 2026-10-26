@@ -1,0 +1,27 @@
+{
+  "version": "0.2.2",
+  "bytes": 24846321,
+  "sha256": "fbd04587679693f8c6cfb57d9f0bd1c954fc6695b8d276dc77e466a365ed7abc",
+  "under25000000Bytes": true,
+  "zipCrcVerified": true,
+  "sourcePayloadVerifiedFiles": 1966,
+  "changedRuntimeFiles": [
+    "src/manifest.json",
+    "src/common/ui/alka.png",
+    "src/common/ui/exit.png",
+    "src/common/ui/gallery.png",
+    "src/common/ui/load.png",
+    "src/common/ui/manual.png",
+    "src/common/ui/options.png",
+    "src/common/ui/pocket.png",
+    "src/common/ui/restart.png",
+    "src/common/ui/start.png",
+    "src/common/ui/title.png",
+    "src/pages/index/index.ux"
+  ],
+  "onlyTitleImagesLayoutAndVersionChanged": true,
+  "pageJavaScriptIdenticalAfterLineEndingNormalization": true,
+  "storySaveAutoMusicAndProgressLogicUnchanged": true,
+  "targetedRegressionTestsPassed": 11,
+  "physicalDeviceTested": false
+}

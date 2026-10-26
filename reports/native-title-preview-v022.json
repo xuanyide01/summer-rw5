@@ -1,0 +1,18 @@
+{
+  "version": "0.2.2",
+  "date": "2026-10-26",
+  "nativeVisualPreview": "existing isolated SummerUI20261025 app received title assets and compiled page from this build; complete package install not repeated",
+  "nativeTitlePreviewReviewed": true,
+  "leftLoadButtonOpens30SlotPage": true,
+  "screen": [
+    432,
+    514
+  ],
+  "alignmentX": 42,
+  "backgroundBlackBarsRemoved": true,
+  "buttonBackgroundsTransparent": true,
+  "physicalDeviceTested": false,
+  "completeRpkInstallRetested": false,
+  "bytes": 24846321,
+  "sha256": "fbd04587679693f8c6cfb57d9f0bd1c954fc6695b8d276dc77e466a365ed7abc"
+}

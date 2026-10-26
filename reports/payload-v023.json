@@ -1,0 +1,66 @@
+{
+  "0.2.2": {
+    "packageBytes": 24846321,
+    "sha256": "fbd04587679693f8c6cfb57d9f0bd1c954fc6695b8d276dc77e466a365ed7abc",
+    "files": 1972,
+    "unpackedBytes": 34038472,
+    "deflatedFiles": 1682,
+    "deflatedUncompressedBytes": 19782267,
+    "largestDeflatedBytes": 631876,
+    "storedImagesAudioFont": false
+  },
+  "0.2.3": {
+    "packageBytes": 24985697,
+    "sha256": "1525c2ffcaa83bdc37da18a18d63bfa198a724ae4b4f34ce11b528ebad2c5198",
+    "files": 1957,
+    "unpackedBytes": 34007788,
+    "deflatedFiles": 461,
+    "deflatedUncompressedBytes": 11511497,
+    "largestDeflatedBytes": 327005,
+    "storedImagesAudioFont": true
+  },
+  "validation": {
+    "storyGalleryMapFilesByteIdentical": 459,
+    "retainedStoryArtFileBytesIdentical": true,
+    "removedOnly15ExactDuplicatePortraits": true,
+    "changedEntries": [
+      "META-INF/CERT",
+      "manifest-watch.json",
+      "manifest.json",
+      "app.js",
+      "pages/index/index.js",
+      "common/summer-name.otf",
+      "common/title-theme.wav",
+      "common/ui/alka.png",
+      "common/ui/exit.png",
+      "common/ui/gallery.png",
+      "common/ui/load.png",
+      "common/ui/manual.png",
+      "common/ui/options.png",
+      "common/ui/pocket.png",
+      "common/ui/restart.png",
+      "common/ui/start.png",
+      "common/ui/title.png",
+      "META-INF/build.txt"
+    ],
+    "removedEntries": [
+      "common/images/portrait_km060101.png",
+      "common/images/portrait_km080101.png",
+      "common/images/portrait_km080202.png",
+      "common/images/portrait_km080303.png",
+      "common/images/portrait_km081111.png",
+      "common/images/portrait_km081211.png",
+      "common/images/portrait_km081311.png",
+      "common/images/portrait_ky030101.png",
+      "common/images/portrait_ru020101.png",
+      "common/images/portrait_ru020201.png",
+      "common/images/portrait_ru020301.png",
+      "common/images/portrait_tn010201.png",
+      "common/images/portrait_tn030101.png",
+      "common/images/portrait_tn040204.png",
+      "common/images/portrait_tn060204.png"
+    ],
+    "crc": null,
+    "sourceAndCompiledPayloadsVerified": 1955
+  }
+}

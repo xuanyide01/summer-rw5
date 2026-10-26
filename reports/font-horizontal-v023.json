@@ -1,0 +1,31 @@
+{
+  "beforeBytes": 631876,
+  "afterBytes": 620592,
+  "unusedVerticalTablesRemoved": [
+    {
+      "table": "BASE",
+      "bytes": 222
+    },
+    {
+      "table": "VORG",
+      "bytes": 20
+    },
+    {
+      "table": "vmtx",
+      "bytes": 10940
+    },
+    {
+      "table": "vhea",
+      "bytes": 36
+    }
+  ],
+  "glyphProgramsHorizontalMetricsUnicodeAndLayoutTablesByteIdentical": true,
+  "tableSha256": {
+    "CFF ": "b96c8ff4bbc7ec4e998dfcc4777fac263c2bbfd495a52e7fef9d6dfc7fe533e3",
+    "hmtx": "2dccd4f5a47a22b6ecb27914fac52ec9157ed39b79842a4fb43fe8353b927e08",
+    "hhea": "a7580333d3c75dd3416b6c89d1e8b712d0f5309170234a9b44dde7ee4c8dd2d0",
+    "cmap": "2a25e1a99cd1542cf2bd385960e8b75af6005faaa99b8a19a543c615099d4b77",
+    "GPOS": "6ecab550ccfbadf88eea577ed27cf3aea5f63d7bdabe4f71d417dd1e5d401145",
+    "GSUB": "ae1d2766f830bbbf0f5feaae8a65d0fb19ec2e5e75ce0d94377e8fd8bcb7e55f"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "version": "0.2.4",
+  "bytes": 24984817,
+  "sha256": "453bdc986b9c26261b45c473b6e384e6c01907e85c9ba32d48b1af40d6729dcc",
+  "changedEntries": [
+    "META-INF/CERT",
+    "manifest-watch.json",
+    "manifest.json",
+    "app.js",
+    "pages/index/index.js",
+    "common/ui/title.png",
+    "META-INF/build.txt"
+  ],
+  "audioBytesIdentical": true,
+  "allStoryCgPortraitAndFontBytesUnchanged": true,
+  "crcPassed": true
+}

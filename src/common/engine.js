@@ -4,7 +4,12 @@ export function evaluate(expr,state){
   if(typeof expr==='number')return expr;
   if(!Array.isArray(expr))throw new Error('条件格式无效');
   const op=expr[0];
-  if(op==='v')return state.variables[String(evaluate(expr[1],state))]||0;
+  if(op==='v'){
+    const key=String(evaluate(expr[1],state));
+    // The original executable computes this counter from global clear flags.
+    if(key==='24006')return [12003,12004,12005,12006,12573,12574,12575,12007,12008].filter(id=>state.variables[String(id)]===1).length;
+    return state.variables[key]||0;
+  }
   if(op==='s')return state.strings[String(expr[1])]||'';
   if(op==='string')return expr[1];
   // These APIs belong to the original map/minigame runtime. They are not emulated.

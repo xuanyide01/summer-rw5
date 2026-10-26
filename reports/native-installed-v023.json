@@ -1,0 +1,59 @@
+{
+  "version": "0.2.3",
+  "versionCode": 12,
+  "nativeAppLaunches": true,
+  "physicalDeviceTested": false,
+  "previousOverwriteResult": -19,
+  "freshInstallReadBackAndStarted": true,
+  "freshInstallCommandResultNotCapturedAcrossSessionRestart": true,
+  "rows": [
+    {
+      "file": "manifest.json",
+      "bytes": 600,
+      "sha256": "2c8f429cd6c77ca050f465b0fc0a24878a4ced611f9b712b3b5824a8bd324c1e",
+      "installedBytesIdentical": true
+    },
+    {
+      "file": "app.js",
+      "bytes": 1187,
+      "sha256": "12469665a1fea5fc93ab3e626b78e00a0fbf163fa39c8396e2497745ded0d3a3",
+      "installedBytesIdentical": true
+    },
+    {
+      "file": "pages/index/index.js",
+      "bytes": 327005,
+      "sha256": "2cf482af77f3850fb7311ccd44552980fe822bab4f6ecebe8360d05ab7d27203",
+      "installedBytesIdentical": true
+    },
+    {
+      "file": "common/title-theme.wav",
+      "bytes": 1912044,
+      "sha256": "2ad59b07f7316c655d8de7404c6d9fcf64e30330d740d0b06c2769e1e38bcbba",
+      "installedBytesIdentical": true
+    },
+    {
+      "file": "common/summer-name.otf",
+      "bytes": 620592,
+      "sha256": "9f86eb9f97ffed57b7b23415f079c2db0554f177810d2ad566d009dee04cad6b",
+      "installedBytesIdentical": true
+    },
+    {
+      "file": "common/ui/title.png",
+      "bytes": 303763,
+      "sha256": "1f30102ebb7d4d4fb0c2a962c124f6f3b493ee722fcadfa30ed4c627d47632b3",
+      "installedBytesIdentical": true
+    },
+    {
+      "file": "common/ui/start.png",
+      "bytes": 7928,
+      "sha256": "2eb5f558e70868aabdb37f605447d42b03e2f52505a882f82b6c040d55066e98",
+      "installedBytesIdentical": true
+    },
+    {
+      "file": "common/ui/load.png",
+      "bytes": 6722,
+      "sha256": "a277bc39cd750ce55c8847e02420e2234421379ee97b4643e308fb57c2a0e7dd",
+      "installedBytesIdentical": true
+    }
+  ]
+}

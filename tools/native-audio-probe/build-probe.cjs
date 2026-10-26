@@ -1,0 +1,1 @@
+const path=require('path');const toolkit=process.env.WATCH_COMPAT_TOOLKIT;require(path.join(toolkit,'lib/commands/compile')).compile('native','prod',false,{signMode:'BUILD'}).then(r=>{if(r.compileError||r.stats.hasErrors())process.exitCode=1;});

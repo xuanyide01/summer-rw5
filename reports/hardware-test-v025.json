@@ -1,0 +1,15 @@
+{
+  "version": "0.2.5",
+  "versionCode": 14,
+  "device": "REDMI Watch 5",
+  "feedbackDate": "2026-10-26",
+  "reportedBy": "maintainer",
+  "passed": true,
+  "userFeedback": "实测通过，上传github",
+  "basis": "User reported successful physical-device testing after receiving v0.2.5. No additional tests inferred.",
+  "packageBytes": 24983953,
+  "packageSha256": "cee59ba0733f578d177b19e64eb27f867b41817cca1682e8baa64ef4f3d2db44",
+  "firmwareVersion": null,
+  "detailedChecklistProvided": false,
+  "coverageLimit": "The feedback does not establish compatibility with every firmware, device, or concurrent application scenario."
+}

@@ -1,0 +1,24 @@
+{
+  "version": "0.2.4",
+  "passed": true,
+  "runtime": "official vela-watch-5.0",
+  "physicalDeviceTested": false,
+  "screen": [
+    432,
+    514
+  ],
+  "previewMethod": "Compiled page and title PNG pushed into the stopped isolated virtual app, then restarted; installed PM metadata remains 0.2.3.",
+  "completeV024RpkInstallRepeated": false,
+  "compiledPageAndImageReadBackMatchFinalPackage": true,
+  "logoSize": [
+    320,
+    92
+  ],
+  "originalTitleShirohaVisible": true,
+  "footerRemoved": true,
+  "buttonRows42px": true,
+  "movedLoadButtonOpensThirtySlots": true,
+  "restartAndEightButtonPostPocketLayoutsVisuallyReviewed": true,
+  "screenshot": "docs/images/title-v024.png",
+  "specialLayoutReviewMethod": "Original-size deterministic previews using final assets; native runtime checked the normal six-button title and LOAD hit target."
+}

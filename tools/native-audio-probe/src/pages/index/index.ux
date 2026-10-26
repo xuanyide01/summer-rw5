@@ -1,0 +1,9 @@
+<template><div class="page" onclick="exit"><text>Audio release probe</text><text>Tap to stop and exit</text></div></template>
+<script>
+import audio from '@system.audio';
+export default {
+ onInit(){this._owned=true;audio.onplay=()=>console.log('AUDIO_PROBE playing');audio.onloadeddata=()=>console.log('AUDIO_PROBE loaded');audio.onstop=()=>console.log('AUDIO_PROBE stopped');audio.onerror=(e,c)=>{console.error('AUDIO_PROBE error',e,c);this.stop();};audio.autoplay=false;audio.loop=false;audio.src='/common/probe.wav';audio.play();this._timer=setTimeout(()=>this.stop(),15000);},
+ stop(){if(this._timer)clearTimeout(this._timer);this._timer=null;if(this._owned){this._owned=false;audio.stop();}},
+ exit(){this.stop();this.$app.exit();},onHide(){this.stop();},onDestroy(){this.stop();audio.onplay=null;audio.onloadeddata=null;audio.onstop=null;audio.onerror=null;}
+}
+</script><style>.page{width:432px;height:514px;flex-direction:column;justify-content:center;align-items:center;background-color:#12354a;}text{font-size:26px;color:#ffffff;height:60px;}</style>

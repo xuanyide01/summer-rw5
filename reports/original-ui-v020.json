@@ -1,0 +1,169 @@
+{
+  "source": "user-provided Summer Pockets OST cover",
+  "sourceSha256": "aab1b1b596dfe038439ac7dd87ebec7b05937c36a124798e0d7fe74a50e08970",
+  "sourceSize": [
+    1600,
+    1600
+  ],
+  "crop": [
+    80,
+    320,
+    1520,
+    1600
+  ],
+  "artViewport": [
+    0,
+    130,
+    432,
+    384
+  ],
+  "headerSourceCrop": [
+    0,
+    0,
+    320,
+    320
+  ],
+  "displaySize": [
+    432,
+    514
+  ],
+  "titleEncoding": "RGB PNG; no palette reduction",
+  "atlasSha256": "b6d04b9f1676e354b16e1247dea24ac08f0d4a7f38595b0bfc2e02b7a002fb2e",
+  "buttons": [
+    {
+      "button": "start",
+      "source": "SYSCG.PAK/TITLE_MENU01B",
+      "sourceRect": [
+        250,
+        18,
+        402,
+        62
+      ],
+      "size": [
+        152,
+        44
+      ],
+      "pixelsFromOriginalAtlas": true
+    },
+    {
+      "button": "load",
+      "source": "SYSCG.PAK/TITLE_MENU01B",
+      "sourceRect": [
+        550,
+        18,
+        682,
+        62
+      ],
+      "size": [
+        132,
+        44
+      ],
+      "pixelsFromOriginalAtlas": true
+    },
+    {
+      "button": "options",
+      "source": "SYSCG.PAK/TITLE_MENU01B",
+      "sourceRect": [
+        829,
+        18,
+        1044,
+        62
+      ],
+      "size": [
+        215,
+        44
+      ],
+      "pixelsFromOriginalAtlas": true
+    },
+    {
+      "button": "manual",
+      "source": "SYSCG.PAK/TITLE_MENU01B",
+      "sourceRect": [
+        1191,
+        18,
+        1403,
+        62
+      ],
+      "size": [
+        212,
+        44
+      ],
+      "pixelsFromOriginalAtlas": true
+    },
+    {
+      "button": "exit",
+      "source": "SYSCG.PAK/TITLE_MENU01B",
+      "sourceRect": [
+        1551,
+        18,
+        1671,
+        62
+      ],
+      "size": [
+        120,
+        44
+      ],
+      "pixelsFromOriginalAtlas": true
+    },
+    {
+      "button": "alka",
+      "source": "SYSCG.PAK/TITLE_MENU01B",
+      "sourceRect": [
+        259,
+        94,
+        390,
+        138
+      ],
+      "size": [
+        131,
+        44
+      ],
+      "pixelsFromOriginalAtlas": true
+    },
+    {
+      "button": "pocket",
+      "source": "SYSCG.PAK/TITLE_MENU01B",
+      "sourceRect": [
+        256,
+        170,
+        396,
+        214
+      ],
+      "size": [
+        140,
+        44
+      ],
+      "pixelsFromOriginalAtlas": true
+    },
+    {
+      "button": "gallery",
+      "source": "SYSCG.PAK/TITLE_MENU01B",
+      "sourceRect": [
+        504,
+        322,
+        717,
+        366
+      ],
+      "size": [
+        213,
+        44
+      ],
+      "pixelsFromOriginalAtlas": true
+    },
+    {
+      "button": "restart",
+      "source": "SYSCG.PAK/TITLE_MENU01B",
+      "sourceRect": [
+        334,
+        398,
+        538,
+        442
+      ],
+      "size": [
+        204,
+        44
+      ],
+      "pixelsFromOriginalAtlas": true
+    }
+  ]
+}
