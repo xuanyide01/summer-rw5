@@ -4,22 +4,22 @@ test('native ending positions preserve the original scenario operation count and
  const ops=JSON.parse(fs.readFileSync(path.join(root,'converted-story',api.catalog.flowScene+'.json'),'utf8'));
  assert.equal(ops.length,638);for(const cursor of Object.keys(api.FLOW_ENDINGS))assert.equal(ops[cursor].op,'end');assert.equal(api.SLOT_COUNT,30);
 });
-test('fourth and sixth main heroine clears require ReSTART; seven unlock ALKA, ALKA unlocks Pocket',()=>{
+test('fourth and fifth included heroine clears require ReSTART; five unlock ALKA, ALKA unlocks Pocket',()=>{
  let p=api.emptyProgress(),s=api.newState();
  for(const ending of [4,5,6])p=api.progressFromState(p,s,ending);assert.deepEqual(api.titleActions(p),['start']);
  p=api.progressFromState(p,s,7);assert.deepEqual(api.titleActions(p),['restart']);assert.ok(!api.titleRows(p).some(x=>x.action==='load'));
  s.variables['14003']=2;p=api.progressFromState(p,s);assert.deepEqual(api.titleActions(p),['start']);
- p=api.progressFromState(p,s,10);assert.deepEqual(api.titleActions(p),['start']);p=api.progressFromState(p,s,12);assert.deepEqual(api.titleActions(p),['restart']);
+ p=api.progressFromState(p,s,10);p=api.progressFromState(p,s,12);assert.deepEqual(api.titleActions(p),['start']);p=api.progressFromState(p,s,13);assert.deepEqual(api.titleActions(p),['restart']);
  s.variables['14003']=4;p=api.progressFromState(p,s);p=api.progressFromState(p,s,13);assert.deepEqual(api.titleActions(p),['alka']);
  p=api.progressFromState(p,s,8);assert.deepEqual(api.titleActions(p),['pocket']);p=api.progressFromState(p,s,9);assert.deepEqual(api.titleActions(p),['start','alka','pocket']);
- const state=api.withProgress(api.newState(),p);assert.equal(state.variables['24006'],9);assert.equal(state.variables['12007'],1);assert.equal(state.variables['12008'],1);
+ const state=api.withProgress(api.newState(),p);assert.equal(state.variables['24006'],7);assert.equal(state.variables['12007'],1);assert.equal(state.variables['12008'],1);
 });
-test('bad endings and Umi do not count as the seven main heroines; duplicates cannot trigger extra restarts',()=>{
+test('bad endings and Umi do not count as the five included heroines; duplicates cannot trigger extra restarts',()=>{
  let p=api.emptyProgress();for(const id of [1,2,3,11,14,4,4,4])p=api.progressFromState(p,api.newState(),id);assert.equal(api.heroineCount(p),1);assert.deepEqual(api.titleActions(p),['start']);
 });
 test('older saves cannot roll back persisted clear flags or restart stages',()=>{
  const p={version:1,cleared:[4,5,6,7,10,12],restartStage:4,globals:{'12001':1}};
- const s=api.withProgress(api.newState(),p);assert.equal(s.variables['14003'],4);assert.equal(s.variables['24006'],6);assert.equal(s.variables['12574'],1);const merged=api.progressFromState(p,api.newState());assert.equal(merged.restartStage,4);assert.equal(api.heroineCount(merged),6);
+ const s=api.withProgress(api.newState(),p);assert.equal(s.variables['14003'],4);assert.equal(s.variables['24006'],4);assert.equal(s.variables['12574'],1);const merged=api.progressFromState(p,api.newState());assert.equal(merged.restartStage,4);assert.equal(api.heroineCount(merged),4);
 });
 test('page enables only the matching original title action; ALKA and Pocket enter the original flow',()=>{
  const m=model(),p=m.p;p.titleAction('alka');assert.equal(p.mode,'title');
@@ -30,10 +30,10 @@ test('invalid global records are not silently overwritten and auto starts disabl
 });
 
 
-test('original fourth and sixth ending branches see the newly set native clear counter immediately',()=>{
+test('fourth and fifth ending branches see the newly set native clear counter immediately',()=>{
  const ops=JSON.parse(fs.readFileSync(path.join(root,'converted-story/6.json'),'utf8'));
  let p={version:1,cleared:[5,6,7],restartStage:0,globals:{}},s=api.withProgress(api.newState(6,true),p);s.cursor=313;
  api.readFrame(ops,s);assert.equal(s.variables['12003'],1);assert.equal(s.variables['14003'],1);
- p={version:1,cleared:[4,5,6,7,10],restartStage:2,globals:{}};s=api.withProgress(api.newState(6,true),p);s.cursor=515;api.readFrame(ops,s);assert.equal(s.variables['12574'],1);assert.equal(s.variables['14003'],3);
- p.cleared.push(14);s=api.withProgress(api.newState(6,true),p);s.cursor=515;api.readFrame(ops,s);assert.equal(s.variables['12576'],1);assert.equal(s.variables['14003'],3);
+ p={version:1,cleared:[4,5,6,7],restartStage:2,globals:{}};s=api.withProgress(api.newState(6,true),p);s.cursor=540;api.readFrame(ops,s);assert.equal(s.variables['12575'],1);assert.equal(s.variables['14003'],3);
+ p.cleared.push(14);s=api.withProgress(api.newState(6,true),p);s.cursor=540;api.readFrame(ops,s);assert.equal(s.variables['12576'],1);assert.equal(s.variables['14003'],3);
 });

@@ -1,0 +1,146 @@
+{
+  "version": "0.3.0",
+  "physicalDeviceTested": false,
+  "fullRpkFreshInstalled": true,
+  "installedVersion": "0.3.0",
+  "installedVersionCode": 15,
+  "tapSamples": [
+    {
+      "chapter": 7,
+      "cursor": 11,
+      "milliseconds": 145
+    },
+    {
+      "chapter": 7,
+      "cursor": 12,
+      "milliseconds": 156
+    },
+    {
+      "chapter": 7,
+      "cursor": 13,
+      "milliseconds": 155
+    },
+    {
+      "chapter": 348,
+      "cursor": 5,
+      "milliseconds": 148
+    },
+    {
+      "chapter": 63,
+      "cursor": 11,
+      "milliseconds": 154
+    },
+    {
+      "chapter": 63,
+      "cursor": 13,
+      "milliseconds": 153
+    },
+    {
+      "chapter": 63,
+      "cursor": 14,
+      "milliseconds": 153
+    },
+    {
+      "chapter": 63,
+      "cursor": 16,
+      "milliseconds": 154
+    },
+    {
+      "chapter": 63,
+      "cursor": 17,
+      "milliseconds": 149
+    },
+    {
+      "chapter": 63,
+      "cursor": 19,
+      "milliseconds": 153
+    },
+    {
+      "chapter": 63,
+      "cursor": 20,
+      "milliseconds": 154
+    },
+    {
+      "chapter": 63,
+      "cursor": 22,
+      "milliseconds": 151
+    },
+    {
+      "chapter": 63,
+      "cursor": 24,
+      "milliseconds": 154
+    },
+    {
+      "chapter": 63,
+      "cursor": 26,
+      "milliseconds": 161
+    },
+    {
+      "chapter": 63,
+      "cursor": 28,
+      "milliseconds": 148
+    },
+    {
+      "chapter": 63,
+      "cursor": 29,
+      "milliseconds": 154
+    },
+    {
+      "chapter": 63,
+      "cursor": 30,
+      "milliseconds": 153
+    },
+    {
+      "chapter": 63,
+      "cursor": 32,
+      "milliseconds": 148
+    },
+    {
+      "chapter": 63,
+      "cursor": 34,
+      "milliseconds": 152
+    },
+    {
+      "chapter": 63,
+      "cursor": 41,
+      "milliseconds": 153
+    },
+    {
+      "chapter": 63,
+      "cursor": 43,
+      "milliseconds": 158
+    },
+    {
+      "chapter": 63,
+      "cursor": 45,
+      "milliseconds": 160
+    },
+    {
+      "chapter": 63,
+      "cursor": 47,
+      "milliseconds": 151
+    }
+  ],
+  "screens": [
+    "common-date-no-border",
+    "common-shiki-date",
+    "personal-shiroha",
+    "expression-43",
+    "expression-47",
+    "old-slot30"
+  ],
+  "upperArtworkAdvances": true,
+  "commonCharacterDateChecked": true,
+  "twoExpressionsDisplayed": [
+    "/common/images/portrait_sr021111_e02.png",
+    "/common/images/portrait_sr020101_e11.png"
+  ],
+  "personalCharacterOnlyChecked": true,
+  "oldSlot30Loaded": "7:43",
+  "titleAudioPlaying": true,
+  "noObservedAppErrorOrNativeAbort": true,
+  "audioStatePosition": 41.472,
+  "installedCompiledPageMatchesFinalRpk": true,
+  "virtualSaveRestoredByteIdentically": true,
+  "maximumTapMs": 161
+}

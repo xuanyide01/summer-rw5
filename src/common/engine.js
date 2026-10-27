@@ -7,7 +7,7 @@ export function evaluate(expr,state){
   if(op==='v'){
     const key=String(evaluate(expr[1],state));
     // The original executable computes this counter from global clear flags.
-    if(key==='24006')return [12003,12004,12005,12006,12573,12574,12575,12007,12008].filter(id=>state.variables[String(id)]===1).length;
+    if(key==='24006')return [12003,12004,12005,12006,12575,12007,12008].filter(id=>state.variables[String(id)]===1).length;
     return state.variables[key]||0;
   }
   if(op==='s')return state.strings[String(expr[1])]||'';
@@ -32,9 +32,19 @@ export function evaluate(expr,state){
 }
 function sceneVariables(state){
   const info=catalog.scenes[String(state.chapter)];
-  if(!info)throw new Error('章节无效');
+  if(!info)throw new Error('章节无效');if(info.removed)throw new Error('此存档属于已移除的角色个人线，请使用0.2.5或选择其他存档');
   const m=/(\d{2})(\d{2})(AM|PM|[a-z]?)$/.exec(info.source);
-  if(m){state.strings['106']=String(Number(m[1])).replace(/[0-9]/g,c=>String.fromCharCode(c.charCodeAt(0)+65248))+'月'+String(Number(m[2])).replace(/[0-9]/g,c=>String.fromCharCode(c.charCodeAt(0)+65248))+'日';}
+  if(m&&Number(m[1])>=1&&Number(m[1])<=12&&Number(m[2])>=1&&Number(m[2])<=31){state.strings['106']=String(Number(m[1])).replace(/[0-9]/g,c=>String.fromCharCode(c.charCodeAt(0)+65248))+'月'+String(Number(m[2])).replace(/[0-9]/g,c=>String.fromCharCode(c.charCodeAt(0)+65248))+'日';}
+}
+export function sceneLabel(state){
+  const info=catalog.scenes[String(state.chapter)]||{},frames=state.stack||[],flow=frames.find(x=>x[0]===catalog.flowScene);
+  if(state.progression==='story'&&flow&&catalog.flowLabels[String(flow[1])])return catalog.flowLabels[String(flow[1])];
+  if((!flow||state.progression!=='story')&&(info.phase==='personal'||info.phase==='final')&&info.routeName)return info.routeName;
+  let date=String((state.strings||{})['106']||'').replace(/[０-９]/g,c=>String.fromCharCode(c.charCodeAt(0)-65248));
+  if(!/^(?:[1-9]|1[0-2])月(?:[1-9]|[12][0-9]|3[01])日$/.test(date))date=info.date||'';
+  if(!date&&flow)date=catalog.flowDates[String(flow[1])]||'';
+  if(!date)for(let i=frames.length-1;i>=0;i--){const parent=catalog.scenes[String(frames[i][0])];if(parent&&parent.date){date=parent.date;break;}}
+  return date||'7月29日';
 }
 export function newState(chapter,story){
   const initial=chapter||catalog.initial;
@@ -49,6 +59,7 @@ export function restore(saved){
   if(!saved||!Number.isInteger(saved.chapter)||saved.chapter<1||saved.chapter>catalog.count||!Number.isInteger(saved.cursor)||saved.cursor<0||saved.cursor>100000)throw new Error('存档位置无效');
   if(!Number.isInteger(saved.rootChapter)||!catalog.scenes[String(saved.rootChapter)]||!saved.variables||typeof saved.variables!=='object'||Object.keys(saved.variables).length>1024||!Array.isArray(saved.stack)||saved.stack.length>MAX_STACK)throw new Error('存档数据无效');
   for(const x of saved.stack)if(!Array.isArray(x)||x.length!==2||!Number.isInteger(x[0])||x[0]<1||x[0]>catalog.count||!Number.isInteger(x[1])||x[1]<0)throw new Error('存档调用位置无效');
+  if(catalog.scenes[String(saved.rootChapter)].removed||saved.stack.some(x=>catalog.scenes[String(x[0])]&&catalog.scenes[String(x[0])].removed))throw new Error('此存档属于已移除的角色个人线，请使用0.2.5或选择其他存档');
   return Object.assign(newState(saved.chapter),saved,{history:[],variables:Object.assign({},saved.variables),strings:Object.assign({},saved.strings),choices:Array.isArray(saved.choices)?saved.choices.slice(-80):[],stack:saved.stack.map(x=>x.slice()),mapVisits:Object.assign({},saved.mapVisits)});
 }
 function remember(state){state.history.push(checkpoint(state));if(state.history.length>12)state.history.shift();}

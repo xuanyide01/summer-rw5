@@ -1,0 +1,29 @@
+[INFO] aiot-toolkit: 1.1.0; babel: 7.29.7; webpack: 5.88.1;
+[INFO] Configuration environment：{"NODE_PLATFORM":"native","NODE_PHASE":"prod"}
+[INFO] Get the app file suffix: ux
+[WARN] Label img must be closed, please follow the XML specification D:\codex\2026-10-27\summer-rw5\src\pages\index\index.ux@5:7
+[WARN] Label img must be closed, please follow the XML specification D:\codex\2026-10-27\summer-rw5\src\pages\index\index.ux@10:7
+[WARN] Label img must be closed, please follow the XML specification D:\codex\2026-10-27\summer-rw5\src\pages\index\index.ux@12:104
+[WARN] Label img must be closed, please follow the XML specification D:\codex\2026-10-27\summer-rw5\src\pages\index\index.ux@73:121
+[WARN] Label img must be closed, please follow the XML specification D:\codex\2026-10-27\summer-rw5\src\pages\index\index.ux@74:124
+[WARN] Label img must be closed, please follow the XML specification D:\codex\2026-10-27\summer-rw5\src\pages\index\index.ux@78:7
+[INFO] Build Time Cost: 6.109s
+[LOG] ### App Loader ### Built-in debug signature is enabled by project build
+[LOG] ### App Loader ### Project build and generate files：com.codex.summer.rw5.debug.0.3.0.rpk
+
+[WARN] asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  pages\index\index.js (317 KiB)
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  pages\index\index (317 KiB)
+      pages\index\index.js
+
+
+webpack performance recommendations: 
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+R1_PACKAGING {"bytes":24983777,"sha256":"964e1db4693560fa5fefdb5a1a162bb8f344fd7d0003edd05d58249eba325916","extraZipCommentBytes":11}
+BUILD_OUTPUT com.codex.summer.rw5.debug.0.3.0.rpk 24983777

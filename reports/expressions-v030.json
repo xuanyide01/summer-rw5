@@ -1,0 +1,1495 @@
+{
+  "version": "0.3.0",
+  "originalArchive": "CHARCG.PAK",
+  "entriesAndIdsVerified": 6045,
+  "method": "Original same-camera suffix-01 complete base, alpha composite exact expression patch at original canvas coordinates, same crop and 200x256 limit as the existing base; RGB rounding retained; one complete image loaded per character.",
+  "addedExpressions": 40,
+  "families": 10,
+  "heroineCounts": {
+    "SR": 8,
+    "AO": 8,
+    "TM": 8,
+    "KM": 8,
+    "SK": 8
+  },
+  "addedBytes": 1955710,
+  "maxDecodedBytes": 203200,
+  "records": [
+    {
+      "family": "SR020101",
+      "heroine": "SR",
+      "expression": "02",
+      "baseSource": "BS3_SR02010101",
+      "baseSourceId": 13236,
+      "patchSource": "BS3_SR02010102",
+      "patchSourceId": 13239,
+      "patchPosition": [
+        560,
+        368
+      ],
+      "originalCanvas": [
+        1504,
+        1600
+      ],
+      "baseCrop": [
+        262,
+        93,
+        1264,
+        1600
+      ],
+      "file": "portrait_sr020101_e02.png",
+      "baseFile": "portrait_sr020101.png",
+      "size": [
+        170,
+        256
+      ],
+      "bytes": 43375,
+      "changedPixels": 15884,
+      "mappedIds": [
+        13237,
+        13238,
+        13239
+      ],
+      "scriptImageUses": 119
+    },
+    {
+      "family": "SR020101",
+      "heroine": "SR",
+      "expression": "18",
+      "baseSource": "BS3_SR02010101",
+      "baseSourceId": 13236,
+      "patchSource": "BS3_SR02010118",
+      "patchSourceId": 13275,
+      "patchPosition": [
+        728,
+        608
+      ],
+      "originalCanvas": [
+        1504,
+        1600
+      ],
+      "baseCrop": [
+        262,
+        93,
+        1264,
+        1600
+      ],
+      "file": "portrait_sr020101_e18.png",
+      "baseFile": "portrait_sr020101.png",
+      "size": [
+        170,
+        256
+      ],
+      "bytes": 43374,
+      "changedPixels": 15841,
+      "mappedIds": [
+        13273,
+        13274,
+        13275
+      ],
+      "scriptImageUses": 106
+    },
+    {
+      "family": "SR020101",
+      "heroine": "SR",
+      "expression": "11",
+      "baseSource": "BS3_SR02010101",
+      "baseSourceId": 13236,
+      "patchSource": "BS3_SR02010111",
+      "patchSourceId": 13260,
+      "patchPosition": [
+        552,
+        368
+      ],
+      "originalCanvas": [
+        1504,
+        1600
+      ],
+      "baseCrop": [
+        262,
+        93,
+        1264,
+        1600
+      ],
+      "file": "portrait_sr020101_e11.png",
+      "baseFile": "portrait_sr020101.png",
+      "size": [
+        170,
+        256
+      ],
+      "bytes": 43193,
+      "changedPixels": 15984,
+      "mappedIds": [
+        13258,
+        13259,
+        13260
+      ],
+      "scriptImageUses": 91
+    },
+    {
+      "family": "SR020101",
+      "heroine": "SR",
+      "expression": "08",
+      "baseSource": "BS3_SR02010101",
+      "baseSourceId": 13236,
+      "patchSource": "BS3_SR02010108",
+      "patchSourceId": 13254,
+      "patchPosition": [
+        552,
+        368
+      ],
+      "originalCanvas": [
+        1504,
+        1600
+      ],
+      "baseCrop": [
+        262,
+        93,
+        1264,
+        1600
+      ],
+      "file": "portrait_sr020101_e08.png",
+      "baseFile": "portrait_sr020101.png",
+      "size": [
+        170,
+        256
+      ],
+      "bytes": 43238,
+      "changedPixels": 16100,
+      "mappedIds": [
+        13252,
+        13253,
+        13254
+      ],
+      "scriptImageUses": 69
+    },
+    {
+      "family": "SR021111",
+      "heroine": "SR",
+      "expression": "06",
+      "baseSource": "BS3_SR02111101",
+      "baseSourceId": 13371,
+      "patchSource": "BS3_SR02111106",
+      "patchSourceId": 13385,
+      "patchPosition": [
+        320,
+        336
+      ],
+      "originalCanvas": [
+        1456,
+        1850
+      ],
+      "baseCrop": [
+        111,
+        71,
+        1354,
+        1850
+      ],
+      "file": "portrait_sr021111_e06.png",
+      "baseFile": "portrait_sr021111.png",
+      "size": [
+        179,
+        256
+      ],
+      "bytes": 43940,
+      "changedPixels": 16034,
+      "mappedIds": [
+        13383,
+        13384,
+        13385
+      ],
+      "scriptImageUses": 68
+    },
+    {
+      "family": "SR021111",
+      "heroine": "SR",
+      "expression": "02",
+      "baseSource": "BS3_SR02111101",
+      "baseSourceId": 13371,
+      "patchSource": "BS3_SR02111102",
+      "patchSourceId": 13374,
+      "patchPosition": [
+        328,
+        392
+      ],
+      "originalCanvas": [
+        1456,
+        1850
+      ],
+      "baseCrop": [
+        111,
+        71,
+        1354,
+        1850
+      ],
+      "file": "portrait_sr021111_e02.png",
+      "baseFile": "portrait_sr021111.png",
+      "size": [
+        179,
+        256
+      ],
+      "bytes": 43985,
+      "changedPixels": 15944,
+      "mappedIds": [
+        13372,
+        13373,
+        13374
+      ],
+      "scriptImageUses": 64
+    },
+    {
+      "family": "SR021111",
+      "heroine": "SR",
+      "expression": "22",
+      "baseSource": "BS3_SR02111101",
+      "baseSourceId": 13371,
+      "patchSource": "BS3_SR02111122",
+      "patchSourceId": 13427,
+      "patchPosition": [
+        320,
+        336
+      ],
+      "originalCanvas": [
+        1456,
+        1850
+      ],
+      "baseCrop": [
+        111,
+        71,
+        1354,
+        1850
+      ],
+      "file": "portrait_sr021111_e22.png",
+      "baseFile": "portrait_sr021111.png",
+      "size": [
+        179,
+        256
+      ],
+      "bytes": 43917,
+      "changedPixels": 16019,
+      "mappedIds": [
+        13425,
+        13426,
+        13427
+      ],
+      "scriptImageUses": 46
+    },
+    {
+      "family": "SR021111",
+      "heroine": "SR",
+      "expression": "19",
+      "baseSource": "BS3_SR02111101",
+      "baseSourceId": 13371,
+      "patchSource": "BS3_SR02111119",
+      "patchSourceId": 13419,
+      "patchPosition": [
+        416,
+        576
+      ],
+      "originalCanvas": [
+        1456,
+        1850
+      ],
+      "baseCrop": [
+        111,
+        71,
+        1354,
+        1850
+      ],
+      "file": "portrait_sr021111_e19.png",
+      "baseFile": "portrait_sr021111.png",
+      "size": [
+        179,
+        256
+      ],
+      "bytes": 43978,
+      "changedPixels": 15909,
+      "mappedIds": [
+        13417,
+        13418,
+        13419
+      ],
+      "scriptImageUses": 41
+    },
+    {
+      "family": "AO020301",
+      "heroine": "AO",
+      "expression": "05",
+      "baseSource": "BS3_AO02030101",
+      "baseSourceId": 10197,
+      "patchSource": "BS3_AO02030105",
+      "patchSourceId": 10209,
+      "patchPosition": [
+        688,
+        304
+      ],
+      "originalCanvas": [
+        1708,
+        1500
+      ],
+      "baseCrop": [
+        57,
+        30,
+        1594,
+        1500
+      ],
+      "file": "portrait_ao020301_e05.png",
+      "baseFile": "portrait_ao020301.png",
+      "size": [
+        200,
+        191
+      ],
+      "bytes": 41900,
+      "changedPixels": 14242,
+      "mappedIds": [
+        10207,
+        10208,
+        10209
+      ],
+      "scriptImageUses": 73
+    },
+    {
+      "family": "AO020301",
+      "heroine": "AO",
+      "expression": "16",
+      "baseSource": "BS3_AO02030101",
+      "baseSourceId": 10197,
+      "patchSource": "BS3_AO02030116",
+      "patchSourceId": 10236,
+      "patchPosition": [
+        688,
+        296
+      ],
+      "originalCanvas": [
+        1708,
+        1500
+      ],
+      "baseCrop": [
+        57,
+        30,
+        1594,
+        1500
+      ],
+      "file": "portrait_ao020301_e16.png",
+      "baseFile": "portrait_ao020301.png",
+      "size": [
+        200,
+        191
+      ],
+      "bytes": 41727,
+      "changedPixels": 14187,
+      "mappedIds": [
+        10235,
+        10236
+      ],
+      "scriptImageUses": 67
+    },
+    {
+      "family": "AO020301",
+      "heroine": "AO",
+      "expression": "02",
+      "baseSource": "BS3_AO02030101",
+      "baseSourceId": 10197,
+      "patchSource": "BS3_AO02030102",
+      "patchSourceId": 10201,
+      "patchPosition": [
+        688,
+        296
+      ],
+      "originalCanvas": [
+        1708,
+        1500
+      ],
+      "baseCrop": [
+        57,
+        30,
+        1594,
+        1500
+      ],
+      "file": "portrait_ao020301_e02.png",
+      "baseFile": "portrait_ao020301.png",
+      "size": [
+        200,
+        191
+      ],
+      "bytes": 41805,
+      "changedPixels": 14239,
+      "mappedIds": [
+        10200
+      ],
+      "scriptImageUses": 66
+    },
+    {
+      "family": "AO020301",
+      "heroine": "AO",
+      "expression": "04",
+      "baseSource": "BS3_AO02030101",
+      "baseSourceId": 10197,
+      "patchSource": "BS3_AO02030104",
+      "patchSourceId": 10206,
+      "patchPosition": [
+        688,
+        336
+      ],
+      "originalCanvas": [
+        1708,
+        1500
+      ],
+      "baseCrop": [
+        57,
+        30,
+        1594,
+        1500
+      ],
+      "file": "portrait_ao020301_e04.png",
+      "baseFile": "portrait_ao020301.png",
+      "size": [
+        200,
+        191
+      ],
+      "bytes": 41810,
+      "changedPixels": 14218,
+      "mappedIds": [
+        10204,
+        10205,
+        10206
+      ],
+      "scriptImageUses": 44
+    },
+    {
+      "family": "AO021111",
+      "heroine": "AO",
+      "expression": "06",
+      "baseSource": "BS3_AO02111101",
+      "baseSourceId": 10277,
+      "patchSource": "BS3_AO02111106",
+      "patchSourceId": 10291,
+      "patchPosition": [
+        704,
+        304
+      ],
+      "originalCanvas": [
+        1911,
+        1400
+      ],
+      "baseCrop": [
+        301,
+        42,
+        1439,
+        1400
+      ],
+      "file": "portrait_ao021111_e06.png",
+      "baseFile": "portrait_ao021111.png",
+      "size": [
+        200,
+        238
+      ],
+      "bytes": 55897,
+      "changedPixels": 19032,
+      "mappedIds": [
+        10289,
+        10290,
+        10291
+      ],
+      "scriptImageUses": 95
+    },
+    {
+      "family": "AO021111",
+      "heroine": "AO",
+      "expression": "14",
+      "baseSource": "BS3_AO02111101",
+      "baseSourceId": 10277,
+      "patchSource": "BS3_AO02111114",
+      "patchSourceId": 10309,
+      "patchPosition": [
+        704,
+        304
+      ],
+      "originalCanvas": [
+        1911,
+        1400
+      ],
+      "baseCrop": [
+        301,
+        42,
+        1439,
+        1400
+      ],
+      "file": "portrait_ao021111_e14.png",
+      "baseFile": "portrait_ao021111.png",
+      "size": [
+        200,
+        238
+      ],
+      "bytes": 55855,
+      "changedPixels": 19010,
+      "mappedIds": [
+        10307,
+        10308,
+        10309
+      ],
+      "scriptImageUses": 59
+    },
+    {
+      "family": "AO021111",
+      "heroine": "AO",
+      "expression": "18",
+      "baseSource": "BS3_AO02111101",
+      "baseSourceId": 10277,
+      "patchSource": "BS3_AO02111118",
+      "patchSourceId": 10320,
+      "patchPosition": [
+        704,
+        304
+      ],
+      "originalCanvas": [
+        1911,
+        1400
+      ],
+      "baseCrop": [
+        301,
+        42,
+        1439,
+        1400
+      ],
+      "file": "portrait_ao021111_e18.png",
+      "baseFile": "portrait_ao021111.png",
+      "size": [
+        200,
+        238
+      ],
+      "bytes": 55741,
+      "changedPixels": 18943,
+      "mappedIds": [
+        10318,
+        10319,
+        10320
+      ],
+      "scriptImageUses": 52
+    },
+    {
+      "family": "AO021111",
+      "heroine": "AO",
+      "expression": "04",
+      "baseSource": "BS3_AO02111101",
+      "baseSourceId": 10277,
+      "patchSource": "BS3_AO02111104",
+      "patchSourceId": 10286,
+      "patchPosition": [
+        696,
+        304
+      ],
+      "originalCanvas": [
+        1911,
+        1400
+      ],
+      "baseCrop": [
+        301,
+        42,
+        1439,
+        1400
+      ],
+      "file": "portrait_ao021111_e04.png",
+      "baseFile": "portrait_ao021111.png",
+      "size": [
+        200,
+        238
+      ],
+      "bytes": 56079,
+      "changedPixels": 19037,
+      "mappedIds": [
+        10284,
+        10285,
+        10286
+      ],
+      "scriptImageUses": 41
+    },
+    {
+      "family": "TM010101",
+      "heroine": "TM",
+      "expression": "16",
+      "baseSource": "BS3_TM01010101",
+      "baseSourceId": 14198,
+      "patchSource": "BS3_TM01010116",
+      "patchSourceId": 14235,
+      "patchPosition": [
+        752,
+        592
+      ],
+      "originalCanvas": [
+        1583,
+        1229
+      ],
+      "baseCrop": [
+        245,
+        89,
+        1350,
+        1229
+      ],
+      "file": "portrait_tm010101_e16.png",
+      "baseFile": "portrait_tm010101.png",
+      "size": [
+        200,
+        206
+      ],
+      "bytes": 52460,
+      "changedPixels": 17667,
+      "mappedIds": [
+        14233,
+        14234,
+        14235
+      ],
+      "scriptImageUses": 59
+    },
+    {
+      "family": "TM010101",
+      "heroine": "TM",
+      "expression": "02",
+      "baseSource": "BS3_TM01010101",
+      "baseSourceId": 14198,
+      "patchSource": "BS3_TM01010102",
+      "patchSourceId": 14201,
+      "patchPosition": [
+        584,
+        352
+      ],
+      "originalCanvas": [
+        1583,
+        1229
+      ],
+      "baseCrop": [
+        245,
+        89,
+        1350,
+        1229
+      ],
+      "file": "portrait_tm010101_e02.png",
+      "baseFile": "portrait_tm010101.png",
+      "size": [
+        200,
+        206
+      ],
+      "bytes": 51523,
+      "changedPixels": 17910,
+      "mappedIds": [
+        14199,
+        14200,
+        14201
+      ],
+      "scriptImageUses": 36
+    },
+    {
+      "family": "TM010101",
+      "heroine": "TM",
+      "expression": "08",
+      "baseSource": "BS3_TM01010101",
+      "baseSourceId": 14198,
+      "patchSource": "BS3_TM01010108",
+      "patchSourceId": 14212,
+      "patchPosition": [
+        584,
+        344
+      ],
+      "originalCanvas": [
+        1583,
+        1229
+      ],
+      "baseCrop": [
+        245,
+        89,
+        1350,
+        1229
+      ],
+      "file": "portrait_tm010101_e08.png",
+      "baseFile": "portrait_tm010101.png",
+      "size": [
+        200,
+        206
+      ],
+      "bytes": 52544,
+      "changedPixels": 17888,
+      "mappedIds": [
+        14210,
+        14211,
+        14212
+      ],
+      "scriptImageUses": 35
+    },
+    {
+      "family": "TM010101",
+      "heroine": "TM",
+      "expression": "03",
+      "baseSource": "BS3_TM01010101",
+      "baseSourceId": 14198,
+      "patchSource": "BS3_TM01010103",
+      "patchSourceId": 14203,
+      "patchPosition": [
+        584,
+        344
+      ],
+      "originalCanvas": [
+        1583,
+        1229
+      ],
+      "baseCrop": [
+        245,
+        89,
+        1350,
+        1229
+      ],
+      "file": "portrait_tm010101_e03.png",
+      "baseFile": "portrait_tm010101.png",
+      "size": [
+        200,
+        206
+      ],
+      "bytes": 52469,
+      "changedPixels": 17935,
+      "mappedIds": [
+        14202,
+        14203
+      ],
+      "scriptImageUses": 29
+    },
+    {
+      "family": "TM020101",
+      "heroine": "TM",
+      "expression": "16",
+      "baseSource": "BS3_TM02010101",
+      "baseSourceId": 14379,
+      "patchSource": "BS3_TM02010116",
+      "patchSourceId": 14418,
+      "patchPosition": [
+        752,
+        592
+      ],
+      "originalCanvas": [
+        1583,
+        1229
+      ],
+      "baseCrop": [
+        245,
+        89,
+        1350,
+        1229
+      ],
+      "file": "portrait_tm020101_e16.png",
+      "baseFile": "portrait_tm020101.png",
+      "size": [
+        200,
+        206
+      ],
+      "bytes": 51001,
+      "changedPixels": 17568,
+      "mappedIds": [
+        14416,
+        14417,
+        14418
+      ],
+      "scriptImageUses": 39
+    },
+    {
+      "family": "TM020101",
+      "heroine": "TM",
+      "expression": "08",
+      "baseSource": "BS3_TM02010101",
+      "baseSourceId": 14379,
+      "patchSource": "BS3_TM02010108",
+      "patchSourceId": 14397,
+      "patchPosition": [
+        584,
+        344
+      ],
+      "originalCanvas": [
+        1583,
+        1229
+      ],
+      "baseCrop": [
+        245,
+        89,
+        1350,
+        1229
+      ],
+      "file": "portrait_tm020101_e08.png",
+      "baseFile": "portrait_tm020101.png",
+      "size": [
+        200,
+        206
+      ],
+      "bytes": 51083,
+      "changedPixels": 17789,
+      "mappedIds": [
+        14395,
+        14396,
+        14397
+      ],
+      "scriptImageUses": 38
+    },
+    {
+      "family": "TM020101",
+      "heroine": "TM",
+      "expression": "02",
+      "baseSource": "BS3_TM02010101",
+      "baseSourceId": 14379,
+      "patchSource": "BS3_TM02010102",
+      "patchSourceId": 14382,
+      "patchPosition": [
+        584,
+        352
+      ],
+      "originalCanvas": [
+        1583,
+        1229
+      ],
+      "baseCrop": [
+        245,
+        89,
+        1350,
+        1229
+      ],
+      "file": "portrait_tm020101_e02.png",
+      "baseFile": "portrait_tm020101.png",
+      "size": [
+        200,
+        206
+      ],
+      "bytes": 50066,
+      "changedPixels": 17811,
+      "mappedIds": [
+        14380,
+        14381,
+        14382
+      ],
+      "scriptImageUses": 35
+    },
+    {
+      "family": "TM020101",
+      "heroine": "TM",
+      "expression": "03",
+      "baseSource": "BS3_TM02010101",
+      "baseSourceId": 14379,
+      "patchSource": "BS3_TM02010103",
+      "patchSourceId": 14385,
+      "patchPosition": [
+        584,
+        344
+      ],
+      "originalCanvas": [
+        1583,
+        1229
+      ],
+      "baseCrop": [
+        245,
+        89,
+        1350,
+        1229
+      ],
+      "file": "portrait_tm020101_e03.png",
+      "baseFile": "portrait_tm020101.png",
+      "size": [
+        200,
+        206
+      ],
+      "bytes": 50998,
+      "changedPixels": 17836,
+      "mappedIds": [
+        14383,
+        14384,
+        14385
+      ],
+      "scriptImageUses": 33
+    },
+    {
+      "family": "KM080101",
+      "heroine": "KM",
+      "expression": "03",
+      "baseSource": "BS3_KM08010101",
+      "baseSourceId": 11241,
+      "patchSource": "BS3_KM08010103",
+      "patchSourceId": 11246,
+      "patchPosition": [
+        552,
+        336
+      ],
+      "originalCanvas": [
+        1472,
+        1667
+      ],
+      "baseCrop": [
+        129,
+        78,
+        1376,
+        1667
+      ],
+      "file": "portrait_km080101_e03.png",
+      "baseFile": "portrait_km040101.png",
+      "size": [
+        200,
+        254
+      ],
+      "bytes": 47170,
+      "changedPixels": 17310,
+      "mappedIds": [
+        11244,
+        11245,
+        11246
+      ],
+      "scriptImageUses": 51
+    },
+    {
+      "family": "KM080101",
+      "heroine": "KM",
+      "expression": "06",
+      "baseSource": "BS3_KM08010101",
+      "baseSourceId": 11241,
+      "patchSource": "BS3_KM08010106",
+      "patchSourceId": 11253,
+      "patchPosition": [
+        544,
+        328
+      ],
+      "originalCanvas": [
+        1472,
+        1667
+      ],
+      "baseCrop": [
+        129,
+        78,
+        1376,
+        1667
+      ],
+      "file": "portrait_km080101_e06.png",
+      "baseFile": "portrait_km040101.png",
+      "size": [
+        200,
+        254
+      ],
+      "bytes": 47372,
+      "changedPixels": 17262,
+      "mappedIds": [
+        11251,
+        11252,
+        11253
+      ],
+      "scriptImageUses": 41
+    },
+    {
+      "family": "KM080101",
+      "heroine": "KM",
+      "expression": "05",
+      "baseSource": "BS3_KM08010101",
+      "baseSourceId": 11241,
+      "patchSource": "BS3_KM08010105",
+      "patchSourceId": 11250,
+      "patchPosition": [
+        552,
+        336
+      ],
+      "originalCanvas": [
+        1472,
+        1667
+      ],
+      "baseCrop": [
+        129,
+        78,
+        1376,
+        1667
+      ],
+      "file": "portrait_km080101_e05.png",
+      "baseFile": "portrait_km040101.png",
+      "size": [
+        200,
+        254
+      ],
+      "bytes": 47388,
+      "changedPixels": 17281,
+      "mappedIds": [
+        11248,
+        11249,
+        11250
+      ],
+      "scriptImageUses": 27
+    },
+    {
+      "family": "KM080101",
+      "heroine": "KM",
+      "expression": "19",
+      "baseSource": "BS3_KM08010101",
+      "baseSourceId": 11241,
+      "patchSource": "BS3_KM08010119",
+      "patchSourceId": 11267,
+      "patchPosition": [
+        552,
+        336
+      ],
+      "originalCanvas": [
+        1472,
+        1667
+      ],
+      "baseCrop": [
+        129,
+        78,
+        1376,
+        1667
+      ],
+      "file": "portrait_km080101_e19.png",
+      "baseFile": "portrait_km040101.png",
+      "size": [
+        200,
+        254
+      ],
+      "bytes": 47578,
+      "changedPixels": 17348,
+      "mappedIds": [
+        11266,
+        11267
+      ],
+      "scriptImageUses": 10
+    },
+    {
+      "family": "KM081111",
+      "heroine": "KM",
+      "expression": "15",
+      "baseSource": "BS3_KM08111101",
+      "baseSourceId": 11309,
+      "patchSource": "BS3_KM08111115",
+      "patchSourceId": 11337,
+      "patchPosition": [
+        544,
+        600
+      ],
+      "originalCanvas": [
+        1896,
+        1800
+      ],
+      "baseCrop": [
+        156,
+        79,
+        1348,
+        1800
+      ],
+      "file": "portrait_km081111_e15.png",
+      "baseFile": "portrait_km041111.png",
+      "size": [
+        177,
+        256
+      ],
+      "bytes": 45631,
+      "changedPixels": 16777,
+      "mappedIds": [
+        11335,
+        11336,
+        11337
+      ],
+      "scriptImageUses": 44
+    },
+    {
+      "family": "KM081111",
+      "heroine": "KM",
+      "expression": "14",
+      "baseSource": "BS3_KM08111101",
+      "baseSourceId": 11309,
+      "patchSource": "BS3_KM08111114",
+      "patchSourceId": 11334,
+      "patchPosition": [
+        544,
+        608
+      ],
+      "originalCanvas": [
+        1896,
+        1800
+      ],
+      "baseCrop": [
+        156,
+        79,
+        1348,
+        1800
+      ],
+      "file": "portrait_km081111_e14.png",
+      "baseFile": "portrait_km041111.png",
+      "size": [
+        177,
+        256
+      ],
+      "bytes": 45516,
+      "changedPixels": 16741,
+      "mappedIds": [
+        11332,
+        11333,
+        11334
+      ],
+      "scriptImageUses": 33
+    },
+    {
+      "family": "KM081111",
+      "heroine": "KM",
+      "expression": "02",
+      "baseSource": "BS3_KM08111101",
+      "baseSourceId": 11309,
+      "patchSource": "BS3_KM08111102",
+      "patchSourceId": 11312,
+      "patchPosition": [
+        392,
+        328
+      ],
+      "originalCanvas": [
+        1896,
+        1800
+      ],
+      "baseCrop": [
+        156,
+        79,
+        1348,
+        1800
+      ],
+      "file": "portrait_km081111_e02.png",
+      "baseFile": "portrait_km041111.png",
+      "size": [
+        177,
+        256
+      ],
+      "bytes": 45269,
+      "changedPixels": 16893,
+      "mappedIds": [
+        11310,
+        11311,
+        11312
+      ],
+      "scriptImageUses": 27
+    },
+    {
+      "family": "KM081111",
+      "heroine": "KM",
+      "expression": "04",
+      "baseSource": "BS3_KM08111101",
+      "baseSourceId": 11309,
+      "patchSource": "BS3_KM08111104",
+      "patchSourceId": 11317,
+      "patchPosition": [
+        384,
+        328
+      ],
+      "originalCanvas": [
+        1896,
+        1800
+      ],
+      "baseCrop": [
+        156,
+        79,
+        1348,
+        1800
+      ],
+      "file": "portrait_km081111_e04.png",
+      "baseFile": "portrait_km041111.png",
+      "size": [
+        177,
+        256
+      ],
+      "bytes": 45502,
+      "changedPixels": 16856,
+      "mappedIds": [
+        11315,
+        11316,
+        11317
+      ],
+      "scriptImageUses": 25
+    },
+    {
+      "family": "SK010101",
+      "heroine": "SK",
+      "expression": "02",
+      "baseSource": "BS3_SK01010101",
+      "baseSourceId": 12451,
+      "patchSource": "BS3_SK01010102",
+      "patchSourceId": 12454,
+      "patchPosition": [
+        536,
+        344
+      ],
+      "originalCanvas": [
+        1424,
+        1198
+      ],
+      "baseCrop": [
+        253,
+        27,
+        1207,
+        1198
+      ],
+      "file": "portrait_sk010101_e02.png",
+      "baseFile": "portrait_sk010101.png",
+      "size": [
+        200,
+        246
+      ],
+      "bytes": 53392,
+      "changedPixels": 18025,
+      "mappedIds": [
+        12452,
+        12453,
+        12454
+      ],
+      "scriptImageUses": 66
+    },
+    {
+      "family": "SK010101",
+      "heroine": "SK",
+      "expression": "18",
+      "baseSource": "BS3_SK01010101",
+      "baseSourceId": 12451,
+      "patchSource": "BS3_SK01010118",
+      "patchSourceId": 12497,
+      "patchPosition": [
+        528,
+        320
+      ],
+      "originalCanvas": [
+        1424,
+        1198
+      ],
+      "baseCrop": [
+        253,
+        27,
+        1207,
+        1198
+      ],
+      "file": "portrait_sk010101_e18.png",
+      "baseFile": "portrait_sk010101.png",
+      "size": [
+        200,
+        246
+      ],
+      "bytes": 53008,
+      "changedPixels": 17826,
+      "mappedIds": [
+        12495,
+        12496,
+        12497
+      ],
+      "scriptImageUses": 59
+    },
+    {
+      "family": "SK010101",
+      "heroine": "SK",
+      "expression": "16",
+      "baseSource": "BS3_SK01010101",
+      "baseSourceId": 12451,
+      "patchSource": "BS3_SK01010116",
+      "patchSourceId": 12491,
+      "patchPosition": [
+        536,
+        344
+      ],
+      "originalCanvas": [
+        1424,
+        1198
+      ],
+      "baseCrop": [
+        253,
+        27,
+        1207,
+        1198
+      ],
+      "file": "portrait_sk010101_e16.png",
+      "baseFile": "portrait_sk010101.png",
+      "size": [
+        200,
+        246
+      ],
+      "bytes": 53044,
+      "changedPixels": 17805,
+      "mappedIds": [
+        12489,
+        12490,
+        12491
+      ],
+      "scriptImageUses": 56
+    },
+    {
+      "family": "SK010101",
+      "heroine": "SK",
+      "expression": "06",
+      "baseSource": "BS3_SK01010101",
+      "baseSourceId": 12451,
+      "patchSource": "BS3_SK01010106",
+      "patchSourceId": 12464,
+      "patchPosition": [
+        520,
+        336
+      ],
+      "originalCanvas": [
+        1424,
+        1198
+      ],
+      "baseCrop": [
+        253,
+        27,
+        1207,
+        1198
+      ],
+      "file": "portrait_sk010101_e06.png",
+      "baseFile": "portrait_sk010101.png",
+      "size": [
+        200,
+        246
+      ],
+      "bytes": 53007,
+      "changedPixels": 17833,
+      "mappedIds": [
+        12462,
+        12463,
+        12464
+      ],
+      "scriptImageUses": 43
+    },
+    {
+      "family": "SK030101",
+      "heroine": "SK",
+      "expression": "16",
+      "baseSource": "BS3_SK03010101",
+      "baseSourceId": 12741,
+      "patchSource": "BS3_SK03010116",
+      "patchSourceId": 12778,
+      "patchPosition": [
+        536,
+        344
+      ],
+      "originalCanvas": [
+        1424,
+        1198
+      ],
+      "baseCrop": [
+        253,
+        27,
+        1207,
+        1198
+      ],
+      "file": "portrait_sk030101_e16.png",
+      "baseFile": "portrait_sk030101.png",
+      "size": [
+        200,
+        246
+      ],
+      "bytes": 54969,
+      "changedPixels": 18282,
+      "mappedIds": [
+        12776,
+        12777,
+        12778
+      ],
+      "scriptImageUses": 60
+    },
+    {
+      "family": "SK030101",
+      "heroine": "SK",
+      "expression": "18",
+      "baseSource": "BS3_SK03010101",
+      "baseSourceId": 12741,
+      "patchSource": "BS3_SK03010118",
+      "patchSourceId": 12784,
+      "patchPosition": [
+        528,
+        320
+      ],
+      "originalCanvas": [
+        1424,
+        1198
+      ],
+      "baseCrop": [
+        253,
+        27,
+        1207,
+        1198
+      ],
+      "file": "portrait_sk030101_e18.png",
+      "baseFile": "portrait_sk030101.png",
+      "size": [
+        200,
+        246
+      ],
+      "bytes": 54918,
+      "changedPixels": 18303,
+      "mappedIds": [
+        12782,
+        12783,
+        12784
+      ],
+      "scriptImageUses": 55
+    },
+    {
+      "family": "SK030101",
+      "heroine": "SK",
+      "expression": "02",
+      "baseSource": "BS3_SK03010101",
+      "baseSourceId": 12741,
+      "patchSource": "BS3_SK03010102",
+      "patchSourceId": 12744,
+      "patchPosition": [
+        536,
+        344
+      ],
+      "originalCanvas": [
+        1424,
+        1198
+      ],
+      "baseCrop": [
+        253,
+        27,
+        1207,
+        1198
+      ],
+      "file": "portrait_sk030101_e02.png",
+      "baseFile": "portrait_sk030101.png",
+      "size": [
+        200,
+        246
+      ],
+      "bytes": 55306,
+      "changedPixels": 18502,
+      "mappedIds": [
+        12742,
+        12743,
+        12744
+      ],
+      "scriptImageUses": 54
+    },
+    {
+      "family": "SK030101",
+      "heroine": "SK",
+      "expression": "20",
+      "baseSource": "BS3_SK03010101",
+      "baseSourceId": 12741,
+      "patchSource": "BS3_SK03010120",
+      "patchSourceId": 12790,
+      "patchPosition": [
+        544,
+        344
+      ],
+      "originalCanvas": [
+        1424,
+        1198
+      ],
+      "baseCrop": [
+        253,
+        27,
+        1207,
+        1198
+      ],
+      "file": "portrait_sk030101_e20.png",
+      "baseFile": "portrait_sk030101.png",
+      "size": [
+        200,
+        246
+      ],
+      "bytes": 54682,
+      "changedPixels": 18121,
+      "mappedIds": [
+        12788,
+        12789,
+        12790
+      ],
+      "scriptImageUses": 43
+    }
+  ],
+  "losslessPngSavings": 197598
+}

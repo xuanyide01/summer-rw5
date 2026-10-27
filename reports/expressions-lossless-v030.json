@@ -1,0 +1,565 @@
+{
+  "allPixelsIdentical": true,
+  "records": [
+    {
+      "file": "images/portrait_sr020101_e02.png",
+      "beforeBytes": 45297,
+      "afterBytes": 43375,
+      "beforeSha256": "75017cff04c8b3dc9bacb324a578b7cae0132b19b20144341be392fb40ebe88c",
+      "afterSha256": "b7f8b66bd7602e1e254303713a29b80cd2841b2de7669df6f1a87eba55e40ee4",
+      "pixelsIdentical": true,
+      "size": [
+        170,
+        256
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_sr020101_e18.png",
+      "beforeBytes": 45334,
+      "afterBytes": 43374,
+      "beforeSha256": "ff98f5404babfb2c0b1d6037033251099bd92d4240dc538664254749c470d57d",
+      "afterSha256": "4b86490aeb9b36eeaf079f1ad6781157f10af2f9daf2512c80c16b3f287c4f4b",
+      "pixelsIdentical": true,
+      "size": [
+        170,
+        256
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_sr020101_e11.png",
+      "beforeBytes": 45153,
+      "afterBytes": 43193,
+      "beforeSha256": "c6ab430950418278fd65bac1bf2f51e3b270158ea5c18e316f19a1ad13a8086c",
+      "afterSha256": "51ff0f050287da13571db4cea58be150d8ba4e3f21bd044216ee4ef158bf409e",
+      "pixelsIdentical": true,
+      "size": [
+        170,
+        256
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_sr020101_e08.png",
+      "beforeBytes": 45134,
+      "afterBytes": 43238,
+      "beforeSha256": "3cc43edac849cc113f439ae79552efb1fe36b5df1304a2c70ddafcf8c38b1e0f",
+      "afterSha256": "1c3795a9235aebbbb46e17765e2dd6a6a04609e1d12b92542242fca4169123fc",
+      "pixelsIdentical": true,
+      "size": [
+        170,
+        256
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_sr021111_e06.png",
+      "beforeBytes": 49400,
+      "afterBytes": 43940,
+      "beforeSha256": "78d47869df667269ac3a93e370bc2d6a146d9277dbd0d729bedc8b67c822e454",
+      "afterSha256": "73ed332e722d6d9cd45c2aced4be0128b652410afa0c4916fc65589f7eb5b90e",
+      "pixelsIdentical": true,
+      "size": [
+        179,
+        256
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_sr021111_e02.png",
+      "beforeBytes": 49434,
+      "afterBytes": 43985,
+      "beforeSha256": "47890466be20283e6771a6a5d2b6470cd98231d2f88b874b0daa42de108f78b1",
+      "afterSha256": "95972e3754add8c42f308389be9d4416e3e303ccd882cb7162210fb94ff3b8b2",
+      "pixelsIdentical": true,
+      "size": [
+        179,
+        256
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_sr021111_e22.png",
+      "beforeBytes": 49366,
+      "afterBytes": 43917,
+      "beforeSha256": "7f944a09448681a1e8d6950a4e68afc850d055913a3da022f11f45f3396af35f",
+      "afterSha256": "a2143f2f1a1f5a32ae504141f6962105e660d0e62477913b5069ade19bcb517a",
+      "pixelsIdentical": true,
+      "size": [
+        179,
+        256
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_sr021111_e19.png",
+      "beforeBytes": 49501,
+      "afterBytes": 43978,
+      "beforeSha256": "eaa380a2e4da1dbc8b5788617896482b95c11093b53958760257d91d8247a8b5",
+      "afterSha256": "9de1f98794159d0d06b28a9b7fb1a3f1e699723e1ef0fbb99a27b24eb2ea12ce",
+      "pixelsIdentical": true,
+      "size": [
+        179,
+        256
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_ao020301_e05.png",
+      "beforeBytes": 51161,
+      "afterBytes": 41900,
+      "beforeSha256": "0d74e0b2b3f3646d1297303cec5a06244f8e4fdcbc9f51fefde401d114f65ed4",
+      "afterSha256": "c758e0f66dd3ee47da2e3bb5219a9f48d20ff7da292372feb5cc95139a073eff",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        191
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_ao020301_e16.png",
+      "beforeBytes": 51051,
+      "afterBytes": 41727,
+      "beforeSha256": "f0747e30768b36d15f587ac2d5b2b220f519c0efc3970246cd1d859f96701de6",
+      "afterSha256": "2a0fea49f8f8b6d8164814ce3ce7eae22ca018a6ab8efda66765f6a68f32bba7",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        191
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_ao020301_e02.png",
+      "beforeBytes": 51166,
+      "afterBytes": 41805,
+      "beforeSha256": "0f4d0fb6a55fb36f8707ca8ba1eeb014ee54a18f9b1ad56b435be2b3e1772e93",
+      "afterSha256": "c6c930ea73c9745ae95614302f3f00218144773a5ed81b6516a0eddc8bda3bc6",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        191
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_ao020301_e04.png",
+      "beforeBytes": 51084,
+      "afterBytes": 41810,
+      "beforeSha256": "4da7e42a3341db9b273fcb16604b76bbf9b57c92b03d2d786bfda650a7ed15fd",
+      "afterSha256": "9298c27f752f8f62aa5dd996b4bd65ea735ddb7cd31802aa7eeb96e86be14d66",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        191
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_ao021111_e06.png",
+      "beforeBytes": 66569,
+      "afterBytes": 55897,
+      "beforeSha256": "bc594b7434c54cc0a835866f9d2e0b48f03575e4856ed29022a3885bce85abef",
+      "afterSha256": "6982faf3ac9edab7b0209eded655a055ab7195aab7965da9f8b9d7656843b298",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        238
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_ao021111_e14.png",
+      "beforeBytes": 66489,
+      "afterBytes": 55855,
+      "beforeSha256": "6b1f9a0ef7ed85ff4f054b146a38d1507d91bdc72881d991886352ddee98eaa3",
+      "afterSha256": "5bd3a272eeecf1ad35fea2da3da777ed9e233ecd417b180392ad1f253589fe95",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        238
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_ao021111_e18.png",
+      "beforeBytes": 66322,
+      "afterBytes": 55741,
+      "beforeSha256": "9e102abfbd35e477e2aabbff271d693a0436616a758663f1fba881cf5961ce7f",
+      "afterSha256": "6a2d9c9c41556f2c735575b2073a803f5a79c5905e0fb7ceb5f3863e6e21c768",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        238
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_ao021111_e04.png",
+      "beforeBytes": 66660,
+      "afterBytes": 56079,
+      "beforeSha256": "25fda21fadc1f02f8a2f7d87fd4d33aeb1c2d866e88e935aea0a74e2279d6c6e",
+      "afterSha256": "8cd98ba8f49f54d34620bddb860c99d36b2e520eb87a087d813ade5a1fac7b6d",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        238
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_tm010101_e16.png",
+      "beforeBytes": 57206,
+      "afterBytes": 52460,
+      "beforeSha256": "af643614a26c65c5dd8c03d0478dd3604c185f897dc5418ddc61695e7c5138ea",
+      "afterSha256": "1754b71dd2c1762320e1d09ac1a88fd01afa81badabb275698ed46d9eb78f3b8",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        206
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_tm010101_e02.png",
+      "beforeBytes": 56288,
+      "afterBytes": 51523,
+      "beforeSha256": "ff10f30198ab9dde630b04541d97381d5c1dae0a37024f6cfa96817c3772d325",
+      "afterSha256": "79818b2ab8a91057dcc1fff5d1f5e0005e4c889f6dba98eba3e0c8ead967f909",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        206
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_tm010101_e08.png",
+      "beforeBytes": 57393,
+      "afterBytes": 52544,
+      "beforeSha256": "41cbb7878c74306d55473686a804944257f7cd12f9cbfe25f1173b96b04132bb",
+      "afterSha256": "987e9572611390bb89306286274a2e8701127844abce71b79e7de6aade6a38f1",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        206
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_tm010101_e03.png",
+      "beforeBytes": 57259,
+      "afterBytes": 52469,
+      "beforeSha256": "8767e72ec06160966011d11f5c9555a2fa568e939f344bb54554d248530e2c2a",
+      "afterSha256": "909d00cc793d8cdf41b6cac8e644d982be3c5f37695fb05130f368c0dccd6840",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        206
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_tm020101_e16.png",
+      "beforeBytes": 56111,
+      "afterBytes": 51001,
+      "beforeSha256": "ab62fa2c9ff453d810d19b33ae550dcd3a7400d831629b8680d2db83fb6ce474",
+      "afterSha256": "6f209e0b10cae3b76990f6c5bfff62f8d4ca6c5d916911f20e886fe9d0065df3",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        206
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_tm020101_e08.png",
+      "beforeBytes": 56307,
+      "afterBytes": 51083,
+      "beforeSha256": "56de131ad52cceb8fdd3ffca000565581e03439205d38e0a400ed497852f5f63",
+      "afterSha256": "c0c1f84ca7c4b1c67c9bd82e051af34d50850df77a1a97d913de1a41efcdfb3e",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        206
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_tm020101_e02.png",
+      "beforeBytes": 55196,
+      "afterBytes": 50066,
+      "beforeSha256": "8769b4858466a95381f09ecdd145cadb9de8330e4083d6b699222f5bf131186b",
+      "afterSha256": "3536d2d2ec70bdafbfb617bfbf1f6074755eaeca1b3a9963c4334ad3e393d38b",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        206
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_tm020101_e03.png",
+      "beforeBytes": 56171,
+      "afterBytes": 50998,
+      "beforeSha256": "31b5e3723876dff464009215f140f73291e11334a524a1814a85dea4c3547921",
+      "afterSha256": "03c0081061a26a517ee6a9fed8da20ceadfa40ffd4d4907b79ff3c7fa33dfa1b",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        206
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_km080101_e03.png",
+      "beforeBytes": 49923,
+      "afterBytes": 47170,
+      "beforeSha256": "a41803085c1302df493c7a1abeba1ee693322c25d6ec8d4527ece19caa6da055",
+      "afterSha256": "741d97d9cb1b2eb9df60a70f88d4031cff30d5f80e2b62e8815de4b1b3cef52c",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        254
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_km080101_e06.png",
+      "beforeBytes": 50100,
+      "afterBytes": 47372,
+      "beforeSha256": "b9bcafa1a733c1a3d894c0fe06c5c4dd3afa233b5a8239aa7e65ed2cfc987b7f",
+      "afterSha256": "d2e74c4fa50f795615e2abe9c6743dd22fce483738a47c7817b54e59bc185b11",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        254
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_km080101_e05.png",
+      "beforeBytes": 50127,
+      "afterBytes": 47388,
+      "beforeSha256": "5116920c218b8204ec90880cb34e6b9a731c400982593937325ba6fa49a74980",
+      "afterSha256": "6058a31d24915af00accac57cbea3c2f2e9f685477083e55c62d90793dc296bd",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        254
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_km080101_e19.png",
+      "beforeBytes": 50322,
+      "afterBytes": 47578,
+      "beforeSha256": "f9369e5a40cb87be29ef086b3f08b9f8503e3f64e0c1736634ee3a4a0b8d9e5f",
+      "afterSha256": "55b2f8f0476459be57e66cd1758311b83f74f0c1684f5c1e465e625c14400b00",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        254
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_km081111_e15.png",
+      "beforeBytes": 48664,
+      "afterBytes": 45631,
+      "beforeSha256": "204fa7d37ddc45203df701d31f74ef5ea7cbe159bd62ee2dff7c7cd0c7aac6c9",
+      "afterSha256": "033e3b9329e9c27815f2345068b89f4825739de23a8f60ea694a1c298b26a970",
+      "pixelsIdentical": true,
+      "size": [
+        177,
+        256
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_km081111_e14.png",
+      "beforeBytes": 48528,
+      "afterBytes": 45516,
+      "beforeSha256": "5aa8249040275f57fe3ab11d9881d8549d8f3d230c10593c1083217d5f89d391",
+      "afterSha256": "6e8cf8a7a96ecdcd4cb3c70bb403b3bfd22efaf885db62f333bdbba059f242e9",
+      "pixelsIdentical": true,
+      "size": [
+        177,
+        256
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_km081111_e02.png",
+      "beforeBytes": 48274,
+      "afterBytes": 45269,
+      "beforeSha256": "450ab570a9b8de6ee16ddbb6a7db32a87d7db2046552ed8c2ffac535ef78ed8d",
+      "afterSha256": "5d8e3aaeb7725902e70e979bbac37c4e1d00f477006b5383f4e0aaf53d0b7236",
+      "pixelsIdentical": true,
+      "size": [
+        177,
+        256
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_km081111_e04.png",
+      "beforeBytes": 48516,
+      "afterBytes": 45502,
+      "beforeSha256": "9e2c0f6a110dd3ddc2d21f1976a4dd4aaa0ac71398938d711aa4c9097d99dc98",
+      "afterSha256": "8230ebb4d50f72eee4bf788489b42b32dd39462168c5dc3978cd11f762034c25",
+      "pixelsIdentical": true,
+      "size": [
+        177,
+        256
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_sk010101_e02.png",
+      "beforeBytes": 56422,
+      "afterBytes": 53392,
+      "beforeSha256": "5eee1371a9db870d62b8c26c0fb6182c53e07b6dae4bc4990ff97aeee6fc51c5",
+      "afterSha256": "ff64affbe8f8d1ad1e64836fdd27a1fe09dbc70015728da1160bde39cad3176d",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        246
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_sk010101_e18.png",
+      "beforeBytes": 56054,
+      "afterBytes": 53008,
+      "beforeSha256": "baabf606ff8cf2f772857e5ebe3c3db28d8dcd0e1fd47dd117ce3c57067b6d0d",
+      "afterSha256": "e9754bfd42a9a711dd00e323a58c1a30a0c2a0d987782d1afc902fbea467c0e2",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        246
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_sk010101_e16.png",
+      "beforeBytes": 56048,
+      "afterBytes": 53044,
+      "beforeSha256": "946f474afb993396665311955eefc4934ecbede3c5f020356a65703bfd3b2511",
+      "afterSha256": "6a3ea45061cab87ad095081696397d1dc28f0f60ad0d14dc67a8b5897dcd0897",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        246
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_sk010101_e06.png",
+      "beforeBytes": 55981,
+      "afterBytes": 53007,
+      "beforeSha256": "021c97db96d6847d13f97cdac90df439ec9fb34b29ba45351dc8769ca2a6b3e5",
+      "afterSha256": "b343596c9b197e81e940fc2b30210dcafa245628410d8d24f6fd088f93a43965",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        246
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_sk030101_e16.png",
+      "beforeBytes": 58273,
+      "afterBytes": 54969,
+      "beforeSha256": "4865592a79ef8fba726a8aa5ccfe29e38c3a165c21211d42fc071f23c944377c",
+      "afterSha256": "633571e5254edd9ce8a1c3e13c66450b8bef8abbbbda722be0bc11d1d794a36d",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        246
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_sk030101_e18.png",
+      "beforeBytes": 58279,
+      "afterBytes": 54918,
+      "beforeSha256": "8c912f0617d5c1a498735e29014ea8a67a24ef0ef80a722d7bcde06b712541e3",
+      "afterSha256": "36652e9ec12b2e4dce6ccfc7816f7f599fa643e20e38ba92e5f6cea68a9b6768",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        246
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_sk030101_e02.png",
+      "beforeBytes": 58646,
+      "afterBytes": 55306,
+      "beforeSha256": "8ee4dcc4222e237c230f2b9de3b54fdc3e49460585cbc355b787a9784dd2ec28",
+      "afterSha256": "00d5f255db0d1d9ff05c3719e6b8d33d7eab50c0dc9f08a56329ae8abbc7d091",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        246
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    },
+    {
+      "file": "images/portrait_sk030101_e20.png",
+      "beforeBytes": 58099,
+      "afterBytes": 54682,
+      "beforeSha256": "efa28cab88a3c091200b54239ea6b9e4fac68d5719d3ede93cbdfa527f120f84",
+      "afterSha256": "3bbd9b8dab0aacfc880a71a9a7bac89ec9f412fe246847e6e069f2af37029694",
+      "pixelsIdentical": true,
+      "size": [
+        200,
+        246
+      ],
+      "pngBitDepth": 8,
+      "pngColorType": 6
+    }
+  ]
+}

@@ -19,9 +19,9 @@ test('actual page reads packaged TXT chapters and CG catalog; API 202 exits load
  let reads=0;
  if(summer){
   for(const dir of fs.readdirSync(path.join(common,'story'))){for(const name of fs.readdirSync(path.join(common,'story',dir))){page.cachedChapter=0;page.session.cursor=Number(path.parse(name).name)*1024;page.readChapter(Number(dir),()=>{reads++;});}}
-  assert.equal(reads,457);
+  assert.equal(reads,456);
  }else{for(let chapter=1;chapter<=17;chapter++){page.cachedChapter=0;page.readChapter(chapter,()=>{reads++;});}assert.equal(reads,17);}
- page.openGallery();assert.equal(page.loading,false);assert.equal(page._galleryTotal,summer?856:124);assert.equal(page._galleryCatalog.length,summer?155:24);
+ page.openGallery();assert.equal(page.loading,false);assert.equal(page._galleryTotal,summer?712:124);assert.equal(page._galleryCatalog.length,summer?136:24);
  assert.ok(seen.includes('/common/gallery.txt'));
  const failed=await pageWithReader(o=>o.fail('invalid file path',202));
  failed.readChapter(1,()=>assert.fail('A failed read must not render a frame'));

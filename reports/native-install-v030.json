@@ -1,0 +1,8 @@
+{
+  "version": "0.3.0",
+  "physicalDeviceTested": false,
+  "overwriteAttemptResult": -19,
+  "overwriteFailureCause": "unconfirmed",
+  "freshInstallResult": "onInstallResult: com.codex.summer.rw5(success 0)\r\n",
+  "virtualSaveBackupSha256": "691d5479eabec7d1aa0f41b7d7c60e8f33d196ed12b67b6a80a1964c7d7261c3"
+}

@@ -4,6 +4,7 @@
       <image if="{{mode === 'title'}}" class="background" src="/common/ui/title.png" onerror="backgroundError" oncomplete="backgroundLoaded"></image>
       <image if="{{mode !== 'title'}}" class="background" src="{{backgroundSrc}}" onerror="backgroundError" oncomplete="backgroundLoaded"></image>
       <image if="{{bodySrc !== ''}}" class="body" src="{{bodySrc}}"></image>
+      <div class="art-tap" ontouchstart="dialogueTouchStart" ontouchmove="dialogueTouchMove" ontouchend="dialogueTouchEnd" onclick="dialogueTap"></div>
     </div>
     <div if="{{mode === 'title'}}" class="title-scene">
       <image class="title-background" src="/common/ui/title.png"></image>
@@ -92,7 +93,7 @@ import {PROGRESS_KEY,FLOW_ENDINGS,emptyProgress,decodeProgress,progressFromState
 import {formatDialogue} from '../../common/dialogue.js';
 import storage from '@system.storage';
 import prompt from '@system.prompt';
-import {newState,restore,readFrame,readChapterSkip,next,nextChapter,choose,previous,previewMap} from '../../common/engine.js';
+import {newState,restore,readFrame,readChapterSkip,next,nextChapter,choose,previous,previewMap,sceneLabel} from '../../common/engine.js';
 import {SLOT_COUNT,LEGACY_KEY,slotKey,decodeSave,createSave,slotRow} from '../../common/saves.js';
 import {catalog} from '../../common/catalog.js';
 import {imagePath} from '../../common/assets.js';
@@ -100,7 +101,7 @@ import {groupGallery,stepVariant} from '../../common/gallery.js';
 import {visibleText,textFont} from '../../common/names.js';
 export default {
   private:{mode:'title',backgroundSrc:'/common/ui/title.png',bodySrc:'',speaker:'',displayText:'',chapterLabel:'',speakerFont:'sans-serif',dialogueFont:'sans-serif',chapterFont:'sans-serif',browseFont:'sans-serif',overwriteFont:'sans-serif',
-    titleButtons:[],titleMenuTop:262,titleMenuHeight:232,dialogueHeight:128,autoEnabled:false,autoSpeed:1,autoLabel:'自动播放：关闭',autoSpeedLabel:'自动速度：标准',soundEnabled:true,musicAvailable:true,musicLabel:'标题音乐：开启',helpText:'点击正文可补全当前句或进入下一句。\n\n阅读菜单提供30个保存/加载栏位、下一章、三档自动播放和字号设置。遇到选项必须手动选择。拖动长文本时暂停推进。\n\nReSTART、ALKA、Pocket随原作通关阶段出现。通关记录独立保存，章节阅览不会伪造结局记录。\n\n标题音乐在LOAD和CG鉴赏中继续播放，可在OPTIONS中关闭。',options:[],loading:false,errorText:'',hasNextChapter:true,fontSize:24,textSpeed:30,speedLabel:'显示速度：逐字',fontLabel:'字号：标准',
+    titleButtons:[],titleMenuTop:262,titleMenuHeight:232,dialogueHeight:128,autoEnabled:false,autoSpeed:1,autoLabel:'自动播放：关闭',autoSpeedLabel:'自动速度：标准',soundEnabled:true,musicAvailable:true,musicLabel:'标题音乐：开启',helpText:'点击上方画面或正文可补全当前句或进入下一句。\n\n阅读菜单提供30个保存/加载栏位、下一章、三档自动播放和字号设置。遇到选项必须手动选择。拖动长文本时暂停推进。\n\n保留白羽、苍、紬、鸥、识五条个人线及ALKA/Pocket。完成4、5条个人线后分别进入ReSTART；完成五条后解锁ALKA。通关记录独立保存，章节阅览不会伪造结局记录。\n\n标题音乐在LOAD和CG鉴赏中继续播放，可在OPTIONS中关闭。',options:[],loading:false,errorText:'',hasNextChapter:true,fontSize:24,textSpeed:30,speedLabel:'显示速度：逐字',fontLabel:'字号：标准',
     slotTitle:'',slotPage:0,slotPageLabel:'',slotRows:[],storageBusy:false,overwriteTitle:'',overwriteDetail:'',
     galleryPage:0,galleryPageLabel:'',galleryTop:[],galleryBottom:[],cgIndex:0,cgVariant:0,cgSrc:'',cgLabel:'',browseRows:[],browseTitle:'',browseLabel:'',browsePage:0},
   onInit(){
@@ -167,9 +168,9 @@ export default {
         if(this.session.progression==='story')withProgress(this.session,this._progress);
         const f=this._chapterSkip?readChapterSkip(this.ops,this.session,this._chapterSkip,this.opsBase,catalog.scenes[String(this.session.chapter)].length):readFrame(this.ops,this.session,this.opsBase,catalog.scenes[String(this.session.chapter)].length);
         if(f.type==='jump'||f.type==='yield'){this._autoHops=(this._autoHops||0)+1;if(this._autoHops>1000)throw new Error('此章节无法继续，可从标题选择其他篇章');this.loading=true;this.timer=setTimeout(()=>{this.timer=null;this.renderFrame();},0);return;}this._autoHops=0;this._chapterSkip=null;this._framePending=false;this.loading=false;
-        this.backgroundSrc=imagePath(this.session.background);
-        this.bodySrc=this.session.body?imagePath(this.session.body):'';
-        this.chapterLabel=this.visibleText(catalog.scenes[String(this.session.rootChapter)].name,true);this.chapterFont=textFont(this.chapterLabel);this.hasNextChapter=!this.session.ended;
+        const background=imagePath(this.session.background);if(this.backgroundSrc!==background)this.backgroundSrc=background;
+        const body=this.session.body?imagePath(this.session.body):'';if(this.bodySrc!==body)this.bodySrc=body;
+        this.chapterLabel=this.visibleText(sceneLabel(this.session),true);this.chapterFont=textFont(this.chapterLabel);this.hasNextChapter=!this.session.ended;
         if(f.type==='map'){this.renderMap(f);return;}
         if(f.type==='choice'){this.options=this.visibleOptions(f.items);this.mode='choice';console.log('SUMMER_RW5 choice',this.session.chapter,this.session.cursor);return;}
         if(f.type==='end'){this.syncProgress(this.session.chapter===catalog.flowScene?FLOW_ENDINGS[this.session.cursor]:0);this.stopAuto();this.mode='end';console.log('SUMMER_RW5 ending');return;}
@@ -206,7 +207,7 @@ export default {
       if(this._slotData[0]){ready();return;}
       storage.get({complete:()=>{},key:LEGACY_KEY,default:'',success:data=>{if(seq!==this._slotsSequence)return;try{const old=decodeSave(data);if(old){old.legacy=true;this._slotData[0]=old;}}catch(e){}ready();},fail:ready});
     };
-    for(let i=0;i<SLOT_COUNT;i++)storage.get({complete:()=>{},key:slotKey(i),default:'',success:data=>{if(seq!==this._slotsSequence)return;try{this._slotData[i]=decodeSave(data);}catch(e){this._slotData[i]={invalid:true};}finish();},fail:()=>{if(seq!==this._slotsSequence)return;this._slotData[i]={invalid:true};finish();}});
+    for(let i=0;i<SLOT_COUNT;i++)storage.get({complete:()=>{},key:slotKey(i),default:'',success:data=>{if(seq!==this._slotsSequence)return;try{this._slotData[i]=decodeSave(data);}catch(e){this._slotData[i]={invalid:true,reason:e.message};}finish();},fail:()=>{if(seq!==this._slotsSequence)return;this._slotData[i]={invalid:true};finish();}});
   },
   refreshSlotRows(){const start=this.slotPage*4;const rows=[];for(let i=start;i<Math.min(start+4,SLOT_COUNT);i++)rows.push(slotRow(i,this._slotData[i]));this.slotRows=rows;this.slotPageLabel=SLOT_COUNT+' 个栏位 · 第 '+(this.slotPage+1)+' / '+Math.ceil(SLOT_COUNT/4)+' 页';},
   previousSlotPage(){if(this.loading||this.slotPage===0)return;this.slotPage--;this.refreshSlotRows();},
@@ -264,6 +265,7 @@ export default {
 @font-face {font-family:summername;src:url('/common/summer-name.otf');}
 .page{width:432px;height:514px;background-color:#0a111f;flex-direction:column;}
 .art{position:absolute;top:0px;left:0px;width:432px;height:286px;justify-content:center;align-items:center;background-color:#000000;}
+.art-tap{position:absolute;left:0px;top:0px;width:432px;height:286px;background-color:transparent;}
 .background{width:432px;height:286px;object-fit:contain;}
 .body{position:absolute;top:0px;left:0px;width:432px;height:286px;object-fit:contain;}
 .title-panel,.dialogue-panel,.choice-panel,.end-panel{position:absolute;top:286px;left:0px;width:432px;height:228px;flex-direction:column;padding:12px 18px;}
@@ -319,7 +321,7 @@ export default {
 .title-row{height:42px;width:170px;align-items:center;justify-content:flex-start;}
 .title-button{height:41px;object-fit:contain;}
 .dialogue-content{width:396px;flex-direction:column;}
-.dialogue-panel{background-color:#102c42;border-top-width:2px;border-color:#9acfe4;}
+.dialogue-panel{background-color:#102c42;border-width:0px;}
 .speaker{color:#c7edfa;}
 .chapter{color:#a1c7d5;}
 .tool{color:#bfe8f7;}

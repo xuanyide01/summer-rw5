@@ -17,7 +17,7 @@ test('bundled font covers every name-bearing story line and original speaker, wi
   }else if(Array.isArray(x))x.forEach(visit);else if(x&&typeof x==='object')Object.values(x).forEach(visit);
  }
  for(const file of fs.readdirSync(path.join(root,'converted-story')))if(file.endsWith('.json'))visit(JSON.parse(fs.readFileSync(path.join(root,'converted-story',file),'utf8')));
- assert.equal(fields,4637);
+ assert.equal(fields,3685);
  assert.equal(fs.statSync(path.join(root,'src/common/summer-name.otf')).size,report.fontBytes);
  assert.ok(report.fontBytes<750000);
  const ux=fs.readFileSync(path.join(root,'src/pages/index/index.ux'),'utf8');assert.match(ux,/@font-face.*summer-name\.otf/);assert.ok(!ux.includes("'Tsumugi'"));

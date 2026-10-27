@@ -4,7 +4,7 @@ test('character eyes and mouths resolve to complete close portraits, with true-c
  const records=JSON.parse(fs.readFileSync(path.join(root,'portrait-quality-report.json'),'utf8')).images;
  const headers=JSON.parse(fs.readFileSync(path.join(root,'portrait-source-headers.json'),'utf8'));
  const paths=JSON.parse(/const paths=(.*);\r?\n/.exec(fs.readFileSync(path.join(root,'src/common/assets.js'),'utf8'))[1]);
- assert.equal(records.length,277);
+ assert.equal(records.length,267);
  for(const record of records){
   const original=headers.find(e=>e.id===record.sourceId);assert.ok(original);
   assert.match(original.name,/^BS[123]_.*01$/i);assert.ok(original.dh>=500);
@@ -14,7 +14,8 @@ test('character eyes and mouths resolve to complete close portraits, with true-c
   assert.ok(record.size[0]<=200&&record.size[1]<=256);assert.ok(record.size[0]*record.size[1]*4<=204800);
  }
  // These two source IDs are facial patches, not complete characters.
- assert.equal(paths.i10004,'portrait_ao010101.png');assert.equal(paths.i13061,'portrait_sr010101.png');
+ if(paths.i10004)assert.equal(paths.i10004,'portrait_ao010101.png');if(paths.i13061)assert.equal(paths.i13061,'portrait_sr010101.png');
+ assert.ok(headers.filter(e=>paths['i'+e.id]&&!e.name.endsWith('01')).length>2000);
  assert.equal(records.find(x=>x.family==='AO010101').source,'BS3_AO01010101');
  assert.equal(records.find(x=>x.family==='SR010101').source,'BS3_SR01010101');
  for(const entry of headers){const resolved=paths['i'+entry.id];if(resolved)assert.ok(resolved.startsWith('portrait_'),entry.name);}

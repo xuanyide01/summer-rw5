@@ -1,0 +1,20 @@
+{
+  "version": "0.3.0",
+  "versionCode": 15,
+  "device": "REDMI Watch 5",
+  "feedbackDate": "2026-10-27",
+  "reportedBy": "maintainer",
+  "physicalDeviceTested": true,
+  "userFeedback": "首次安装失败，表现为无法显示应用图标。重启手表后依旧安装失败。重置手表后安装成功。暂未发现bug",
+  "initialInstallationSucceeded": false,
+  "initialSymptom": "应用图标无法显示",
+  "rebootResolvedInstallation": false,
+  "installationSucceededAfterFactoryReset": true,
+  "runtimeIssuesReportedAfterSuccessfulInstall": false,
+  "installationRootCause": null,
+  "firmwareVersion": null,
+  "factoryResetRecommended": false,
+  "packageBytes": 24983777,
+  "packageSha256": "964e1db4693560fa5fefdb5a1a162bb8f344fd7d0003edd05d58249eba325916",
+  "scope": "User-reported successful installation after reset and no currently observed in-game bugs; initial installation failure remains unresolved. No complete checklist or firmware version provided."
+}

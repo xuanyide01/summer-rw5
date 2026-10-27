@@ -1,5 +1,5 @@
 {
-  "version": "0.1.3",
+  "version": "0.3.0",
   "maxSize": [
     200,
     256
@@ -8,8 +8,8 @@
   "colorQuantization": "RGB 6 bits/channel; alpha 8 bits",
   "poseGroups": 277,
   "mappedIds": 4522,
-  "sourcePolicy": "Complete suffix-01 base, original BS3 close view preferred; one expression per pose/outfit",
-  "totalBytes": 13764683,
+  "sourcePolicy": "267 logical base poses (252 unique files), plus 40 original expressions described in reports/expressions-v030.json; complete portraits only",
+  "totalBytes": 11437264,
   "maxDecodedBytes": 203200,
   "minColors": 1235,
   "removedOldFiles": 263,
@@ -2116,75 +2116,6 @@
       "colors": 3873
     },
     {
-      "family": "MK031414",
-      "sourceId": 11981,
-      "source": "BS3_MK03141401",
-      "sourceSize": [
-        784,
-        1576
-      ],
-      "crop": [
-        11,
-        11,
-        775,
-        1576
-      ],
-      "file": "portrait_mk031414.png",
-      "size": [
-        125,
-        256
-      ],
-      "mode": "RGBA",
-      "bytes": 37549,
-      "colors": 3691
-    },
-    {
-      "family": "MK031514",
-      "sourceId": 11988,
-      "source": "BS2_MK03151401",
-      "sourceSize": [
-        680,
-        1514
-      ],
-      "crop": [
-        11,
-        9,
-        667,
-        1514
-      ],
-      "file": "portrait_mk031514.png",
-      "size": [
-        112,
-        256
-      ],
-      "mode": "RGBA",
-      "bytes": 32354,
-      "colors": 3185
-    },
-    {
-      "family": "MK040101",
-      "sourceId": 11994,
-      "source": "BS3_MK04010101",
-      "sourceSize": [
-        688,
-        1227
-      ],
-      "crop": [
-        10,
-        9,
-        673,
-        1227
-      ],
-      "file": "portrait_mk040101.png",
-      "size": [
-        140,
-        256
-      ],
-      "mode": "RGBA",
-      "bytes": 42800,
-      "colors": 3820
-    },
-    {
       "family": "RU010101",
       "sourceId": 12007,
       "source": "BS3_RU01010101",
@@ -2418,29 +2349,6 @@
       "colors": 3739
     },
     {
-      "family": "RU040202",
-      "sourceId": 12199,
-      "source": "BS2_RU04020201",
-      "sourceSize": [
-        744,
-        1376
-      ],
-      "crop": [
-        15,
-        8,
-        730,
-        1376
-      ],
-      "file": "portrait_ru040202.png",
-      "size": [
-        133,
-        256
-      ],
-      "mode": "RGBA",
-      "bytes": 42792,
-      "colors": 4223
-    },
-    {
       "family": "RU040301",
       "sourceId": 12205,
       "source": "BS3_RU04030101",
@@ -2462,29 +2370,6 @@
       "mode": "RGBA",
       "bytes": 44389,
       "colors": 3136
-    },
-    {
-      "family": "RU040302",
-      "sourceId": 12223,
-      "source": "BS2_RU04030201",
-      "sourceSize": [
-        1104,
-        1584
-      ],
-      "crop": [
-        11,
-        12,
-        1095,
-        1584
-      ],
-      "file": "portrait_ru040302.png",
-      "size": [
-        176,
-        256
-      ],
-      "mode": "RGBA",
-      "bytes": 52987,
-      "colors": 4129
     },
     {
       "family": "RU050101",
@@ -2692,29 +2577,6 @@
       "mode": "RGBA",
       "bytes": 43233,
       "colors": 1785
-    },
-    {
-      "family": "RU090101",
-      "sourceId": 12280,
-      "source": "BS3_RU09010101",
-      "sourceSize": [
-        1096,
-        1272
-      ],
-      "crop": [
-        11,
-        15,
-        1086,
-        1272
-      ],
-      "file": "portrait_ru090101.png",
-      "size": [
-        200,
-        234
-      ],
-      "mode": "RGBA",
-      "bytes": 41016,
-      "colors": 2124
     },
     {
       "family": "SC010101",
@@ -3520,29 +3382,6 @@
       "mode": "RGBA",
       "bytes": 52929,
       "colors": 2755
-    },
-    {
-      "family": "SR011211",
-      "sourceId": 13213,
-      "source": "BS3_SR01121101",
-      "sourceSize": [
-        1272,
-        1794
-      ],
-      "crop": [
-        15,
-        15,
-        1258,
-        1794
-      ],
-      "file": "portrait_sr011211.png",
-      "size": [
-        179,
-        256
-      ],
-      "mode": "RGBA",
-      "bytes": 56047,
-      "colors": 3083
     },
     {
       "family": "SR011312",
@@ -4440,75 +4279,6 @@
       "mode": "RGBA",
       "bytes": 58982,
       "colors": 4795
-    },
-    {
-      "family": "SZ041111",
-      "sourceId": 14140,
-      "source": "BS2_SZ04111101",
-      "sourceSize": [
-        608,
-        1227
-      ],
-      "crop": [
-        15,
-        11,
-        590,
-        1227
-      ],
-      "file": "portrait_sz041111.png",
-      "size": [
-        121,
-        256
-      ],
-      "mode": "RGBA",
-      "bytes": 43213,
-      "colors": 3673
-    },
-    {
-      "family": "SZ041211",
-      "sourceId": 14163,
-      "source": "BS3_SZ04121101",
-      "sourceSize": [
-        872,
-        1299
-      ],
-      "crop": [
-        8,
-        10,
-        862,
-        1299
-      ],
-      "file": "portrait_sz041211.png",
-      "size": [
-        169,
-        256
-      ],
-      "mode": "RGBA",
-      "bytes": 56007,
-      "colors": 4728
-    },
-    {
-      "family": "SZ041311",
-      "sourceId": 14179,
-      "source": "BS3_SZ04131101",
-      "sourceSize": [
-        1008,
-        1299
-      ],
-      "crop": [
-        14,
-        10,
-        998,
-        1299
-      ],
-      "file": "portrait_sz041311.png",
-      "size": [
-        195,
-        256
-      ],
-      "mode": "RGBA",
-      "bytes": 63877,
-      "colors": 4986
     },
     {
       "family": "TM010101",
@@ -6400,5 +6170,7 @@
       "bytes": 57505,
       "colors": 3752
     }
-  ]
+  ],
+  "retainedPoseGroups": 267,
+  "expressionReport": "reports/expressions-v030.json"
 }

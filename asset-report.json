@@ -1,11 +1,11 @@
 {
   "requested": 3940,
-  "retainedFiles": 1492,
+  "retainedFiles": 1324,
   "mappedImageIds": 5753,
   "cgCount": 856,
   "duplicateFilesRemoved": 1488,
   "rawCompressedAssetBytes": 20970834,
-  "finalAssetBytes": 21317825,
+  "finalAssetBytes": 19786500,
   "maxDecodedImage": 300800,
   "omitted": "原版 UI/过渡效果、动态图像及面部遮罩不用于章节阅读版",
   "additionalBytesSaved": 5066286,
@@ -21,11 +21,17 @@
   "storyBlockMaxBytes": 76131,
   "storyBlocks": 457,
   "portraitPoseGroups": 277,
-  "portraitExpressionPolicy": "同服装、同姿势共用完整底图，优先近景；全部 CG 差分保留",
+  "portraitExpressionPolicy": "五位女主各两种常用姿势，每姿势四个原作表情；合成后单张完整RGBA立绘，保持原尺寸上限",
   "cgComposition": {
     "full": 367,
     "composed": 438,
     "standalone-on-original-canvas": 51
   },
-  "portraitFormat": "RGBA PNG; mild RGB rounding, lossless PNG encoding afterwards"
+  "portraitFormat": "RGBA PNG; mild RGB rounding, lossless PNG encoding afterwards",
+  "version": "0.3.0",
+  "portraitPhysicalFiles": 292,
+  "portraitBaseFiles": 252,
+  "addedExpressions": 40,
+  "cgGalleryItems": 712,
+  "cgGalleryGroups": 136
 }

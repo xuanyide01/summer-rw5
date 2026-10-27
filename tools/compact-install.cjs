@@ -26,5 +26,5 @@ module.exports=async function(file,toolkit){
  const deflated=rows.filter(r=>retained.has(r.name));
  if(rows.some(r=>!r.text&&retained.has(r.name)))throw Error('Binary resource requires inflate');
  fs.writeFileSync(file,signed);
- fs.writeFileSync(path.join(__dirname,'../reports/install-packaging-v025.json'),JSON.stringify({passed:true,sourceBytes:before.length,bytesBeforeR1:signed.length,allUncompressedPayloadBytesIdentical:true,allImagesPcmAndFontStored:true,storedFiles:rows.length-deflated.length,deflatedFiles:deflated.length,largestDeflatedBytes:Math.max(...deflated.map(r=>r.bytes)),deflatedUncompressedBytes:deflated.reduce((n,r)=>n+r.bytes,0),actualFirmwareHeapNotMeasured:true,deflatedEntries:deflated.map(({name,bytes,compressed})=>({name,bytes,compressed}))},null,2));
+ fs.writeFileSync(path.join(__dirname,'../reports/install-packaging-v030.json'),JSON.stringify({passed:true,sourceBytes:before.length,bytesBeforeR1:signed.length,allUncompressedPayloadBytesIdentical:true,allImagesPcmAndFontStored:true,storedFiles:rows.length-deflated.length,deflatedFiles:deflated.length,largestDeflatedBytes:Math.max(...deflated.map(r=>r.bytes)),deflatedUncompressedBytes:deflated.reduce((n,r)=>n+r.bytes,0),actualFirmwareHeapNotMeasured:true,deflatedEntries:deflated.map(({name,bytes,compressed})=>({name,bytes,compressed}))},null,2));
 };

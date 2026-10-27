@@ -1,0 +1,10 @@
+{
+  "version": "0.3.0",
+  "bytes": 24983777,
+  "sha256": "964e1db4693560fa5fefdb5a1a162bb8f344fd7d0003edd05d58249eba325916",
+  "crcPassed": true,
+  "sourceResourcesMatch": 1797,
+  "compiledPageMatches": true,
+  "allNewExpressionsPresent": 40,
+  "pageBytes": 324644
+}
