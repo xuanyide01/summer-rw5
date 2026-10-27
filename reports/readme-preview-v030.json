@@ -1,0 +1,89 @@
+{
+  "version": "0.3.0",
+  "versionCode": 15,
+  "method": "Original 432x514 screenshots from the installed, unchanged published v0.3.0 package in the official Vela native emulator; no simulated HTML UI.",
+  "captured": [
+    "preview-title-v030",
+    "preview-gallery-v030",
+    "preview-cg-v030",
+    "preview-load-v030",
+    "preview-menu-v030",
+    "preview-choice-v030"
+  ],
+  "files": [
+    {
+      "path": "docs/images/preview-title-v030.png",
+      "sha256": "a670d6f6c8b1376091e1a39b3ce643170bb0d10fa382702dc2cec9acd9ea2cef",
+      "dimensions": [
+        432,
+        514
+      ]
+    },
+    {
+      "path": "docs/images/preview-gallery-v030.png",
+      "sha256": "8fde5b2f0482a5c1d98de285de635ec9dfbaa8e850e4122204bd00b34d81daf2",
+      "dimensions": [
+        432,
+        514
+      ]
+    },
+    {
+      "path": "docs/images/preview-cg-v030.png",
+      "sha256": "212835f14758f92237d52bff45ef75912becaa3910682f4f1d8b6019796a999f",
+      "dimensions": [
+        432,
+        514
+      ]
+    },
+    {
+      "path": "docs/images/preview-load-v030.png",
+      "sha256": "f54dfcf09082dac45cf0e185ac5b573012763004af1e2be80946875be3f6c7f2",
+      "dimensions": [
+        432,
+        514
+      ]
+    },
+    {
+      "path": "docs/images/preview-menu-v030.png",
+      "sha256": "95b557bd644b240e76d1f96392bb609ffaf51cb0f097ee57613ed126a6ced616",
+      "dimensions": [
+        432,
+        514
+      ]
+    },
+    {
+      "path": "docs/images/preview-choice-v030.png",
+      "sha256": "1f1ebda709f7da52e9bb6dadabfc8d5fe37b19ff9a8fe645cb2b457648df9919",
+      "dimensions": [
+        432,
+        514
+      ]
+    },
+    {
+      "path": "docs/images/common-date-v030.png",
+      "sha256": "8fdb60f373cf9eb8495bcaa9bff483edf906c00474b9e4f278a405bc16a17c44",
+      "dimensions": [
+        432,
+        514
+      ],
+      "source": "Previously verified final v0.3.0 native capture."
+    },
+    {
+      "path": "docs/images/expression-v030.png",
+      "sha256": "2d6d6ce78f2e124aedb264cb078175a162412100d731dca6766198a5f9b60ae1",
+      "dimensions": [
+        432,
+        514
+      ],
+      "source": "Previously verified final v0.3.0 native capture."
+    }
+  ],
+  "readmeLocalLinksValid": true,
+  "currentPreviewImages": 8,
+  "historicalScreenshotsRemovedFromMainReadme": true,
+  "binaryUnchanged": true,
+  "releaseArchiveSnapshotPreserved": true,
+  "allEightImagesVisuallyInspected": true,
+  "galleryCapturedAfterThumbnailsRendered": true,
+  "virtualSaveRestoredByteIdentically": true
+}

@@ -1,123 +1,88 @@
 # 夏日口袋 · REDMI Watch 5
 
-基于《Summer Pockets REFLECTION BLUE》Windows 版资源制作的 Xiaomi Vela 手表阅读版本。应用名称为“夏日口袋”，在 REDMI Watch 5 的 432 × 514 屏幕上提供对白阅读、角色立绘、剧情选择、章节导航、存档和 CG 鉴赏。
+基于《Summer Pockets REFLECTION BLUE》Windows 版资源制作的 Xiaomi Vela 视觉小说阅读应用，适配 **REDMI Watch 5（432 × 514）**。当前版本为 **0.3.0 / versionCode 15**；小米手环 8 Pro 尚未适配。
 
-本项目参考 **[@liuyuze61](https://github.com/liuyuze61)** 的《ATRI 1.5.1》与《星空列车与白的旅行 v1.0.0》移植作品的实现方式，进一步完成《夏日口袋》的资源转换、播放器功能和图片适配。两部原作品链接见「参考作品与致谢」。
+程序实现、资源转换、界面适配、测试工具与文档由 **OpenAI Codex** 在维护者的需求与反馈指导下完成。维护者负责提供资源、审查成果及实机测试。自编代码采用 MIT，原作与第三方素材按各自授权处理。
 
-## 0.3.0 正式发布（2026-10-27）
+## 下载与安装反馈
 
-> **实机安装反馈：** 维护者于 **2026-10-27** 反馈：首次安装后无法显示应用图标，重启手表后仍未安装成功；重置手表后安装成功，随后暂未发现游戏内 bug。**首次安装兼容性问题尚未定位；本次确认的是重置后的安装与运行情况。重置并非推荐安装步骤。**
+[下载 v0.3.0](https://github.com/xuanyide01/summer-rw5/releases/tag/v0.3.0) · [BIN 安装包](https://github.com/xuanyide01/summer-rw5/releases/download/v0.3.0/summer-rw5-v0.3.0.bin) · [RPK 安装包](https://github.com/xuanyide01/summer-rw5/releases/download/v0.3.0/summer-rw5-v0.3.0.rpk) · [完整更新说明](docs/v0.3.0.md)
 
-[下载 v0.3.0](https://github.com/xuanyide01/summer-rw5/releases/tag/v0.3.0) · [BIN 安装包](https://github.com/xuanyide01/summer-rw5/releases/download/v0.3.0/summer-rw5-v0.3.0.bin) · [完整更新与验证](docs/v0.3.0.md) · [实机反馈记录](reports/hardware-test-v030.json)
-
-- 去掉阅读框蓝色描边；上方 CG、背景和人物都可点击补全当前句或推进下一句，拖动不会误翻句。
-- 共通线只标日期，个人线仅标人物名，不再显示“神山识0000”等内部编号。
-- 保留白羽、苍、紬、鸥、识五条个人线及 ALKA/Pocket；其他角色的共通事件保留。ReSTART 对应完成第 4、第 5 条个人线，完成五条后解锁 ALKA。
-- 新增 **40 个原作表情差分**，每位女主 8 个；CG 精简为 **712 张 / 136 组**。已有保留图片维持原文件字节和画质。
-- 减少安装时的 DEFLATE 工作量，单张立绘最大解码量保持原上限。目录曲、30 槽格式和保留场景的旧存档继续使用原实现。
-
-安装包 **24,983,777 字节（约 24.984 MB）**，低于 25 MB。52 项自动检查及最终 RPK 原生模拟器全新安装、画面点击、标签、代表表情和旧存档加载通过；维护者确认重置后可安装运行，目前暂未发现游戏内异常。移除线路中的旧档需使用 [0.2.5](https://github.com/xuanyide01/summer-rw5/releases/tag/v0.2.5)。
-
-![0.3.0 阅读界面](docs/images/expression-v030.png)
-
-程序、资源转换、界面适配、测试工具与文档由 **OpenAI Codex** 在维护者的需求与反馈指导下完成。自编代码采用 MIT；原作与第三方素材按各自授权处理。
-
-历史 [0.2.5 发布](https://github.com/xuanyide01/summer-rw5/releases/tag/v0.2.5) 保留完整个人线与旧存档兼容范围；[0.2.5 更新说明](docs/v0.2.5.md) 和此前各版验证文档保留为历史记录。
-
-## 功能与本项目成果
-
-- **大体量剧情转换**：0.3.0 保留 81,040 条对白/旁白、188 处对白选择、252 个可选章节入口；OPTIONS 中可进入路线/章节阅览。
-- **完整角色立绘**：0.3.0 保留 267 个姿势映射，对重复图片去重后共 252 份底图，并增加 40 份完整表情图。修复将局部眼睛、嘴巴补丁当成完整立绘的问题，保留透明边缘；最大尺寸 200 × 256。
-- **改善立绘压缩质量**：取消早期 32 色方案，重新处理人物图片，使用 RGBA PNG。构建时保留已检查的 PNG，避免工具再次量化造成明显失真。
-- **30 个存档栏位**：自行选择保存、加载栏位，覆盖前确认；支持标题读档与地图选择页面的存档恢复。
-- **安全下一章**：从当前进度按原剧情快进，到首个待选选项（包含地图选择）立即停止；选项界面再次跳章会返回原选项，必须自行选择。没有待选选项时停在下一章开头或本篇结束。已选分支、变量与存档格式保持一致。
-- **分组 CG 鉴赏**：0.3.0 的 712 张保留 CG 按场景整理为 136 组，当前收录 CG 全部开放。列表中同场景差分只占一项，打开后点击图片循环切换。
-- **完整 CG 合成**：局部差分先合回对应原画布，再缩放和压缩，避免把眼睛、嘴巴等局部补丁当作一张完整 CG 展示。
-- **地图选择适配**：将地图选点整理为可滚动的文字选项，保留可解析的原版分支编号。
-- **包体与内存处理**：安装包控制在 25 MB 内；剧情按 1,024 条指令分块，只缓存当前块，限制历史和异常跳转，自动执行分批让出界面。
-- **中文人物姓名**：人物标签、路线/章节与存档信息使用“紬文德斯”；对白保留原作简称“紬”。内嵌字体子集覆盖涉及该字的文本，不再用 `Tsumugi` 代替，也不依赖设备内置字体含有该字。
-- **正式名称与图标**：应用列表使用原版封面裁剪的 192 × 192 PNG，修复黑色占位图标。
-
-章节直达与全开放 CG 会提前展示后续剧情。
-
-## 开发工具与分工
-
-本项目的程序实现、资源转换、图像处理、手表界面适配、测试工具及文档整理由 **OpenAI Codex** 在维护者的需求与反馈指导下完成。维护者负责提出需求、提供原版资源、审查成果及完成 REDMI Watch 5 实机测试。
-
-## 画面预览
-
-| 标题界面 | 角色立绘 | 完整 CG |
-| --- | --- | --- |
-| ![标题界面](docs/images/title.png) | ![角色立绘](docs/images/portrait.png) | ![完整 CG](docs/images/cg.png) |
-
-截图来自官方 Vela 原生模拟器。标题与安全跳章截图为 0.1.6；其余历史截图保留原说明。
-
-![紬文德斯姓名显示](docs/images/name-fix.png)
-
-![安全跳章停在原选项](docs/images/safe-skip.png)
-
-## 安装包（0.3.0）
+> **实机安装反馈（2026-10-27）：** 维护者首次安装后无法显示应用图标，重启后仍未安装成功；重置手表后安装成功，随后暂未发现游戏内 bug。首次安装问题的原因尚未确认。重置只是这次实测经过，**不是推荐安装步骤**。详见 [实机反馈记录](reports/hardware-test-v030.json)。
 
 | 项目 | 内容 |
 | --- | --- |
 | 应用名称 | 夏日口袋 |
-| 原版资源版本 | REFLECTION BLUE |
-| 应用版本 | 0.3.0 / versionCode 15 |
 | 包名 | `com.codex.summer.rw5` |
-| BIN 文件 | `summer-rw5-v0.3.0.bin` |
-| 文件大小 | **24,983,777 字节，约 24.984 MB** |
-| 实机反馈 | 首次及重启后安装失败；重置后安装成功，运行暂未发现异常；安装原因未确认 |
+| 当前版本 | 0.3.0 / versionCode 15 |
+| BIN / RPK 大小 | **24,983,777 字节，约 24.984 MB** |
+| 安装包上限 | 25,000,000 字节；安装后占用和运行内存另计 |
 
-MB 按 1,000,000 字节计算，安装包上限为 **25,000,000 字节**。BIN 与同版本 RPK 内容相同，任选安装工具支持的格式；当前产物使用开发签名。安装后占用和运行内存另计。
+BIN 与 RPK 内容相同，任选安装工具支持的格式；当前产物使用开发签名。两种文件的 SHA256 均为：
 
 ```text
-SHA256
 964e1db4693560fa5fefdb5a1a162bb8f344fd7d0003edd05d58249eba325916
 ```
 
-Release 同时提供 `source.zip` 与 `resources.zip`，开发时将两者解压到同一目录，使内容合并到 `summer-rw5/`；安装游戏只需 BIN 或 RPK。完整线路旧版 [0.2.5](https://github.com/xuanyide01/summer-rw5/releases/tag/v0.2.5)、历史 [0.1.7 正式版](https://github.com/xuanyide01/summer-rw5/releases/tag/v0.1.7) 与 [0.1.6-r1](https://github.com/xuanyide01/summer-rw5/releases/tag/v0.1.6-r1) 保留供回退；卸载可能清除存档。
+## 画面预览
+
+以下截图均来自**已安装 0.3.0 的官方 Vela 原生模拟器**，尺寸为 432 × 514；不是实机拍照。标题、阅读、菜单、存档和 CG 界面统一展示当前版本。
+
+| 标题界面 | 共通剧情：仅日期 | 个人线：人物名与表情 |
+| --- | --- | --- |
+| ![0.3.0 标题界面](docs/images/preview-title-v030.png) | ![0.3.0 共通剧情日期](docs/images/common-date-v030.png) | ![0.3.0 个人线与表情](docs/images/expression-v030.png) |
+
+| CG 列表 | CG 差分鉴赏 | 30 栏读档 |
+| --- | --- | --- |
+| ![0.3.0 CG 列表](docs/images/preview-gallery-v030.png) | ![0.3.0 CG 差分鉴赏](docs/images/preview-cg-v030.png) | ![0.3.0 读取存档](docs/images/preview-load-v030.png) |
+
+| 阅读菜单与自动播放 | 剧情选项 |
+| --- | --- |
+| ![0.3.0 阅读菜单](docs/images/preview-menu-v030.png) | ![0.3.0 剧情选项](docs/images/preview-choice-v030.png) |
+
+[查看 40 个新增表情的导出资源对比](docs/images/expressions-v030.jpg)。旧版截图与验证记录见 [历史文档](docs/history-validation.md)。
+
+## 内容与功能
+
+- **五条个人线与最终篇**：保留鸣濑白羽、空门苍、紬文德斯、久岛鸥、神山识的个人线，以及 **ALKA、Pocket 和尾声**。美希、静久、羽未的个人线移除，她们在共通线中的事件保留。
+- **剧情规模**：81,040 条对白/旁白、188 处对白选择、252 个可选章节入口。OPTIONS 中可进入路线/章节阅览。
+- **原作标题风格**：原作标题场景、白羽形象与透明按键；Logo 顶部居中，按键左侧竖排。精简版在完成第 4、第 5 条个人线后触发对应 ReSTART 阶段，五条完成后解锁 ALKA，ALKA 完成后解锁 Pocket。
+- **完整立绘与新增表情**：267 个姿势映射，对重复图片去重后为 252 份底图；新增 40 份完整表情图，五位女主各 8 个。眼睛、嘴巴补丁先合回原画布，再输出完整 RGBA 立绘，尺寸上限保持 200 × 256。
+- **点击与自动阅读**：上方画面和正文都可点击推进；逐字显示未完成时先补全当前句，再次点击才推进。菜单提供慢速、标准、快速三档自动播放；遇到选项暂停，玩家选择后继续。拖动、菜单、存档页和后台会暂停自动推进。
+- **30 个存档栏位**：自行选择保存和加载栏位，覆盖前确认；保留原有存档键和格式。
+- **安全下一章**：从菜单快进到下一章或首个待选选项；选项必须手动选择，不会自动越过分支。
+- **分组 CG 鉴赏**：本版收录 712 张 CG，按场景分为 136 组，当前收录全部开放；打开后点击图片切换同场景差分。章节直达与 CG 鉴赏可能提前展示后续剧情。
+- **日期与姓名**：共通剧情只显示日期，进入个人线后仅显示人物名；人物标签使用“紬文德斯”，对白保留原作简称“紬”。
+- **目录曲**：标题、OPTIONS、MANUAL、LOAD、CG 列表和单张 CG 鉴赏连续播放，不因页面切换从头起播；进入剧情、后台或退出时停止，可在 OPTIONS 关闭。
+- **包体与加载**：保持 25 MB 上限；剧情按 1,024 条指令分块。图片、PCM 音频、字体使用 STORE，减少安装时的 DEFLATE 解压工作；保留图片没有进一步降低画质。
 
 ## 安装与使用
 
-**已知安装问题：** 维护者于 **2026-10-27** 反馈：首次安装后无法显示应用图标，重启手表后仍未安装成功；重置手表后安装成功，随后暂未发现游戏内 bug。**首次安装兼容性问题尚未定位；本次确认的是重置后的安装与运行情况。重置并非推荐安装步骤。**
+1. 使用支持 REDMI Watch 5 的 Vela 应用安装工具，已有实测使用“表盘自定义工具”（[米坛社区 BandBBS](https://www.bandbbs.cn/)）。
+2. **工具提示安装完成后，仍需等待手表端真正安装结束。** 等应用与图标正常显示后再打开，不要刚看到完成提示就反复重装。当前版本的首次安装问题见上方实机反馈。
+3. 在标题选择 START、LOAD 或 GALLERY。路线/章节阅览位于 OPTIONS 中。
+4. 阅读时点击上方画面、正文或“下一句”推进；从菜单保存、加载、跳至下一章或开启自动播放。选项需手动选择。
+5. CG 列表每个场景只占一项，打开后点击图片切换差分。
 
-1. 使用支持 REDMI Watch 5 的 Vela 应用安装工具安装对应 BIN；已有实机测试使用「表盘自定义工具」（相关社区：[米坛社区 BandBBS](https://www.bandbbs.cn/)）。
-2. **工具显示安装完成后，仍需等待一阵，手表端才会完成安装。** 等待应用与图标在列表中正常显示，再打开游戏；不要刚看到完成提示就反复重装。
-3. 在应用列表打开“夏日口袋”，选择 START、LOAD 或 GALLERY；路线/章节阅览位于 OPTIONS 中。
-4. 游戏内打开菜单选择保存、加载或下一章。保存时选定栏位；加载时自行选择所需栏位。
-5. 出现地图选择时滚动文字选项并点击目标；CG 鉴赏中点击图片切换同场景差分。
+**旧档兼容性：** 保留场景中的旧档继续可读；被移除个人线中的旧档不能在 0.3.0 继续，请保留 [0.2.5](https://github.com/xuanyide01/summer-rw5/releases/tag/v0.2.5) 用于读取这些存档。更新前保留旧包和存档，卸载可能清除存档；不同安装工具的覆盖更新行为尚不能一概而论。
 
-包名和存档键保持不变。不同安装工具的覆盖安装行为可能不同，卸载可能清除存档；更新前请保留旧安装文件并记录版本。
+## 验证与已知限制
 
-## 0.1.6 跳章修正
+0.3.0 的 **52 项自动检查通过**，覆盖剧情分块、保留章节、旧存档、CG、自动阅读、音频清理及本次改动；从五条个人线通关状态可完整遍历 ALKA/Pocket，无需补记被移除角色的结局。
 
-新包在官方 Vela 虚拟手表安装、启动和菜单选项保护检查通过；仍使用已通过此前实机测试的资源格式与兼容编译器，未改动图片和剧情文件。同时修复路线/章节第一页切换时复用行标识造成旧文字残留的问题。 已在虚拟手表确认鸣濑白羽、空门苍的章节第一页立即显示对应章节，返回也立即恢复路线列表；连续四次进入/返回检查通过，无需翻页刷新。
+最终完整 RPK 在独立官方 Vela 模拟器全新安装成功，读回版本为 0.3.0 / 15，编译页面与发布包一致。上方画面推进、日期/姓名、代表表情、旧第 30 栏存档和返回标题音乐检查通过。模拟器覆盖安装曾返回 `-19`，原因未确认，未将它与实机图标问题认定为同一原因。详情见 [本版验证说明](docs/v0.3.0.md)、[原生记录](reports/native-v030.json) 和 [历史验证](docs/history-validation.md)。
 
-## 0.1.7 文本与圆形图标
-
-移除过长的行首排版空白，仅作用于显示文本；原始对白、条件变量、调用栈及存档键保持不变。18 项自动检查通过，包括实际页面打开 0999、原始文本保存在 session 中、46 句全部正确显示及安全跳章。原生模拟器确认 24 / 28 px 字号和前后翻句，字体测试后已恢复虚拟存档与设置。
-
-## 适配与验证
-
-0.3.0 的原生模拟器与 52 项检查通过；维护者的实机结果为“重置后安装成功，暂未发现 bug”，首次和重启后的安装失败仍未定位，详见 [实机记录](reports/hardware-test-v030.json)。
-
-当前目标为 **REDMI Watch 5**，界面按 **432 × 514** 设计；目前**小米手环 8 Pro 尚未适配**。
-
-- **0.2.5 的 47 项自动检查通过；维护者于 2026-10-26 确认本版本 REDMI Watch 5 实测通过。** 记录见 [实机反馈](reports/hardware-test-v025.json)。
-- 早期 15 项自动测试包含原始剧情/资源、30 槽保存、CG、TXT 读取及安全跳章。检查 315 个章节入口，快进后的选项、变量与调用栈与正常阅读一致。
-- 457 个剧情分块与完整转换脚本流程的一致性比较通过；315 个章节按首项/末项两种选择策略共遍历 630 次，未穷举全部跨周目条件。
-- 0.1.3 在原生模拟器中通过 30 个旧存档加载、8 名主要角色完整立绘、完整 CG、代表差分循环及旧地图存档恢复与分支跳转检查。
-- 0.1.4 通过原生模拟器安装、启动、名称与图标资源检查；游戏代码和剧情图像资源与 0.1.3 逐字节相同，已有模拟器存档数据库未发生变化。
-- 0.1.5 通过 30 个旧存档加载、路线/章节、中文姓名对白、字号切换、存档预览/覆盖/读取及 CG 差分的原生检查；姓名字体覆盖 4,637 处相关字段，全部原有运行资源与 0.1.4 逐字节一致。官方模拟器磁盘不足时，本次备份并保留虚拟存档后重装应用；不据此承诺所有安装工具的覆盖更新行为。
-- **0.1.4 已完成 REDMI Watch 5 上机测试，应用图标正常显示，目前各项功能暂未发现异常。** 此项依据维护者于 2026-10-09 提供的实机反馈记录。
-- **0.1.6-r1 已通过 REDMI Watch 5 实机安装测试，章节界面卡顿已解决。** 依据维护者于 2026-10-09 的反馈；范围限本次已测安装包与已反馈功能。后续收到 0999 文本行首留白反馈，记录为已知排版问题。
-- **0.1.5 已完成 REDMI Watch 5 上机测试。** 此项依据维护者于 2026-10-09 提供的“夏日口袋通过上机测试”反馈记录，已确认姓名修正版本通过实机测试。
-
-原生环境使用官方 `vela-watch-5.0` 镜像，并非 REDMI Watch 5 实际系统的完整复刻。实机与模拟器检查的范围以已测试设备和已检查内容为准，尚未覆盖所有设备、固件及长期运行情况。
+- 官方 `vela-watch-5.0` 镜像并非 REDMI Watch 5 固件的完整复刻；实机结果以上方维护者反馈为准。
+- 本项目是手表端视觉小说阅读应用，Windows 原版引擎没有在手表上运行。
+- 剧情中不含原版 BGM、配音、视频、复杂动画或完整多人站位。目录曲为完整 237 秒、PCM 16 位 / 4 kHz 单声道，为满足包体限制减少了高频细节。
+- 40 个新增表情覆盖常用姿势，其他姿势仍共用底图，未还原全部表情。小游戏玩法未复现，可阅读相关对白。
+- 地图图标状态和部分原引擎接口尚未完整复现；章节直达不代表原版全部解锁流程均已还原。
 
 ## 开发与构建
 
-在 Windows 的项目根目录执行，需 Node.js 与 npm，并已准备好 `src/common/` 下的转换资源和测试所需转换脚本数据：
+仓库包含已转换的运行资源，常规构建无需读取 Windows 游戏目录。也可从 Release 下载 [源码 ZIP](https://github.com/xuanyide01/summer-rw5/releases/download/v0.3.0/summer-rw5-v0.3.0-source.zip) 与 [资源 ZIP](https://github.com/xuanyide01/summer-rw5/releases/download/v0.3.0/summer-rw5-v0.3.0-resources.zip)，将两者解压到同一目录，合并为 `summer-rw5/`。Release 中的 ZIP 是发布时快照，GitHub 主分支包含后续文档和截图更新。
+
+准备 Node.js 与 npm，在项目根目录执行：
 
 ```powershell
 npm ci
@@ -126,96 +91,73 @@ npm test
 npm run release
 ```
 
-产物为 `dist/com.codex.summer.rw5.debug.0.3.0.rpk`。构建固定使用 **aiot-toolkit 1.1.0**，`tools/compat-toolkit` 将图片依赖 sharp 固定为 0.34.5；项目根目录的 2.0.5 依赖用于开发和模拟器工具。构建脚本检查 25,000,000 字节上限。
-
-`npm run release` 在兼容编译后执行 `tools/compact-install.cjs` 与 `tools/repack-rpk.cjs`：二进制资源使用 STORE，只对满足包体上限所需的文本进行 DEFLATE；保持条目解压内容，重新签名并调整封装。源码重新构建会产生新的构建时间信息，仍需校验新产物。
-
-`quickapp.config.js` 在构建时保留检查过的 PNG 资源；当前包的 PNG/JPEG 与对应源文件逐字节一致。
-
-`tools/build-name-font.py` 用 fontTools 从 Noto Sans Mono CJK SC（SIL OFL 1.1）提取姓名相关文本需要的字形，输出 `src/common/summer-name.otf`。字体已随源代码提供，常规构建无需重新生成；改动相关对白后需重建字体子集并运行字体覆盖检查。仅姓名相关文本使用该子集，其余文本使用系统字体。
+产物为 `dist/com.codex.summer.rw5.debug.0.3.0.rpk`。构建使用 **aiot-toolkit 1.1.0** 兼容编译器，项目根目录的 2.0.5 依赖用于开发和模拟器工具。发布构建保留图片字节、调整 ZIP 封装并重新签名，检查 25,000,000 字节上限。重建包含新的时间信息，不保证与发布附件具有相同 SHA256。
 
 ```text
-src/                  Vela 应用、界面与转换后的运行资源
-converted-story/      用于转换流程验证的剧情数据
-tools/                格式解析、图片处理、构建及模拟器工具
-tests/                自动测试
-reports/              自动检查、原生检查和实机反馈记录
+src/                  Vela 应用与转换后的运行资源
+converted-story/      转换流程校验数据
+tools/                格式解析、资源处理、构建和模拟器工具
+tests/                自动检查
+reports/              本版及历史验证、实机反馈
 licenses/             第三方许可证
-docs/images/          README 截图
+docs/                 更新说明、历史记录和版本截图
 ```
 
-资源研究工具包括 `luca_format.py`、`cz_images.py`、`compile_expressions.py`；立绘与 CG 处理工具包括 `restore-portraits.py`、`compress-portraits.py`、`compose-cg.py`。这些工具针对本次 PC 游戏资源版本，目前并非任意 Galgame 的一键转换器。仅公开代码和工具的仓库需先准备原版资源的转换结果，再构建。
-
-运行原版资源分析与图片处理工具前，将环境变量 `SUMMER_GAME_ROOT` 设为原版 `SummerPocketsRB.exe` 所在目录。已转换资源的应用构建无需读取原版目录。
+原版资源分析工具需将 `SUMMER_GAME_ROOT` 设为 `SummerPocketsRB.exe` 所在目录；它们针对本次资源格式，不是任意 Galgame 的一键转换工具。姓名字体子集已随资源提供，变更相关文本后才需重建并检查覆盖范围。
 
 ### 原生模拟器
 
+下面显式指定与 `emulator:setup` 一致的设备名，并统一控制端口。首次准备会下载官方 SDK；运行前确认同名设备与这些端口未被其他实例占用。
+
 ```powershell
-$env:STARRY_EMULATOR_HOME = Join-Path $env:LOCALAPPDATA 'VelaGalgameDev'
+$env:STARRY_EMULATOR_HOME = Join-Path $env:LOCALAPPDATA 'SummerRW5Dev'
+$env:WATCH_SDK_HOME = Join-Path $env:STARRY_EMULATOR_HOME 'sdk'
+$env:WATCH_VVD_NAME = 'RedmiWatch5-432x514'
+$env:WATCH_SERIAL_PORT = '5556'
+$env:WATCH_GRPC_PORT = '8556'
+$env:WATCH_DEBUG_PORT = '10056'
+$env:WATCH_HTTP_PORT = '43126'
 npm run emulator:setup
 npm run emulator
 ```
 
-两个项目共用 `STARRY_EMULATOR_HOME` 指定的 SDK 与虚拟设备目录。首次准备会联网下载官方 SDK 镜像，并在用户目录 `.vela/vvd/` 注册 432 × 514 的虚拟设备。
-
-待虚拟系统完成启动后，另开终端进入本项目目录，安装已经构建的包：
+虚拟系统启动完成后，在同项目的另一个 PowerShell 终端安装已构建的 RPK：
 
 ```powershell
 $rpkPath = (Resolve-Path 'dist/com.codex.summer.rw5.debug.0.3.0.rpk').Path
-$installUrl = 'http://127.0.0.1:43125/install?rpk=' + [Uri]::EscapeDataString($rpkPath)
+$installUrl = 'http://127.0.0.1:43126/install?rpk=' + [Uri]::EscapeDataString($rpkPath)
 Invoke-RestMethod -Uri $installUrl
-Invoke-RestMethod -Uri 'http://127.0.0.1:43125/start'
+Invoke-RestMethod -Uri 'http://127.0.0.1:43126/start'
 ```
 
-随后在浏览器打开 `http://127.0.0.1:43125/` 操作虚拟手表。停止应用与关闭虚拟设备可分别使用本地控制接口 `/stop`、`/shutdown`；关机时 HTTP 连接可能随进程退出而关闭，应检查虚拟进程已结束。
+浏览器打开 `http://127.0.0.1:43126/` 操作。`/stop` 停止应用，`/shutdown` 关闭虚拟设备；关闭后检查进程已退出。不同项目请使用独立环境、设备名与端口，勿同时启动同名设备。部分原生检查会写测试存档，运行前备份模拟器数据。
 
-两个项目控制器使用相同端口和虚拟设备名称，不要同时运行；切换游戏时先关闭前一个控制器并冷启动虚拟设备。部分原生测试会写入测试存档，执行前备份自己的模拟器数据。模拟器磁盘容量有限，安装失败时检查可用空间及安装日志。
+## 卡住或异常退出
 
-## 已知限制
+应用无响应但系统仍可操作时，退出后重新打开并读取最近手动存档。音频异常时可在 OPTIONS 关闭音乐，完整退出后重开。整个 REDMI Watch 5 无响应时，按 [官方 FAQ](https://www.mi.com/pk/support/faq/details/KA-521474/) 长按电源键约 **18 秒**，出现 REDMI 标志后松开。
 
-- 本项目提供手表端视觉小说阅读功能，Windows 原版引擎没有在手表上运行。
-- 0.2.0 加入标题目录曲；剧情中不含背景音乐、配音、视频、复杂动画和完整多人立绘站位。此前已转换的背景与 CG 分辨率保持不变。
-- 五位女主的常用姿势增加 40 个表情差分，其余姿势仍共用底图，未逐一还原全部原作表情。
-- 乒乓球等小游戏的玩法未复现，可从章节入口阅读相关对白。
-- 地图图标状态、部分原引擎接口及跨周目全局解锁条件未完整复现；章节直达方便阅读，不代表原版全部解锁流程已还原。
-
-## 卡住或异常退出的处理
-
-应用无响应但系统仍能操作时，退出后重新打开并加载最近手动存档。整个手表无响应时，按 [REDMI Watch 5 官方 FAQ](https://www.mi.com/pk/support/faq/details/KA-521474/) 长按电源键约 **18 秒**，出现 REDMI 标志后松开。黑屏无法启动时，参考[官方 FAQ](https://www.mi.com/uk/support/faq/details/KA-521474/)使用原配充电座充电至少 10 分钟，再尝试强制重启；仍无法恢复则联系售后。
-
-应用声明 `system.storage`、`system.file`、`system.prompt`、`system.audio`，不包含固件或系统分区写入代码。包体限制及现有检查不能保证所有设备零崩溃。反馈问题时请提供设备型号、系统版本、应用版本、路线/章节和复现步骤。
+应用声明 `system.storage`、`system.file`、`system.prompt`、`system.audio`，不含固件或系统分区写入代码。现有包体与运行检查不能保证所有设备零崩溃。反馈时请附设备型号、固件版本、应用版本、路线/章节和复现步骤。
 
 ## 参考作品与致谢
 
-感谢 **[@liuyuze61](https://github.com/liuyuze61)** 的两部手表移植作品，为本项目的应用结构、资源组织和兼容性研究提供了参考：
+感谢 **[@liuyuze61](https://github.com/liuyuze61)** 的两部手表移植作品，为应用结构、资源组织和兼容性研究提供参考：
 
-- **ATRI 1.5.1**，作者 @liuyuze61：[原作品分享链接](https://api.bandbbs.cn/wftools/bandbbs.html?code=A&state=1820673)。
-- **星空列车与白的旅行 v1.0.0**，作者 @liuyuze61：[原作品分享链接](https://api.bandbbs.cn/wftools/bandbbs.html?code=A&state=1841662)。
+- **ATRI 1.5.1**：[原作品分享链接](https://api.bandbbs.cn/wftools/bandbbs.html?code=A&state=1820673)。
+- **星空列车与白的旅行 v1.0.0**：[原作品分享链接](https://api.bandbbs.cn/wftools/bandbbs.html?code=A&state=1841662)。
 - 作者相关开源项目：[ATRI-miband](https://github.com/liuyuze61/ATRI-miband)。
 
-表盘分享链接保留原分享地址，需要浏览器或「表盘自定义工具」访问。
+原分享链接需通过浏览器或“表盘自定义工具”访问。感谢 **“表盘自定义工具”的开发者及相关团队**提供安装工具；相关社区：[米坛社区 BandBBS](https://www.bandbbs.cn/)。
 
-《夏日口袋》的 LucaSystem 脚本与图片格式研究参考 **[wetor / LuckSystem](https://github.com/wetor/LuckSystem)**，其 MIT 许可证保留于 [licenses/LuckSystem-LICENSE](licenses/LuckSystem-LICENSE)。平台资料参考 [Xiaomi Vela JS 应用官方文档](https://iot.mi.com/vela/quickapp/)。
+LucaSystem 脚本与图片格式研究参考 [wetor / LuckSystem](https://github.com/wetor/LuckSystem)，MIT 许可证保留于 [licenses/LuckSystem-LICENSE](licenses/LuckSystem-LICENSE)。平台资料参考 [Xiaomi Vela 官方文档](https://iot.mi.com/vela/quickapp/)。感谢原作开发者、译者、开源工具作者和测试者。
 
-感谢 **「表盘自定义工具」的开发者及相关团队**提供安装工具，支持本项目的应用安装与实机测试。相关社区：[米坛社区 BandBBS](https://www.bandbbs.cn/)。
+## 原作与许可证
 
-也感谢原作开发者、译者、相关开源工具作者与测试者。
+[《Summer Pockets REFLECTION BLUE》原作官网](https://key.visualarts.gr.jp/summer_rb/)。
 
-## 原作官网
+自行编写的代码采用 [MIT](LICENSE)，第三方代码、工具和字体按各自许可证处理，见 [第三方说明](THIRD_PARTY_NOTICES.md)。原版剧本、立绘、CG、背景和标识属于相应权利人，不包含在本项目的 MIT 授权范围内；完整安装包也不能仅凭代码许可获得素材分发授权。请支持原作。
 
-《Summer Pockets REFLECTION BLUE》：[夏日口袋原作官网](https://key.visualarts.gr.jp/summer_rb/)。
-
-## 许可证与游戏资源
-
-本项目自行编写的程序代码采用 [MIT 许可证](LICENSE)。第三方代码与工具保留各自许可证和署名，见 [第三方说明](THIRD_PARTY_NOTICES.md)。
-
-原版剧本、立绘、CG、背景和标识属于相应权利人，不纳入本项目代码许可证。包含这些素材的完整安装包也不能仅凭代码的开源许可获得素材分发授权。MIT 许可只覆盖程序代码，原作素材的使用和分发仍受相应权利人的授权约束。请支持原作。
-
-## 相关项目
+## 相关项目与反馈
 
 [星空列车与白的旅行 · REDMI Watch 5](https://github.com/xuanyide01/starry-rw5)。
 
-
-## 联系方式
-
-问题反馈与交流：[shining237841@gmail.com](mailto:shining237841@gmail.com)。
+问题反馈：[GitHub Issues](https://github.com/xuanyide01/summer-rw5/issues) · [shining237841@gmail.com](mailto:shining237841@gmail.com)。
